@@ -2,6 +2,7 @@
 
 - `banner.html` gera `../banner.png` (página principal).
 - `banner-sync.html` gera `../banner-sync.png` (produto Sync).
+- `banner-en.html` e `banner-sync-en.html` geram as versões em inglês (`../banner-en.png` e `../banner-sync-en.png`), usadas na parte em inglês dos READMEs.
 - Para um produto novo, copie `banner-sync.html`, troque selo, título, texto e o elemento gráfico (um só por peça: cubo, anel, arco, marca de + ou coluna de pontos).
 
 
