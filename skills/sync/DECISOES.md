@@ -9,6 +9,7 @@
   - `/sync-me`: entrevista livre, sem gerar arquivos, e também o núcleo com o método de entrevista usado pelas outras skills (reúne o `grilling` e o `grill-me` do original). Pode ser invocada pelo usuário e pelo modelo. (Revisado: na primeira versão havia um núcleo separado chamado `syncing`; ele foi renomeado para `sync-me` para que o nome visível ao usuário seja o da skill que ele chama.)
   - `/sync-docs`: entrevista que registra glossário e decisões durante a sessão (equivale ao `grill-with-docs`).
   - `/sync-mva`: entrevista guiada pelas etapas e pelo núcleo da metodologia MVA.
+  - `/sync-spec`: spec de um produto com telas para uma IA de código construir (decisões em `sync/decisoes.md`, D1 a D17).
   - `syncdb`: construção de bases de dados sintéticas (ver abaixo).
   - `/sync-docs` e `/sync-mva` têm `disable-model-invocation: true` e usam o método do `sync-me`.
 - **Fluxo recomendado:** `/sync-docs` → `/sync-mva` → `syncdb`.
@@ -60,8 +61,8 @@
 - **Próximo passo depois do `/sync-docs`:** o `/sync-docs` recomenda, com o motivo, o caminho mais coerente: **`/sync-mva`** quando o projeto é uma automação ou um agente que trabalha sobre documentos e dados e precisa testar valor rápido; **`/sync-spec`** quando é um produto ou software com telas, que vai ser desenvolvido. Quando for os dois (uma automação que depois vira produto), recomenda MVA primeiro e spec depois. A escolha final é do usuário.
 - **Design system de referência:** a família terá um design system básico, pronto para usar quando o usuário não tiver marca, com pelo menos dois temas genéricos da Pandora: **claro** e **escuro**. Serve de padrão para a direção visual e as prévias do `/sync-spec`.
 
+- **Situação (2026-11-19):** `/sync-spec` publicada na versão 0.1, em teste, junto com o Pandora DS v1 (`design-system/`). Cada skill tem uma página própria (`README.md` na pasta da skill) com o que é, quando usar, como usar e resultados esperados. Plugin 0.3.0.
+
 ## Em aberto
 
-- `/sync-spec`: formato das telas (wireframe em texto, prévia visual em HTML, indicação de protótipo).
-- `/sync-spec`: copiar as fontes (to-spec, prototype, wireframes, aidlc-requirements) para `references/`, com licença e commit.
-- Design system de referência: quais paletas além de Pandora claro e escuro; o que entra (tokens, componentes, exemplos); onde fica e como as skills o usam.
+- Testar a `/sync-spec` num projeto real e ajustar.

@@ -9,7 +9,7 @@
       "name": "pandora",
       "displayName": "Pandora Box",
       "source": "./skills",
-      "description": "Skills abertas da Pandora para trabalhar com IA com critério. Família Sync: entrevistas que transformam uma ideia em projeto documentado e em um MVA pronto para montar (sync-me, sync-docs, sync-mva, syncdb)."
+      "description": "Skills abertas da Pandora para trabalhar com IA com critério. Família Sync: entrevistas que transformam uma ideia em projeto documentado e, depois, numa spec para uma IA de código construir ou num MVA para testar (sync-me, sync-docs, sync-spec, sync-mva, syncdb)."
     }
   ]
 }
