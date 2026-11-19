@@ -1,6 +1,6 @@
 ---
 name: syncdb
-description: Cria bases de dados sintéticas (fictícias, mas realistas) em CSV ou Markdown a partir de um arquivo de exemplo (planilha Excel, CSV, JSON, tabela em PDF ou documento) ou de uma descrição. Use quando o usuário precisar de dados de teste sem expor dados reais, quando chamar /pandora:syncdb, ou quando o /pandora:sync-mva precisar dos documentos de referência de um MVA.
+description: Cria bases de dados sintéticas (fictícias, mas realistas) em CSV ou Markdown a partir de um arquivo de exemplo (planilha Excel, CSV, JSON, tabela em PDF ou documento) ou de uma descrição. Use quando o usuário precisar de dados de teste sem expor dados reais, quando chamar /syncdb, ou quando o /sync-mva precisar dos documentos de referência de um MVA.
 ---
 
 # syncdb
@@ -36,7 +36,7 @@ Pergunte, em uma única rodada, só o que faltar (com a sua sugestão para cada 
 3. **Casos difíceis:** quais exceções precisam aparecer para o teste valer (por exemplo, faltas, atrasos, registros duplicados, campos vazios, valores fora da faixa).
 4. **Proporções:** a frequência aproximada de cada caso (por exemplo, 5% de atrasos).
 
-Se for chamado pelo `/pandora:sync-mva` e essas respostas já estiverem no registro, não pergunte de novo.
+Se for chamado pelo `/sync-mva` e essas respostas já estiverem no registro, não pergunte de novo.
 
 ## 3. Gerar
 
@@ -52,7 +52,7 @@ Para cada base, entregue:
 - **os dados**: `<nome>.csv` (separador `,`, codificação UTF-8, com cabeçalho) ou `<nome>.md` para textos como políticas e procedimentos;
 - **o dicionário de dados**: `<nome>-dicionario.md`, com cada coluna (nome, tipo, formato, exemplo), as relações entre tabelas, os casos difíceis incluídos e a semente usada.
 
-Com uma pasta de trabalho, grave os arquivos nela. Quando chamado pelo `/pandora:sync-mva`, grave em `documentos/` dentro da pasta do MVA. Sem pasta de trabalho, crie os arquivos para download; se não for possível, entregue-os em blocos de código prontos para copiar, com o nome de cada arquivo.
+Com uma pasta de trabalho, grave os arquivos nela. Quando chamado pelo `/sync-mva`, grave em `documentos/` dentro da pasta do MVA. Sem pasta de trabalho, crie os arquivos para download; se não for possível, entregue-os em blocos de código prontos para copiar, com o nome de cada arquivo.
 
 Termine dizendo em uma frase como os dados podem ser usados e lembrando que, antes de usar dados reais, é preciso verificar as regras de privacidade (LGPD) da organização.
 

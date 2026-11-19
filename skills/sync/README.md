@@ -1,12 +1,12 @@
-<img src="../../assets/banner-sync.png" alt="Sync. A IA pergunta. Você decide. Uma família de skills que entrevista você sobre o seu projeto até haver entendimento compartilhado e, no fim, entrega a spec ou o MVA do projeto." width="100%">
+<img src="../../assets/banner-sync.png" alt="/pandora:sync. A IA pergunta. Você decide. Uma família de skills que entrevista você sobre o seu projeto até haver entendimento compartilhado e, no fim, entrega a spec ou o MVA do projeto." width="100%">
 
-# Sync
+# /pandora:sync
 
 **Português** · [English](#english)
 
 **Skills para o Claude que entrevistam você sobre o seu projeto antes de qualquer linha ser escrita.**
 
-A maioria dos projetos com IA começa pela ferramenta e descobre o problema no meio do caminho. O Sync inverte a ordem: primeiro vêm as perguntas, depois a construção.
+A maioria dos projetos com IA começa pela ferramenta e descobre o problema no meio do caminho. O `/pandora:sync` inverte a ordem: primeiro vêm as perguntas, depois a construção.
 
 > **Situação.** As cinco skills estão publicadas e em teste: `sync-me` na versão 0.2, as demais na 0.1. Cada uma tem uma página própria: abra a pasta da skill na tabela abaixo.
 
@@ -78,15 +78,15 @@ Escolha a sua plataforma em [Como instalar as skills](../../guias/como-instalar-
 
 <a id="english"></a>
 
-<img src="../../assets/banner-sync-en.png" alt="Sync. The AI asks. You decide. A family of skills that interviews you about your project until you share the same understanding, then delivers your project's spec or MVA." width="100%">
+<img src="../../assets/banner-sync-en.png" alt="/pandora:sync. The AI asks. You decide. A family of skills that interviews you about your project until you share the same understanding, then delivers your project's spec or MVA." width="100%">
 
-# Sync
+# /pandora:sync
 
-**English** · [Português](#sync)
+**English** · [Português](#pandorasync)
 
 **Skills that interview you about your project before a single line is written.**
 
-Most AI projects start with the tool and discover the problem halfway through. Sync reverses the order: questions first, building second.
+Most AI projects start with the tool and discover the problem halfway through. `/pandora:sync` reverses the order: questions first, building second.
 
 > **Status.** All five skills are published and in testing: `sync-me` at version 0.2, the others at 0.1. Each has its own page: open the skill folder in the table below.
 

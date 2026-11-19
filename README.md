@@ -34,13 +34,13 @@ Todo o material é aberto. Leia, copie, adapte e use, citando a fonte.
 
 ## Produtos
 
-<a href="skills/sync/"><img src="assets/banner-sync.png" alt="Sync. A IA pergunta. Você decide. Uma família de skills que entrevista você sobre o seu projeto até haver entendimento compartilhado e, no fim, entrega a spec ou o MVA do projeto." width="100%"></a>
+<a href="skills/sync/"><img src="assets/banner-sync.png" alt="/pandora:sync. A IA pergunta. Você decide. Uma família de skills que entrevista você sobre o seu projeto até haver entendimento compartilhado e, no fim, entrega a spec ou o MVA do projeto." width="100%"></a>
 
-### Sync
+### `/pandora:sync`
 
 **Skills que entrevistam você sobre o seu projeto antes de qualquer linha ser escrita.**
 
-A maioria dos projetos com IA começa pela ferramenta. O Sync começa pelas perguntas: o que você quer resolver, para quem, com quais dados e com qual critério de sucesso. A IA pergunta em rodadas, sugere e mostra o custo de cada sugestão. As decisões ficam com você, e nas que importam um "sim" sem motivo não basta.
+A maioria dos projetos com IA começa pela ferramenta. O `/pandora:sync` começa pelas perguntas: o que você quer resolver, para quem, com quais dados e com qual critério de sucesso. A IA pergunta em rodadas, sugere e mostra o custo de cada sugestão. As decisões ficam com você, e nas que importam um "sim" sem motivo não basta.
 
 No fim, você sai com o projeto documentado e com o próximo passo pronto: a **spec** para uma IA de código construir um produto com telas, ou o **MVA** para testar uma automação.
 
@@ -59,7 +59,7 @@ Cada skill tem uma página com o que é, quando usar, como usar e o que esperar:
 | [`/pandora:syncdb`](skills/sync/syncdb/) | Gera bases de dados sintéticas em CSV ou Markdown a partir de um arquivo de exemplo | v0.1, em teste |
 | [`/pandora:sync-me`](skills/sync/sync-me/) | Entrevista sobre uma ideia ou projeto, sem gerar arquivos. É também o método de entrevista que as outras skills usam. | v0.2, em teste |
 
-[Conhecer o Sync ↗](skills/sync/) · [Instalar](#instalação)
+[Conhecer o /pandora:sync ↗](skills/sync/) · [Instalar](#instalação)
 
 ---
 
@@ -228,13 +228,13 @@ Everything here is open. Read, copy, adapt and use it, with attribution.
 
 ### Products
 
-<a href="skills/sync/README.md#english"><img src="assets/banner-sync-en.png" alt="Sync. The AI asks. You decide. A family of skills that interviews you about your project until you share the same understanding, then delivers your project's spec or MVA." width="100%"></a>
+<a href="skills/sync/README.md#english"><img src="assets/banner-sync-en.png" alt="/pandora:sync. The AI asks. You decide. A family of skills that interviews you about your project until you share the same understanding, then delivers your project's spec or MVA." width="100%"></a>
 
-#### Sync
+#### `/pandora:sync`
 
 **Skills that interview you about your project before a single line is written.**
 
-Most AI projects start with the tool. Sync starts with questions: what you want to solve, for whom, with which data and with which success criteria. The AI asks in rounds, makes suggestions and shows what each suggestion costs. You make the decisions, and on the ones that matter a "yes" without a reason is not enough.
+Most AI projects start with the tool. `/pandora:sync` starts with questions: what you want to solve, for whom, with which data and with which success criteria. The AI asks in rounds, makes suggestions and shows what each suggestion costs. You make the decisions, and on the ones that matter a "yes" without a reason is not enough.
 
 You end up with a documented project and the next step ready: the **spec** for a coding AI to build a product with screens, or the **MVA** (Minimum Viable Automation) to test an automation.
 
@@ -253,7 +253,7 @@ Each skill has its own page with what it is, when to use it, how to use it and w
 | [`/pandora:syncdb`](skills/sync/syncdb/) | Generates synthetic datasets in CSV or Markdown from a sample file | v0.1, testing |
 | [`/pandora:sync-me`](skills/sync/sync-me/) | Interview about an idea or project, no files created. It is also the interview method the other skills use. | v0.2, testing |
 
-[Learn about Sync ↗](skills/sync/README.md#english)
+[Learn about /pandora:sync ↗](skills/sync/README.md#english)
 
 ### Installation
 

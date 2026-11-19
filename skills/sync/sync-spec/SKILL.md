@@ -1,6 +1,6 @@
 ---
 name: sync-spec
-description: Monta a spec de um produto ou sistema com telas a partir do registro do /pandora:sync-docs - propósito, estado de pronto, usuários e acesso, segurança, telas, arquitetura, padrão visual e plano de etapas - escrita para uma IA de código construir com segurança. Conduz a conversa em blocos, explicando por que cada tema importa.
+description: Monta a spec de um produto ou sistema com telas a partir do registro do /sync-docs - propósito, estado de pronto, usuários e acesso, segurança, telas, arquitetura, padrão visual e plano de etapas - escrita para uma IA de código construir com segurança. Conduz a conversa em blocos, explicando por que cada tema importa.
 disable-model-invocation: true
 ---
 
@@ -12,14 +12,14 @@ Quem usa normalmente **não é desenvolvedor experiente**. Ele vai entregar a sp
 
 ## 1. Encontrar o registro
 
-O `/pandora:sync-spec` parte do que o `/pandora:sync-docs` registrou. Procure, nesta ordem:
+O `/sync-spec` parte do que o `/sync-docs` registrou. Procure, nesta ordem:
 
 1. o registro na **conversa atual**;
 2. os arquivos **`sync/glossario.md`** e **`sync/decisoes.md`** na pasta de trabalho;
 3. peça ao usuário que **cole ou anexe** o registro;
-4. se não existir, recomende rodar o **`/pandora:sync-docs`** antes. Se o usuário preferir seguir, comece pelo bloco 1 com mais perguntas.
+4. se não existir, recomende rodar o **`/sync-docs`** antes. Se o usuário preferir seguir, comece pelo bloco 1 com mais perguntas.
 
-**Não pergunte de novo o que já está decidido.** Use o vocabulário do glossário. Se o registro indicar que o projeto é uma automação ou um agente sem telas, sugira o `/pandora:sync-mva`.
+**Não pergunte de novo o que já está decidido.** Use o vocabulário do glossário. Se o registro indicar que o projeto é uma automação ou um agente sem telas, sugira o `/sync-mva`.
 
 ## 2. O método
 

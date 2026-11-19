@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Pandora-Tech-LTDA/pandora-box/main/assets/banner-sync.png" alt="Sync. A IA pergunta. Você decide." width="100%">
+<img src="https://raw.githubusercontent.com/Pandora-Tech-LTDA/pandora-box/main/assets/banner-sync.png" alt="/pandora:sync. A IA pergunta. Você decide." width="100%">
 
 # Pandora Box
 
@@ -6,7 +6,7 @@
 
 Skills abertas da Pandora para trabalhar com IA com critério. Este plugin reúne todas as skills da [Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box) num só pacote e é atualizado a cada nova versão.
 
-## Família Sync
+## Família /pandora:sync
 
 Skills que entrevistam você sobre o seu projeto antes de qualquer linha ser escrita. A IA pergunta em rodadas, sugere e mostra o que cada sugestão custa. As decisões ficam com você, e nas que importam um "sim" sem motivo não basta.
 
@@ -51,7 +51,7 @@ Páginas de cada skill: [sync-me](https://github.com/Pandora-Tech-LTDA/pandora-b
 
 Pandora's open skills for working with AI with sound judgment. This plugin bundles every [Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box) skill in one package and is updated with each new version.
 
-## Sync family
+## /pandora:sync family
 
 Skills that interview you about your project before a single line is written. The AI asks in rounds, makes suggestions and shows what each suggestion costs. You make the decisions, and on the ones that matter a "yes" without a reason is not enough.
 

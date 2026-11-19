@@ -24,7 +24,7 @@ Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Te
 | [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip) | **Plugin com todas as skills.** Um arquivo só, para Claude.ai, Cowork e Claude Code |
 | [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-spec.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-spec.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) | Skills avulsas, para instalar só uma ou usar em outros agentes |
 
-> **Situação.** As cinco skills da família Sync estão publicadas e em teste (`sync-me` na versão 0.2, as demais na 0.1).
+> **Situação.** As cinco skills da família `/pandora:sync` estão publicadas e em teste (`sync-me` na versão 0.2, as demais na 0.1).
 
 ## Depois de instalar
 
@@ -76,7 +76,7 @@ All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pando
 | [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip) | **Plugin with every skill.** A single file for Claude.ai, Cowork and Claude Code |
 | [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-spec.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-spec.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) | Individual skills, to install just one or use with other agents |
 
-> **Status.** All five Sync skills are published and in testing (`sync-me` at version 0.2, the others at 0.1).
+> **Status.** All five `/pandora:sync` skills are published and in testing (`sync-me` at version 0.2, the others at 0.1).
 
 ## After installing
 
