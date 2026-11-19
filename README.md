@@ -1,7 +1,7 @@
 # 📚 Wiki — Base de Conhecimento Público
 
 Conhecimentos, dicas, skills, MCPs e materiais que eu uso no dia a dia e quero que
-**qualquer pessoa** possa acessar — especialmente meus alunos e clientes.
+**qualquer pessoa** possa acessar.
 
 Tudo aqui é aberto: leia, copie, adapte e use nos seus projetos.
 
