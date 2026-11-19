@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Pandora Box: uma caixa aberta espalha luz e pontos de conhecimento pelo mundo; no fundo dela brilha uma estrela dourada, a esperança. Abra a caixa, espalhe o conhecimento." width="100%">
+<img src="assets/banner.png" alt="Pandora Box. Abra a caixa. O conhecimento se espalha. Skills, MCPs, guias e prompts para qualquer pessoa usar. Ao lado, um cubo isométrico aberto, com pontos de luz subindo da caixa; no fundo dela, um ponto branco: a esperança." width="100%">
 
 <br>
 
@@ -9,10 +9,10 @@ Skills, MCPs, guias e prompts para qualquer pessoa usar, do primeiro passo ao av
 
 <br>
 
-[![Licença do código: MIT](https://img.shields.io/badge/c%C3%B3digo-MIT-F5C451?style=flat-square)](LICENSE)
-[![Licença do conteúdo: CC BY 4.0](https://img.shields.io/badge/conte%C3%BAdo-CC%20BY%204.0-A78BFA?style=flat-square)](LICENSE-CONTEUDO.md)
-[![Idioma: português do Brasil](https://img.shields.io/badge/idioma-pt--BR-67E8F9?style=flat-square)](#)
-[![Contribuições bem-vindas](https://img.shields.io/badge/contribui%C3%A7%C3%B5es-bem--vindas-FFF4D6?style=flat-square)](CONTRIBUTING.md)
+[![Licença do código: MIT](https://img.shields.io/badge/c%C3%B3digo-MIT-7024AE?style=flat-square)](LICENSE)
+[![Licença do conteúdo: CC BY 4.0](https://img.shields.io/badge/conte%C3%BAdo-CC%20BY%204.0-7024AE?style=flat-square)](LICENSE-CONTEUDO.md)
+[![Idioma: português do Brasil](https://img.shields.io/badge/idioma-pt--BR-161018?style=flat-square)](#)
+[![Contribuições bem-vindas](https://img.shields.io/badge/contribui%C3%A7%C3%B5es-bem--vindas-161018?style=flat-square)](CONTRIBUTING.md)
 
 [**⚡ Instalar as skills**](#-instalação-rápida) · [**🧰 O que tem aqui**](#-ferramentas-e-skills-disponíveis) · [**🚀 Por onde começar**](#-por-onde-começar) · [**🤝 Contribuir**](#-contribuindo)
 
