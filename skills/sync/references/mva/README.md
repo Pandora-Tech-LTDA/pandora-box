@@ -1,3 +1,5 @@
+> **© 2026 Pandora Tech LTDA.** A metodologia MVA é de propriedade da Pandora Tech LTDA. Versão v0.1, publicada em 23/09/2026. Fonte: [Pandora-Tech-LTDA/mva-whitepaper](https://github.com/Pandora-Tech-LTDA/mva-whitepaper). Veja [`FONTE.md`](FONTE.md).
+
 # MVA — Minimum Viable Automation
 
 O **MVA** é uma metodologia cíclica para descobrir, testar e validar automações a partir de problemas reais da operação.
