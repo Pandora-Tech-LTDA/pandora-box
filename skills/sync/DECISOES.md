@@ -56,6 +56,14 @@
   8. oferece o fechamento quando a visão está clara, mesmo com pendências;
   9. mensagens curtas: sugestão e custo em uma linha cada, no máximo um contraponto por rodada.
 
+- **Nova skill `/sync-spec` (decidido o nome e o papel):** gera o mapa de requisitos (`sync/requisitos.md`), a documentação necessária para começar a desenvolver, incluindo a parte visual: referências, direção visual, telas e wireframes. Parte do registro do `/sync-docs` sem reentrevistar o que já foi decidido. Fontes a derivar: `to-spec` e `prototype` (Matt Pocock, MIT), `wireframes` (ba-toolkit, MIT) e `aidlc-requirements` (AWS, MIT-0).
+- **Próximo passo depois do `/sync-docs`:** o `/sync-docs` recomenda, com o motivo, o caminho mais coerente: **`/sync-mva`** quando o projeto é uma automação ou um agente que trabalha sobre documentos e dados e precisa testar valor rápido; **`/sync-spec`** quando é um produto ou software com telas, que vai ser desenvolvido. Quando for os dois (uma automação que depois vira produto), recomenda MVA primeiro e spec depois. A escolha final é do usuário.
+- **Design system de referência:** a família terá um design system básico, pronto para usar quando o usuário não tiver marca, com pelo menos dois temas genéricos da Pandora: **claro** e **escuro**. Serve de padrão para a direção visual e as prévias do `/sync-spec`.
+
 ## Em aberto
+
+- `/sync-spec`: formato das telas (wireframe em texto, prévia visual em HTML, indicação de protótipo).
+- `/sync-spec`: copiar as fontes (to-spec, prototype, wireframes, aidlc-requirements) para `references/`, com licença e commit.
+- Design system de referência: quais paletas além de Pandora claro e escuro; o que entra (tokens, componentes, exemplos); onde fica e como as skills o usam.
 
 Nenhum ponto em aberto. Próximo passo: escrever as skills.
