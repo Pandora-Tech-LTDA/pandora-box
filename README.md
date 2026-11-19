@@ -67,7 +67,7 @@ As skills seguem o formato aberto [Agent Skills](https://agentskills.io) e funci
 | **VS Code com GitHub Copilot** | Prompt pronto, por projeto | [Instruções](guias/instalar/vscode-copilot.md) |
 | **Outros agentes** | Pasta `.agents/skills` | [Instruções](guias/instalar/outros-agentes.md) |
 
-As skills foram testadas no Claude. Nas demais plataformas, o formato é compatível, mas o comportamento ainda não foi validado. Todos os downloads ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+As skills são escritas para o Claude. Nas demais plataformas, o formato é compatível, mas o comportamento ainda não foi validado. Todos os downloads ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 
 ---
 

@@ -15,6 +15,6 @@ Alguns agentes usam uma pasta própria (por exemplo, `.<nome-do-agente>/skills/`
 
 **Instalação por prompt:** se o seu agente consegue rodar comandos, use o prompt do [Codex](codex.md), trocando a pasta de destino pela do seu agente.
 
-As skills foram escritas e testadas no Claude. Se testar em outro agente, conte o resultado numa [issue](../../../../issues/new/choose).
+As skills foram escritas para o Claude. Se testar em outro agente, conte o resultado numa [issue](../../../../issues/new/choose).
 
 [Voltar para todas as plataformas](../como-instalar-skills.md)

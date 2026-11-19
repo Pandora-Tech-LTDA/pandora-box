@@ -6,9 +6,9 @@ Escolha onde você usa a IA e siga o guia da plataforma.
 
 | Plataforma | Como instala | Guia | Situação |
 |---|---|---|---|
-| **Claude.ai** (navegador, desktop e celular) | Envio de um .zip por skill | [Claude.ai](instalar/claude-ai.md) | Testado |
-| **Claude Cowork** | Envio de um .zip por skill | [Claude Cowork](instalar/claude-cowork.md) | Testado |
-| **Claude Code** | Prompt pronto | [Claude Code](instalar/claude-code.md) | Testado |
+| **Claude.ai** (navegador, desktop e celular) | Envio de um .zip por skill | [Claude.ai](instalar/claude-ai.md) | Suportado |
+| **Claude Cowork** | Envio de um .zip por skill | [Claude Cowork](instalar/claude-cowork.md) | Suportado |
+| **Claude Code** | Prompt pronto | [Claude Code](instalar/claude-code.md) | Suportado |
 | **OpenAI Codex** (CLI, extensão de IDE e app do ChatGPT) | Prompt pronto | [Codex](instalar/codex.md) | Compatível, não testado |
 | **VS Code com GitHub Copilot** | Prompt pronto, por projeto | [VS Code e Copilot](instalar/vscode-copilot.md) | Compatível, não testado |
 | **Outros agentes** compatíveis com Agent Skills | Pasta `.agents/skills` | [Outros agentes](instalar/outros-agentes.md) | Compatível, não testado |

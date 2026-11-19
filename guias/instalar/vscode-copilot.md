@@ -18,6 +18,6 @@ Apague os arquivos temporários do download. No final, liste as skills instalada
 
 Depois, digite `/skills` no chat do modo agente para conferir se elas aparecem.
 
-**Atenção:** as skills foram escritas e testadas no Claude. No Copilot, o comportamento pode variar. Se encontrar diferenças, conte numa [issue](../../../../issues/new/choose).
+**Atenção:** as skills foram escritas para o Claude. No Copilot, o comportamento pode variar. Se encontrar diferenças, conte numa [issue](../../../../issues/new/choose).
 
 [Voltar para todas as plataformas](../como-instalar-skills.md)

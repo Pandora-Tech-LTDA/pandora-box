@@ -18,6 +18,6 @@ Apague os arquivos temporários do download. No final, liste as skills instalada
 
 O Codex detecta skills novas sozinho. Se alguma não aparecer, reinicie.
 
-**Atenção:** as skills foram escritas e testadas no Claude. No Codex, o comportamento pode variar, principalmente quando uma skill chama outra (as portas do Sync chamam a `syncing`). Se encontrar diferenças, conte numa [issue](../../../../issues/new/choose).
+**Atenção:** as skills foram escritas para o Claude. No Codex, o comportamento pode variar, principalmente quando uma skill chama outra (as portas do Sync chamam a `syncing`). Se encontrar diferenças, conte numa [issue](../../../../issues/new/choose).
 
 [Voltar para todas as plataformas](../como-instalar-skills.md)
