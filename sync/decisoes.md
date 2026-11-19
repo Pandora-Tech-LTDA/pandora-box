@@ -86,3 +86,14 @@ Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D
 - **Decisão:** o `/sync-spec` aproveita só as ideias de três fontes, escritas com as nossas palavras: `to-spec` (Matt Pocock, MIT), `wireframes` (ba-toolkit, MIT) e `aidlc-requirements` (AWS, MIT-0). Não copia as skills para `references/`; um `FONTES.md` na pasta da skill lista link, commit e o que foi aproveitado de cada uma. A `prototype` sai da lista. Se algum trecho for copiado literalmente, a licença daquela fonte vai junto.
 - **Motivo:** "precisa de todas essas skills juntas? Não dá pra extrair o que precisamos delas?"
 - **Alternativas descartadas:** copiar as quatro skills inteiras para `references/`.
+
+## D15. Onde fica o design system de referência
+- **Data:** 2026-11-19
+- **Decisão:** o design system de referência fica numa pasta `design-system/` da Pandora Box, fora da skill. A spec leva um resumo do tema escolhido (cores, fontes, tamanhos e contraste mínimo), para a IA de código trabalhar mesmo sem abrir o link, e aponta para uma versão fixa do design system. O design system deve ser moderno e simples, pensado para experimentos.
+- **Motivo:** "o design system de referência pode estar em um repositório, pra não ficar carregado na skill"; "deixe bem moderno e simples para experimentos".
+- **Alternativas descartadas:** design system dentro da skill; spec só com o link, sem resumo.
+
+## D16. Troca pelo design system do usuário
+- **Data:** 2026-11-19
+- **Decisão:** o `/sync-spec` reconhece quando o usuário quer usar o próprio design system, em qualquer momento da conversa ou depois da spec pronta, e troca o padrão da Pandora por ele: registra a origem, resume os tokens do design system do usuário no lugar do resumo da Pandora e remove o link da Pandora.
+- **Motivo:** "a skill precisa entender quando o usuário quiser trocar por um DS dele".
