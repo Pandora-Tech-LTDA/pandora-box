@@ -1,4 +1,4 @@
-# 📚 Wiki — Base de Conhecimento Público
+# 📦 Pandora Box — Base de Conhecimento Público
 
 Conhecimentos, dicas, skills, MCPs e materiais que eu uso no dia a dia e quero que
 **qualquer pessoa** possa acessar.
@@ -34,7 +34,7 @@ Tudo aqui é aberto: leia, copie, adapte e use nos seus projetos.
 Copie o prompt abaixo e cole no **Claude Code** ou no **Claude Cowork**. O próprio Claude baixa e instala as skills para você.
 
 ```text
-Instale para mim as skills da família "sync" do repositório público https://github.com/Pandora-Tech-LTDA/wiki (branch main, pasta skills/sync).
+Instale para mim as skills da família "sync" do repositório público https://github.com/Pandora-Tech-LTDA/pandora-box (branch main, pasta skills/sync).
 
 Cada subpasta de skills/sync que tem um arquivo SKILL.md é uma skill. Ignore a pasta "references".
 
