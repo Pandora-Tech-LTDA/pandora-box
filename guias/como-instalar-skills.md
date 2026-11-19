@@ -22,14 +22,15 @@ Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Te
 | Arquivo | Para quê |
 |---|---|
 | [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip) | **Plugin com todas as skills.** Um arquivo só, para Claude.ai, Cowork e Claude Code |
-| [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) | Skills avulsas, para instalar só uma ou usar em outros agentes |
+| [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-spec.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-spec.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) | Skills avulsas, para instalar só uma ou usar em outros agentes |
 
-> **Situação.** As quatro skills da família Sync estão publicadas na versão 0.1, em teste.
+> **Situação.** As cinco skills da família Sync estão publicadas na versão 0.1, em teste.
 
 ## Depois de instalar
 
 ```
-/sync-docs  →  /sync-mva  →  /syncdb
+/sync-me (opcional) → /sync-docs → /sync-spec  (produto com telas)
+                                 → /sync-mva → /syncdb  (automação ou agente)
 ```
 
 Comece pelo `/sync-docs`, que entrevista você sobre o projeto e registra vocabulário e decisões. Instaladas pelo plugin, as skills aparecem como `/pandora:sync-docs` e assim por diante. Veja a página do [Sync](../skills/sync/) para entender o fluxo completo.
@@ -71,14 +72,15 @@ All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pando
 | File | Purpose |
 |---|---|
 | [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip) | **Plugin with every skill.** A single file for Claude.ai, Cowork and Claude Code |
-| [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) | Individual skills, to install just one or use with other agents |
+| [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-spec.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-spec.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) | Individual skills, to install just one or use with other agents |
 
-> **Status.** All four Sync skills are published at version 0.1, in testing.
+> **Status.** All five Sync skills are published at version 0.1, in testing.
 
 ## After installing
 
 ```
-/sync-docs  →  /sync-mva  →  /syncdb
+/sync-me (optional) → /sync-docs → /sync-spec  (product with screens)
+                                 → /sync-mva → /syncdb  (automation or agent)
 ```
 
 Start with `/sync-docs`, which interviews you about the project and records its vocabulary and decisions. Installed through the plugin, the skills show up as `/pandora:sync-docs` and so on. See the [Sync](../skills/sync/README.md#english) page for the full flow.

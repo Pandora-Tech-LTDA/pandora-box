@@ -17,7 +17,7 @@ Se a sua versão do Claude Code não aceitar esse comando, use os dois passos:
 /plugin install pandora@pandora-box
 ```
 
-As skills aparecem com o nome do plugin na frente: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-mva` e `/pandora:syncdb`.
+As skills aparecem com o nome do plugin na frente: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-spec`, `/pandora:sync-mva` e `/pandora:syncdb`.
 
 [Voltar para todas as plataformas](../como-instalar-skills.md)
 
@@ -44,6 +44,6 @@ If your Claude Code version doesn't accept that command, use the two steps:
 /plugin install pandora@pandora-box
 ```
 
-The skills show up with the plugin name in front: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-mva` and `/pandora:syncdb`.
+The skills show up with the plugin name in front: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-spec`, `/pandora:sync-mva` and `/pandora:syncdb`.
 
 [Back to all platforms](../como-instalar-skills.md#english)

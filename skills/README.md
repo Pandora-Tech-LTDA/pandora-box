@@ -13,11 +13,19 @@ Skills que entrevistam você sobre o seu projeto antes de qualquer linha ser esc
 | Skill | Para quê |
 |---|---|
 | `/pandora:sync-docs` | Entender e documentar um projeto, registrando glossário e decisões. **Comece por aqui.** |
+| `/pandora:sync-spec` | Montar a spec de um produto com telas para uma IA de código construir com segurança: propósito, estado de pronto, acesso e segurança, telas, arquitetura, padrão visual e plano de etapas. |
 | `/pandora:sync-mva` | Montar um MVA a partir do registro do `/sync-docs`: prompt do agente com autoteste, documentos de referência e manual de montagem no Cowork. |
 | `/pandora:syncdb` | Criar dados sintéticos em CSV ou Markdown a partir de um arquivo de exemplo, sem expor dados reais. |
 | `/pandora:sync-me` | Amadurecer uma ideia, sem gerar arquivos. É também o método de entrevista das outras skills. |
 
-**Fluxo recomendado:** `/sync-docs` → `/sync-mva` → `/syncdb`.
+**Fluxo recomendado:**
+
+```
+/sync-me (opcional) → /sync-docs → /sync-spec  (produto com telas)
+                                 → /sync-mva → /syncdb  (automação ou agente)
+```
+
+Páginas de cada skill: [sync-me](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-me) · [sync-docs](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-docs) · [sync-spec](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-spec) · [sync-mva](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-mva) · [syncdb](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/syncdb).
 
 **Exemplo:** você quer um agente que analise a frequência dos funcionários. O `/sync-docs` esclarece a dor, quem usa a análise e quais regras de ponto valem. O `/sync-mva` define que o agente precisa de uma planilha de frequência e da política de ponto e escreve o prompt com casos de teste. O `/syncdb` cria uma planilha fictícia com os mesmos campos da real.
 
@@ -31,7 +39,7 @@ Skills que entrevistam você sobre o seu projeto antes de qualquer linha ser esc
 
 ## Créditos e licença
 
-`sync-me` e `sync-docs` são derivadas das skills `grilling`, `grill-me` e `grill-with-docs` de Matt Pocock ([mattpocock/skills](https://github.com/mattpocock/skills), licença MIT). `sync-mva` e `syncdb` seguem a metodologia MVA, ©2026 Pandora Tech LTDA. Código sob licença MIT.
+`sync-me` e `sync-docs` são derivadas das skills `grilling`, `grill-me` e `grill-with-docs` de Matt Pocock ([mattpocock/skills](https://github.com/mattpocock/skills), licença MIT). `sync-spec` aproveita ideias de `to-spec` (Matt Pocock, MIT), `wireframes` (ba-toolkit, MIT) e `aidlc-requirements` (AWS, MIT-0). `sync-mva` e `syncdb` seguem a metodologia MVA, ©2026 Pandora Tech LTDA. Código sob licença MIT.
 
 ---
 
@@ -50,11 +58,19 @@ Skills that interview you about your project before a single line is written. Th
 | Skill | Purpose |
 |---|---|
 | `/pandora:sync-docs` | Understand and document a project, recording a glossary and decisions. **Start here.** |
+| `/pandora:sync-spec` | Build the spec of a product with screens so a coding AI can build it safely: purpose, definition of done, access and security, screens, architecture, visual standard and step plan. |
 | `/pandora:sync-mva` | Build an MVA (Minimum Viable Automation) from the `/sync-docs` record: agent prompt with self-test, reference documents and a Cowork setup manual. |
 | `/pandora:syncdb` | Create synthetic data in CSV or Markdown from a sample file, without exposing real data. |
 | `/pandora:sync-me` | Develop an idea, without creating files. It is also the interview method for the other skills. |
 
-**Recommended flow:** `/sync-docs` → `/sync-mva` → `/syncdb`. The skills are written in Brazilian Portuguese and work in any language.
+**Recommended flow:**
+
+```
+/sync-me (optional) → /sync-docs → /sync-spec  (product with screens)
+                                 → /sync-mva → /syncdb  (automation or agent)
+```
+
+The skills are written in Brazilian Portuguese and work in any language.
 
 **Status:** version 0.1, in testing.
 
@@ -66,6 +82,6 @@ Skills that interview you about your project before a single line is written. Th
 
 ## Credits and license
 
-`sync-me` and `sync-docs` are derived from Matt Pocock's `grilling`, `grill-me` and `grill-with-docs` skills ([mattpocock/skills](https://github.com/mattpocock/skills), MIT license). `sync-mva` and `syncdb` follow the MVA methodology, ©2026 Pandora Tech LTDA. Code under the MIT license.
+`sync-me` and `sync-docs` are derived from Matt Pocock's `grilling`, `grill-me` and `grill-with-docs` skills ([mattpocock/skills](https://github.com/mattpocock/skills), MIT license). `sync-spec` draws on ideas from `to-spec` (Matt Pocock, MIT), `wireframes` (ba-toolkit, MIT) and `aidlc-requirements` (AWS, MIT-0). `sync-mva` and `syncdb` follow the MVA methodology, ©2026 Pandora Tech LTDA. Code under the MIT license.
 
 <sub>©2026 Pandora Tech LTDA</sub>

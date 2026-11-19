@@ -42,12 +42,20 @@ Todo o material é aberto. Leia, copie, adapte e use, citando a fonte.
 
 A maioria dos projetos com IA começa pela ferramenta. O Sync começa pelas perguntas: o que você quer resolver, para quem, com quais dados e com qual critério de sucesso. A IA pergunta em rodadas, sugere e mostra o custo de cada sugestão. As decisões ficam com você, e nas que importam um "sim" sem motivo não basta.
 
-No fim, você sai com o projeto documentado e, se quiser, com o material para montar um MVA: o prompt do agente com testes, os documentos de referência e o manual de montagem.
+No fim, você sai com o projeto documentado e com o próximo passo pronto: a **spec** para uma IA de código construir um produto com telas, ou o **MVA** para testar uma automação.
+
+```
+/sync-me (opcional) → /sync-docs → /sync-spec  (produto com telas)
+                                 → /sync-mva → /syncdb  (automação ou agente)
+```
+
+Cada skill tem uma página com o que é, quando usar, como usar e o que esperar: [sync-me](skills/sync/sync-me/) · [sync-docs](skills/sync/sync-docs/) · [sync-spec](skills/sync/sync-spec/) · [sync-mva](skills/sync/sync-mva/) · [syncdb](skills/sync/syncdb/).
 
 | Skill | O que faz | Situação |
 |---|---|---|
 | [`/sync-docs`](skills/sync/sync-docs/) | Entrevista sobre o projeto e registra glossário e decisões. **Ponto de partida.** | v0.1, em teste |
-| [`/sync-mva`](skills/sync/sync-mva/) | Monta o MVA a partir do que o `/sync-docs` registrou | v0.1, em teste |
+| [`/sync-spec`](skills/sync/sync-spec/) | Monta a spec de um produto com telas para uma IA de código construir com segurança | v0.1, em teste |
+| [`/sync-mva`](skills/sync/sync-mva/) | Monta o MVA de uma automação ou agente a partir do que o `/sync-docs` registrou | v0.1, em teste |
 | [`/syncdb`](skills/sync/syncdb/) | Gera bases de dados sintéticas em CSV ou Markdown a partir de um arquivo de exemplo | v0.1, em teste |
 | [`/sync-me`](skills/sync/sync-me/) | Entrevista sobre uma ideia ou projeto, sem gerar arquivos. É também o método de entrevista que as outras skills usam. | v0.1, em teste |
 
@@ -87,7 +95,7 @@ O Cowork usa os plugins da sua conta do Claude. Se você já instalou pelo Claud
 2. **Envie o plugin** em *Personalizar → Plugins → Adicionar → Enviar plugin* (*Customize → Plugins → Add → Upload plugin*).
 3. **Teste.** Abra o Cowork numa pasta de projeto e digite `/` no chat. As skills aparecem com o nome do plugin na frente, como `/pandora:sync-docs`.
 
-Como o Cowork trabalha numa pasta do seu computador, o `/sync-docs` grava o glossário e as decisões em `sync/`, e o `/sync-mva` grava os arquivos do MVA na mesma pasta.
+Como o Cowork trabalha numa pasta do seu computador, o `/sync-docs` grava o glossário e as decisões em `sync/`, o `/sync-spec` grava a spec em `sync/spec.md` e o `/sync-mva` grava os arquivos do MVA na mesma pasta.
 
 </details>
 
@@ -107,7 +115,7 @@ Se a sua versão do Claude Code não aceitar esse comando, use os dois passos:
 /plugin install pandora@pandora-box
 ```
 
-As skills aparecem com o nome do plugin na frente: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-mva` e `/pandora:syncdb`.
+As skills aparecem com o nome do plugin na frente: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-spec`, `/pandora:sync-mva` e `/pandora:syncdb`.
 
 </details>
 
@@ -128,7 +136,7 @@ Apague os arquivos temporários do download. No final, me mostre uma tabela com 
 
 O Codex detecta skills novas sozinho. Se alguma não aparecer, reinicie.
 
-**Atenção:** as skills foram escritas para o Claude. No Codex, o comportamento pode variar, principalmente quando uma skill chama outra (o `/sync-docs` e o `/sync-mva` usam o `sync-me`).
+**Atenção:** as skills foram escritas para o Claude. No Codex, o comportamento pode variar, principalmente quando uma skill chama outra (o `/sync-docs`, o `/sync-spec` e o `/sync-mva` usam o `sync-me`).
 
 </details>
 
@@ -227,12 +235,20 @@ Everything here is open. Read, copy, adapt and use it, with attribution.
 
 Most AI projects start with the tool. Sync starts with questions: what you want to solve, for whom, with which data and with which success criteria. The AI asks in rounds, makes suggestions and shows what each suggestion costs. You make the decisions, and on the ones that matter a "yes" without a reason is not enough.
 
-You end up with a documented project and, if you want, everything you need to build an MVA (Minimum Viable Automation): the agent prompt with tests, reference documents and a setup manual.
+You end up with a documented project and the next step ready: the **spec** for a coding AI to build a product with screens, or the **MVA** (Minimum Viable Automation) to test an automation.
+
+```
+/sync-me (optional) → /sync-docs → /sync-spec  (product with screens)
+                                 → /sync-mva → /syncdb  (automation or agent)
+```
+
+Each skill has its own page with what it is, when to use it, how to use it and what to expect: [sync-me](skills/sync/sync-me/README.md#english) · [sync-docs](skills/sync/sync-docs/README.md#english) · [sync-spec](skills/sync/sync-spec/README.md#english) · [sync-mva](skills/sync/sync-mva/README.md#english) · [syncdb](skills/sync/syncdb/README.md#english).
 
 | Skill | What it does | Status |
 |---|---|---|
 | [`/sync-docs`](skills/sync/sync-docs/) | Interviews you about the project and records a glossary and decisions. **Start here.** | v0.1, testing |
-| [`/sync-mva`](skills/sync/sync-mva/) | Builds the MVA from what `/sync-docs` recorded | v0.1, testing |
+| [`/sync-spec`](skills/sync/sync-spec/) | Builds the spec of a product with screens so a coding AI can build it safely | v0.1, testing |
+| [`/sync-mva`](skills/sync/sync-mva/) | Builds the MVA of an automation or agent from what `/sync-docs` recorded | v0.1, testing |
 | [`/syncdb`](skills/sync/syncdb/) | Generates synthetic datasets in CSV or Markdown from a sample file | v0.1, testing |
 | [`/sync-me`](skills/sync/sync-me/) | Interview about an idea or project, no files created. It is also the interview method the other skills use. | v0.1, testing |
 
@@ -270,7 +286,7 @@ Cowork uses the plugins in your Claude account. If you already installed through
 2. **Upload it** in *Customize → Plugins → Add → Upload plugin*.
 3. **Test it.** Open Cowork in a project folder and type `/` in the chat. The skills show up with the plugin name in front, such as `/pandora:sync-docs`.
 
-Because Cowork works inside a folder on your computer, `/sync-docs` saves the glossary and decisions to `sync/`, and `/sync-mva` saves the MVA files to the same folder.
+Because Cowork works inside a folder on your computer, `/sync-docs` saves the glossary and decisions to `sync/`, `/sync-spec` saves the spec to `sync/spec.md` and `/sync-mva` saves the MVA files to the same folder.
 
 </details>
 
@@ -290,7 +306,7 @@ If your Claude Code version doesn't accept that command, use the two steps:
 /plugin install pandora@pandora-box
 ```
 
-The skills show up with the plugin name in front: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-mva` and `/pandora:syncdb`.
+The skills show up with the plugin name in front: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-spec`, `/pandora:sync-mva` and `/pandora:syncdb`.
 
 </details>
 
@@ -311,7 +327,7 @@ Delete the temporary download files. At the end, show me a table of the installe
 
 Codex picks up new skills automatically. If one doesn't show up, restart it.
 
-**Note:** these skills were written for Claude. In Codex, behavior may differ, especially when one skill calls another (`/sync-docs` and `/sync-mva` use `sync-me`).
+**Note:** these skills were written for Claude. In Codex, behavior may differ, especially when one skill calls another (`/sync-docs`, `/sync-spec` and `/sync-mva` use `sync-me`).
 
 </details>
 
