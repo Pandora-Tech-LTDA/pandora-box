@@ -1,0 +1,10 @@
+{
+  "name": "pandora",
+  "version": "0.1.0",
+  "description": "Todas as skills da Pandora Box em um só plugin. Hoje: família Sync (sync-me, sync-docs, sync-mva, syncdb).",
+  "author": { "name": "Pandora Tech" },
+  "homepage": "https://github.com/Pandora-Tech-LTDA/pandora-box",
+  "repository": "https://github.com/Pandora-Tech-LTDA/pandora-box",
+  "license": "MIT",
+  "skills": ["./sync"]
+}

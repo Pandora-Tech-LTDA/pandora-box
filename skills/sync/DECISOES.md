@@ -43,6 +43,8 @@
 
 - **Situação (2026-11-19):** as quatro skills (`sync-me`, `sync-docs`, `sync-mva`, `syncdb`) estão publicadas na versão 0.1, em teste.
 
+- **Instalação em um passo:** o repositório é um marketplace de plugins (`.claude-plugin/marketplace.json`) com o plugin `pandora` (raiz em `skills/`, manifesto em `skills/.claude-plugin/plugin.json`), que reúne todas as skills. O workflow publica `pandora.zip` (o plugin) e um .zip por skill; nos avulsos, a chave `disable-model-invocation` é removida porque o envio avulso de skills no Claude.ai não a aceita. Instaladas pelo plugin, as skills aparecem como `/pandora:<skill>`.
+
 ## Em aberto
 
 Nenhum ponto em aberto. Próximo passo: escrever as skills.

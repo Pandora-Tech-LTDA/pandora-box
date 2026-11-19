@@ -1,7 +1,8 @@
 name: Publicar skills
 
-# Empacota cada skill (toda pasta skills/<família>/<skill>/ com SKILL.md) em um .zip
+# Gera o plugin "pandora" (todas as skills num só .zip) e um .zip por skill,
 # e publica na release "skills", com links fixos para download:
+# https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip
 # https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/<skill>.zip
 
 on:
@@ -25,23 +26,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Empacotar skills
+      - name: Empacotar o plugin e as skills
         run: |
-          mkdir -p dist
+          mkdir -p dist build/pandora
+          # 1. Plugin "pandora": todas as skills num só arquivo (Claude.ai, Cowork e Claude Code)
+          cp -r skills/.claude-plugin build/pandora/
           for f in skills/*/*/SKILL.md; do
-            d="$(dirname "$f")"
-            nome="$(basename "$d")"
+            d="$(dirname "$f")"; nome="$(basename "$d")"; fam="$(basename "$(dirname "$d")")"
             [ "$nome" = "_modelo" ] && continue
-            (cd "$(dirname "$d")" && zip -qr "$GITHUB_WORKSPACE/dist/$nome.zip" "$nome")
-            echo "empacotada: $nome"
+            mkdir -p "build/pandora/$fam"
+            cp -r "$d" "build/pandora/$fam/"
           done
-          for fam in skills/*/; do
-            fam="$(basename "$fam")"
-            ls "skills/$fam"/*/SKILL.md >/dev/null 2>&1 || continue
-            arquivos=""
-            for f in skills/$fam/*/SKILL.md; do arquivos="$arquivos $(basename "$(dirname "$f")").zip"; done
-            (cd dist && zip -q "$fam-todas.zip" $arquivos)
-            echo "pacote da família: $fam-todas.zip"
+          (cd build && zip -qr "$GITHUB_WORKSPACE/dist/pandora.zip" pandora)
+          echo "plugin: pandora.zip"
+          # 2. Uma skill por arquivo (para quem prefere instalar só uma, ou outros agentes).
+          #    O envio avulso de skills no Claude.ai não aceita a chave disable-model-invocation.
+          mkdir -p build/avulsas
+          for f in skills/*/*/SKILL.md; do
+            d="$(dirname "$f")"; nome="$(basename "$d")"
+            [ "$nome" = "_modelo" ] && continue
+            cp -r "$d" "build/avulsas/$nome"
+            sed -i '/^disable-model-invocation:/d' "build/avulsas/$nome/SKILL.md"
+            (cd build/avulsas && zip -qr "$GITHUB_WORKSPACE/dist/$nome.zip" "$nome")
+            echo "skill: $nome.zip"
           done
           ls -la dist
 
@@ -52,7 +59,7 @@ jobs:
           if ! gh release view skills >/dev/null 2>&1; then
             gh release create skills --target "$GITHUB_SHA" \
               --title "Skills da Pandora Box (versão mais recente)" \
-              --notes "Arquivos .zip de cada skill, atualizados automaticamente a cada mudança em skills/. Para instalar no Claude.ai ou no Cowork, envie o .zip em Configurações → Capacidades → Skills. Guia: https://github.com/Pandora-Tech-LTDA/pandora-box/blob/main/guias/como-instalar-skills.md"
+              --notes "pandora.zip é o plugin com todas as skills (instale em Personalizar → Plugins → Adicionar → Enviar plugin). Os demais .zip são as skills avulsas. Tudo é atualizado automaticamente a cada mudança em skills/. Guia: https://github.com/Pandora-Tech-LTDA/pandora-box/blob/main/guias/como-instalar-skills.md"
           fi
           # remove arquivos de skills que não existem mais (por exemplo, depois de renomear uma skill)
           for antigo in $(gh release view skills --json assets -q '.assets[].name'); do

@@ -59,30 +59,33 @@ No fim, você sai com o projeto documentado e, se quiser, com o material para mo
 
 As skills seguem o formato aberto [Agent Skills](https://agentskills.io) e funcionam no Claude e em outros agentes compatíveis. Elas são escritas para o Claude; nas demais plataformas, o formato é compatível, mas o comportamento ainda não foi validado.
 
-Downloads: [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) · [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) · [todos os arquivos](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)
+**Um arquivo só.** No Claude.ai, no Cowork e no Claude Code, todas as skills vêm juntas no plugin **pandora**: baixe [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip) e envie em *Personalizar → Plugins*, ou instale direto do repositório. Skills avulsas e demais arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 
 Clique na sua plataforma:
 
 <details>
 <summary><strong>Claude.ai (navegador, desktop e celular)</strong> · Suportado</summary>
 
-1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória; baixe também [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) e [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
-2. **Ative a execução de código.** Em *Configurações → Capacidades*, ative a execução de código e criação de arquivos.
-3. **Envie cada skill.** Ainda em *Configurações → Capacidades*, na área **Skills**, envie o .zip de cada skill. Se baixou o `sync-todas.zip`, abra-o antes: o Claude espera um .zip por skill.
-4. **Teste.** Em uma nova conversa, escreva: *"Use a skill sync-me para me ajudar a amadurecer a ideia de um agente que analisa a frequência dos funcionários."*
+1. **Baixe o plugin [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip).** É um arquivo só, com todas as skills da Pandora Box.
+2. **Envie o plugin.** Abra *Personalizar → Plugins* (em inglês, *Customize → Plugins*), clique em **Adicionar → Enviar plugin** (*Add → Upload plugin*) e escolha o `pandora.zip`.
+3. **Teste.** Em uma nova conversa, escreva: *"Use a skill sync-docs para me ajudar a entender o processo de análise de frequência dos funcionários."*
 
-As skills enviadas no Claude.ai ficam na sua conta e valem também no Cowork. Os nomes dos menus podem mudar; se não encontrar, pergunte ao próprio Claude onde ficam as skills nas configurações.
+O plugin fica na sua conta e vale também no Cowork e no Claude Code.
+
+**Para receber atualizações sozinho:** em vez de enviar o arquivo, use **Adicionar → Adicionar marketplace** (*Add marketplace*) com o endereço `https://github.com/Pandora-Tech-LTDA/pandora-box` e instale o plugin **pandora**.
+
+**Só uma skill:** os arquivos avulsos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills) e são enviados em *Personalizar → Skills*.
 
 </details>
 
 <details>
 <summary><strong>Claude Cowork</strong> · Suportado</summary>
 
-O Cowork usa as skills da sua conta do Claude. Se você já instalou pelo Claude.ai, não precisa fazer nada.
+O Cowork usa os plugins da sua conta do Claude. Se você já instalou pelo Claude.ai, não precisa fazer nada.
 
-1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória; baixe também [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) e [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
-2. **Envie cada skill.** Em *Configurações → Capacidades → Skills*, envie o .zip de cada skill, com a execução de código ativada.
-3. **Teste.** Abra o Cowork numa pasta de projeto e digite `/` no chat: as skills instaladas aparecem na lista.
+1. **Baixe o plugin [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip).**
+2. **Envie o plugin** em *Personalizar → Plugins → Adicionar → Enviar plugin* (*Customize → Plugins → Add → Upload plugin*).
+3. **Teste.** Abra o Cowork numa pasta de projeto e digite `/` no chat. As skills aparecem com o nome do plugin na frente, como `/pandora:sync-docs`.
 
 Como o Cowork trabalha numa pasta do seu computador, o `/sync-docs` grava o glossário e as decisões em `sync/`, e o `/sync-mva` grava os arquivos do MVA na mesma pasta.
 
@@ -91,21 +94,20 @@ Como o Cowork trabalha numa pasta do seu computador, o `/sync-docs` grava o glos
 <details>
 <summary><strong>Claude Code</strong> · Suportado</summary>
 
-Abra o Claude Code em qualquer pasta, copie o prompt e cole no chat:
+No chat do Claude Code, rode:
 
-```text
-Instale para mim as skills da família "sync" do repositório público https://github.com/Pandora-Tech-LTDA/pandora-box (branch main, pasta skills/sync).
-
-Cada subpasta de skills/sync que tem um arquivo SKILL.md é uma skill. Ignore a pasta "references".
-
-Copie cada uma dessas subpastas, inteira, para ~/.claude/skills/<nome-da-subpasta>/. Se alguma já existir, me pergunte antes de substituir.
-
-Apague os arquivos temporários do download. No final, me mostre uma tabela com as skills instaladas e o que cada uma faz, e me diga como começar a usar.
+```
+/plugin install pandora --marketplace Pandora-Tech-LTDA/pandora-box
 ```
 
-O Claude pode pedir permissão para rodar comandos. Leia e aprove. Depois, reinicie o Claude Code e digite `/`: as skills instaladas aparecem na lista.
+Se a sua versão do Claude Code não aceitar esse comando, use os dois passos:
 
-**Só para um projeto:** troque `~/.claude/skills/` por `.claude/skills/` no prompt, com o Claude Code aberto na pasta do projeto.
+```
+/plugin marketplace add Pandora-Tech-LTDA/pandora-box
+/plugin install pandora@pandora-box
+```
+
+As skills aparecem com o nome do plugin na frente: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-mva` e `/pandora:syncdb`.
 
 </details>
 
@@ -126,7 +128,7 @@ Apague os arquivos temporários do download. No final, me mostre uma tabela com 
 
 O Codex detecta skills novas sozinho. Se alguma não aparecer, reinicie.
 
-**Atenção:** as skills foram escritas para o Claude. No Codex, o comportamento pode variar, principalmente quando uma skill chama outra (as portas do Sync chamam a `sync-me`).
+**Atenção:** as skills foram escritas para o Claude. No Codex, o comportamento pode variar, principalmente quando uma skill chama outra (o `/sync-docs` e o `/sync-mva` usam o `sync-me`).
 
 </details>
 
@@ -239,30 +241,33 @@ You end up with a documented project and, if you want, everything you need to bu
 
 The skills follow the open [Agent Skills](https://agentskills.io) format and work in Claude and other compatible agents. They are written for Claude; on other platforms the format is compatible, but behavior has not been validated yet.
 
-Downloads: [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) · [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) (all Sync skills) · [all files](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)
+**A single file.** On Claude.ai, Cowork and Claude Code, every skill comes together in the **pandora** plugin: download [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip) and upload it in *Customize → Plugins*, or install it straight from the repository. Individual skills and other files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 
 Click your platform:
 
 <details>
 <summary><strong>Claude.ai (web, desktop and mobile)</strong> · Supported</summary>
 
-1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required; also download [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) and [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
-2. **Turn on code execution.** In *Settings → Capabilities*, turn on code execution and file creation.
-3. **Upload each skill.** Still in *Settings → Capabilities*, in the **Skills** section, upload the .zip of each skill. If you downloaded `sync-todas.zip`, unzip it first: Claude expects one .zip per skill.
-4. **Test it.** In a new conversation, write: *"Use the sync-me skill to help me refine the idea of an agent that analyzes employee attendance."*
+1. **Download the plugin [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip).** It is a single file with every Pandora Box skill.
+2. **Upload the plugin.** Open *Customize → Plugins*, click **Add → Upload plugin** and choose `pandora.zip`.
+3. **Test it.** In a new conversation, write: *"Use the sync-docs skill to help me understand the employee attendance analysis process."*
 
-Skills uploaded to Claude.ai belong to your account and also work in Cowork. Menu names may change; if you can't find them, ask Claude where skills are in the settings.
+The plugin belongs to your account and also works in Cowork and Claude Code.
+
+**To get updates automatically:** instead of uploading the file, use **Add → Add marketplace** with the address `https://github.com/Pandora-Tech-LTDA/pandora-box` and install the **pandora** plugin.
+
+**Just one skill:** the individual files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills) and go in *Customize → Skills*.
 
 </details>
 
 <details>
 <summary><strong>Claude Cowork</strong> · Supported</summary>
 
-Cowork uses the skills in your Claude account. If you already installed them through Claude.ai, there is nothing else to do.
+Cowork uses the plugins in your Claude account. If you already installed through Claude.ai, there is nothing else to do.
 
-1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required; also download [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) and [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
-2. **Upload each skill.** In *Settings → Capabilities → Skills*, upload the .zip of each skill, with code execution turned on.
-3. **Test it.** Open Cowork in a project folder and type `/` in the chat: installed skills show up in the list.
+1. **Download the plugin [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip).**
+2. **Upload it** in *Customize → Plugins → Add → Upload plugin*.
+3. **Test it.** Open Cowork in a project folder and type `/` in the chat. The skills show up with the plugin name in front, such as `/pandora:sync-docs`.
 
 Because Cowork works inside a folder on your computer, `/sync-docs` saves the glossary and decisions to `sync/`, and `/sync-mva` saves the MVA files to the same folder.
 
@@ -271,21 +276,20 @@ Because Cowork works inside a folder on your computer, `/sync-docs` saves the gl
 <details>
 <summary><strong>Claude Code</strong> · Supported</summary>
 
-Open Claude Code in any folder, copy the prompt and paste it into the chat:
+In the Claude Code chat, run:
 
-```text
-Install the "sync" skill family from the public repository https://github.com/Pandora-Tech-LTDA/pandora-box (branch main, folder skills/sync).
-
-Each subfolder of skills/sync that contains a SKILL.md file is a skill. Ignore the "references" folder.
-
-Copy each of these subfolders, in full, to ~/.claude/skills/<subfolder-name>/. If any already exists, ask me before replacing it.
-
-Delete the temporary download files. At the end, show me a table of the installed skills and what each one does, and tell me how to get started.
+```
+/plugin install pandora --marketplace Pandora-Tech-LTDA/pandora-box
 ```
 
-Claude may ask for permission to run commands. Read and approve them. Then restart Claude Code and type `/`: installed skills show up in the list.
+If your Claude Code version doesn't accept that command, use the two steps:
 
-**For a single project:** replace `~/.claude/skills/` with `.claude/skills/` in the prompt, with Claude Code open in the project folder.
+```
+/plugin marketplace add Pandora-Tech-LTDA/pandora-box
+/plugin install pandora@pandora-box
+```
+
+The skills show up with the plugin name in front: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-mva` and `/pandora:syncdb`.
 
 </details>
 
@@ -306,7 +310,7 @@ Delete the temporary download files. At the end, show me a table of the installe
 
 Codex picks up new skills automatically. If one doesn't show up, restart it.
 
-**Note:** these skills were written for Claude. In Codex, behavior may differ, especially when one skill calls another (the Sync entry points call `sync-me`).
+**Note:** these skills were written for Claude. In Codex, behavior may differ, especially when one skill calls another (`/sync-docs` and `/sync-mva` use `sync-me`).
 
 </details>
 
