@@ -75,3 +75,8 @@ Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D
 - **Data:** 2026-11-19
 - **Decisão:** a spec privilegia objetivo, visão e estado de pronto em vez de detalhe exaustivo. Os modelos de código atuais preenchem detalhes sozinhos; o que eles precisam é saber para onde ir e quando está pronto.
 - **Motivo:** "a gente não precisa de tanto detalhe para novos modelos. A gente precisa muito mais falar de objetivo e visão."
+
+## D13. Segurança, dados e estética dentro dos blocos
+- **Data:** 2026-11-19
+- **Decisão:** segurança e dados entram no bloco de usuários e acesso (login, integração do login, 2FA, dados sensíveis e LGPD). Estética não vira conversa: a spec aplica o padrão da Pandora (D7), e a skill só pergunta, em uma linha, se o usuário tem um design system próprio. Para compensar o risco de a proteção de dados passar rápido, a skill explica em poucas linhas o que conta como dado sensível, no tom professoral da D10.
+- **Motivo:** proposta aceita pelo usuário ("isso"), coerente com a D11 (menos blocos) e com a D9 (segurança como prioridade).
