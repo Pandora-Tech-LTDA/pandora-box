@@ -11,6 +11,11 @@
   - `/sync-docs`: entrevista que registra glossário e decisões durante a sessão (equivale ao `grill-with-docs`).
   - `/sync-mva`: entrevista guiada pelas etapas e pelo núcleo da metodologia MVA.
   - As três portas têm `disable-model-invocation: true` e delegam para `syncing`.
+- **Objetivo do `/sync-mva`:** é uma skill nova (usa o método de entrevista do `syncing`, mas não tem equivalente no original). Serve para **montar um MVA**: entender o processo que o aluno quer automatizar, quais documentos e base de dados ele precisa e, ao final, gerar os materiais para ele montar o MVA como um projeto no Claude:
+  - os documentos de contexto necessários (ex.: para uma análise de frequência de funcionários, a planilha de frequência);
+  - o prompt (instruções) do projeto;
+  - o passo a passo de como colar tudo isso no projeto dentro do Claude.
+- **Encerramento do `/sync-mva`:** a entrevista segue até a própria skill concluir que entendeu. Então ela diz algo como: "Já entendi. Se você tiver mais alguma informação, me diga; senão, posso gerar agora os materiais para você montar o seu MVA." Os materiais só são gerados depois da resposta do aluno.
 
 ## Em aberto
 
@@ -18,4 +23,5 @@
 - Como tratar a resposta recomendada para não induzir passividade.
 - Qual entregável cada skill gera ao final.
 - Onde o `/sync-docs` grava os registros no ambiente dos alunos.
-- Como o `/sync-mva` usa as 7 etapas e os elementos do núcleo como árvore de decisões.
+- Como o `/sync-mva` usa as etapas e os elementos do núcleo do MVA como árvore de decisões (referência principal: `references/mva/templates/agente-construtor-mva-v0.1.md`).
+- Formato exato do pacote final do `/sync-mva` (o que entra além de documentos, prompt e guia de montagem: casos de teste? critérios de sucesso? lista de suposições?).
