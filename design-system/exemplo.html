@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="claro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pandora DS · exemplo</title>
+<link rel="stylesheet" href="pandora.css">
+<style>
+  .swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: var(--space-2); }
+  .swatch { border: var(--line) solid var(--border); border-radius: var(--radius-md); overflow: hidden; font-size: var(--text-xs); }
+  .swatch div { height: 44px; }
+  .swatch span { display: block; padding: var(--space-2); color: var(--text-2); }
+</style>
+</head>
+<body>
+<header class="ds-topbar">
+  <a class="ds-topbar__brand" href="#">Projeto</a>
+  <nav class="ds-nav" aria-label="Principal">
+    <a href="#" aria-current="page">Painel</a>
+    <a href="#">Relatórios</a>
+    <a href="#">Configurações</a>
+  </nav>
+  <label class="ds-row ds-meta">Tema
+    <select class="ds-select" id="tema" style="width:auto;min-height:32px">
+      <option value="claro">Pandora Claro</option>
+      <option value="escuro">Pandora Escuro</option>
+      <option value="neutro">Neutro</option>
+      <option value="alto-contraste">Alto contraste</option>
+    </select>
+  </label>
+</header>
+
+<main class="ds-container">
+  <section class="ds-section ds-stack">
+    <span class="ds-badge ds-badge--accent">Pandora DS v1</span>
+    <h1>Um padrão visual simples para experimentos.</h1>
+    <p style="max-width:640px">Tokens, temas e componentes básicos para a IA de código montar telas legíveis, com bom contraste e coerentes entre si, mesmo sem um design system próprio.</p>
+    <div class="ds-row">
+      <button class="ds-btn ds-btn--primary">Ação principal</button>
+      <button class="ds-btn ds-btn--secondary">Secundária</button>
+      <button class="ds-btn ds-btn--ghost">Discreta</button>
+      <button class="ds-btn ds-btn--primary" disabled>Desabilitada</button>
+    </div>
+  </section>
+
+  <section class="ds-stack" style="padding-bottom:var(--space-7)">
+    <h2>Cores do tema</h2>
+    <div class="swatches" id="swatches"></div>
+
+    <h2 style="margin-top:var(--space-6)">Componentes</h2>
+    <div class="ds-grid">
+      <div class="ds-card ds-stack">
+        <h3>Formulário</h3>
+        <div class="ds-field">
+          <label class="ds-label" for="nome">Nome</label>
+          <input class="ds-input" id="nome" placeholder="Maria Silva">
+          <span class="ds-help">Como aparece no relatório.</span>
+        </div>
+        <div class="ds-field ds-field--error">
+          <label class="ds-label" for="email">E-mail</label>
+          <input class="ds-input" id="email" value="maria@">
+          <span class="ds-help">Informe um e-mail válido.</span>
+        </div>
+        <label class="ds-check"><input type="checkbox" checked> Receber alertas</label>
+        <button class="ds-btn ds-btn--primary">Salvar</button>
+      </div>
+
+      <div class="ds-card ds-stack">
+        <h3>Situação</h3>
+        <div class="ds-row">
+          <span class="ds-badge ds-badge--success">Em dia</span>
+          <span class="ds-badge ds-badge--warning">Atenção</span>
+          <span class="ds-badge ds-badge--danger">Atrasado</span>
+        </div>
+        <div class="ds-alert ds-alert--success">Relatório gerado com sucesso.</div>
+        <div class="ds-alert ds-alert--warning">3 registros sem horário de saída.</div>
+        <div class="ds-alert ds-alert--danger">Não foi possível ler a planilha.</div>
+      </div>
+
+      <div class="ds-card ds-stack">
+        <h3>Estados</h3>
+        <div class="ds-skeleton" style="width:70%"></div>
+        <div class="ds-skeleton" style="width:90%"></div>
+        <div class="ds-empty">Nenhum registro neste período.</div>
+      </div>
+    </div>
+
+    <div class="ds-card" style="margin-top:var(--space-4)">
+      <h3>Tabela</h3>
+      <div class="ds-table-wrap"><table class="ds-table">
+        <thead><tr><th>Funcionário</th><th>Área</th><th>Atrasos</th><th>Situação</th></tr></thead>
+        <tbody>
+          <tr><td>Ana Souza</td><td>Logística</td><td>0</td><td><span class="ds-badge ds-badge--success">Em dia</span></td></tr>
+          <tr><td>Bruno Lima</td><td>Comercial</td><td>2</td><td><span class="ds-badge ds-badge--warning">Atenção</span></td></tr>
+          <tr><td>Carla Dias</td><td>Financeiro</td><td>5</td><td><span class="ds-badge ds-badge--danger">Atrasado</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+</main>
+
+<script>
+  const nomes = ["bg","surface","text","text-2","muted","border","accent","link","success","danger","warning"];
+  const tema = document.getElementById("tema");
+  function desenhar() {
+    const css = getComputedStyle(document.documentElement);
+    document.getElementById("swatches").innerHTML = nomes.map(n => {
+      const v = css.getPropertyValue("--" + n).trim();
+      return `<div class="swatch"><div style="background:${v}"></div><span>--${n}<br>${v}</span></div>`;
+    }).join("");
+  }
+  tema.addEventListener("change", () => { document.documentElement.dataset.theme = tema.value; desenhar(); });
+  desenhar();
+</script>
+</body>
+</html>

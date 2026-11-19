@@ -172,6 +172,7 @@ Os mesmos passos, com solução de problemas, estão em [Como instalar as skills
 | Pasta | Conteúdo |
 |---|---|
 | [`skills/`](skills/) | Skills: instruções empacotadas para tarefas recorrentes |
+| [`design-system/`](design-system/) | Pandora DS: design system de referência, com quatro temas, para experimentos |
 | [`mcps/`](mcps/) | Servidores MCP (Model Context Protocol), com instalação e uso |
 | [`guias/`](guias/) | Tutoriais passo a passo, do básico ao avançado |
 | [`dicas/`](dicas/) | Dicas curtas e boas práticas |
@@ -352,6 +353,7 @@ The same steps, with troubleshooting, are in [How to install the skills](guias/c
 | Folder | Contents |
 |---|---|
 | [`skills/`](skills/) | Skills: packaged instructions for recurring tasks |
+| [`design-system/`](design-system/) | Pandora DS: reference design system with four themes, for experiments |
 | [`mcps/`](mcps/) | MCP (Model Context Protocol) servers, with setup and usage |
 | [`guias/`](guias/) | Step-by-step guides, from basic to advanced |
 | [`dicas/`](dicas/) | Short tips and good practices |
