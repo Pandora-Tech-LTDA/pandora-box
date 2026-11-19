@@ -17,6 +17,15 @@
   - Se o aluno começar direto pelo `/sync-mva`, a skill sugere passar pelo `/sync-docs` antes.
   - O `/sync-mva` usa o `syncdb` para criar a base sintética do MVA.
 - **`syncdb`:** skill específica para construir bases de dados com dados sintéticos. Pode receber um arquivo de referência (XLS, CSV ou qualquer outro formato de dados) e gerar dados sintéticos de acordo com ele. Funciona nos dois modos: chamada pelo `/sync-mva` ou direto pelo aluno (`/syncdb`).
+- **Ambiente dos alunos:** Claude Cowork ou Claude Code, à escolha do aluno. As skills precisam funcionar nos dois.
+- **Ritmo da entrevista:** igual ao `grilling`, em rodadas com todas as perguntas que já podem ser feitas, numeradas. Também aceita uma pergunta por vez.
+- **Resposta recomendada:** aparece por padrão, e o aluno tem a opção de escondê-la, para responder sem ver a sugestão da IA.
+- **`/sync-mva` usa as etapas 3 a 5 do MVA** (modelagem → hipótese → contexto) como árvore de decisões. Referência principal: `references/mva/templates/agente-construtor-mva-v0.1.md`.
+- **Pacote do `/sync-mva` (v1):**
+  - o prompt do agente, já com teste automatizado;
+  - os documentos de referência (gerados com o `syncdb` quando forem dados sintéticos);
+  - um manual de como montar o agente no Cowork.
+- **`syncdb` também pode ser invocada pelo modelo**, além de pelo aluno (`/syncdb`) e pelo `/sync-mva`.
 - **Passagem do `/sync-docs` para o `/sync-mva`:** funciona em qualquer ambiente, com ou sem repositório.
   - **Registro do `/sync-docs`:** se houver sistema de arquivos ou repositório conectado, grava `sync/glossario.md` e `sync/decisoes.md` no projeto do aluno durante a sessão. Sem arquivos, entrega o registro no chat, em um bloco pronto para salvar.
   - **Aviso:** no início, o `/sync-docs` diz ao aluno onde o registro vai ficar. Se não houver onde gravar, avisa que, para continuar em outra conversa, ele precisa salvar o registro ou conectar um repositório.
@@ -29,9 +38,6 @@
 
 ## Em aberto
 
-- Uma pergunta por vez ou rodadas (o original usa rodadas e aceita voltar para uma por vez).
-- Como tratar a resposta recomendada para não induzir passividade.
-- Qual entregável cada skill gera ao final.
-- Como o `/sync-mva` usa as etapas e os elementos do núcleo do MVA como árvore de decisões (referência principal: `references/mva/templates/agente-construtor-mva-v0.1.md`).
-- `syncdb`: além de ser chamada pelo aluno e pelo `/sync-mva`, o modelo pode invocá-la por conta própria?
-- Formato exato do pacote final do `/sync-mva` (o que entra além de documentos, prompt e guia de montagem: casos de teste? critérios de sucesso? lista de suposições?).
+- Entregável final do `/sync-me` (proposta: resumo no chat com decisões, discordâncias, perguntas sem resposta e o que só um protótipo responde) e do `syncdb` (formatos de saída).
+- Quem pesquisa os fatos: a IA, como no `grilling`, ou parte da pesquisa vira tarefa do aluno?
+- O que exatamente é o "teste automatizado" no prompt do `/sync-mva`: casos de teste que o próprio agente executa, um checklist de autoavaliação ou outro formato.
