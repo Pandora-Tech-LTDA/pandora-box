@@ -98,7 +98,7 @@ Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D
 - **Decisão:** o `/sync-spec` reconhece quando o usuário quer usar o próprio design system, em qualquer momento da conversa ou depois da spec pronta, e troca o padrão da Pandora por ele: registra a origem, resume os tokens do design system do usuário no lugar do resumo da Pandora e remove o link da Pandora.
 - **Motivo:** "a skill precisa entender quando o usuário quiser trocar por um DS dele".
 
-## D17. Versão fixa do design system
+## D17. Versão fixa do design system (commit substituído por D19)
 - **Data:** 2026-11-19
 - **Decisão:** a v1 do Pandora DS é fixada pelo commit `2a87dadfc1e05c96803f9e79edbe35589af567d7` no link do CDN (`cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@<commit>/design-system/pandora.css`), no lugar da tag `design-system-v1`, que o ambiente de trabalho não conseguiu publicar. Se a tag for criada depois, os links podem passar a usá-la.
 - **Motivo:** a spec precisa apontar para uma versão que não muda (D15).
@@ -107,3 +107,8 @@ Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D
 - **Data:** 2026-11-19
 - **Decisão:** a spec é gravada em `sync/spec.md`, não em `sync/requisitos.md` como dizia a D1.
 - **Motivo:** o nome acompanha o nome da skill (`/sync-spec`), adotado na implementação; apontado na auditoria.
+
+## D19. Versão fixa do Pandora DS v1.1
+- **Data:** 2026-11-19
+- **Decisão:** a folha de estilo citada nas specs passa a ser a do Pandora DS v1.1, fixada no commit `3d9b720cdc7b742ddd9068431e2b982aa410cbb1`. O `/sync-spec` lê o resumo dos temas da versão atual (`main`), mas o link da folha de estilo dentro dele é sempre um commit fixo; como o bloco é copiado para a spec, a spec não muda depois. Substitui o commit da D17.
+- **Motivo:** a auditoria mostrou que o resumo do commit da D17 ainda apontava para uma tag inexistente, e a v1.1 corrigiu contraste e foco.

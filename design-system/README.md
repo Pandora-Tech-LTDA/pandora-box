@@ -22,7 +22,7 @@ Todas as combinações de texto passam no contraste mínimo WCAG AA (4,5:1), e a
 ## Como usar
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@2a87dadfc1e05c96803f9e79edbe35589af567d7/design-system/pandora.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@3d9b720cdc7b742ddd9068431e2b982aa410cbb1/design-system/pandora.css">
 <html data-theme="claro">
 ```
 
@@ -64,7 +64,7 @@ Pandora Box's reference design system: simple, modern and made for experiments. 
 Themes: **Pandora Claro** (light, default), **Pandora Escuro** (dark), **Neutro** (graphite with a muted blue accent) and **Alto contraste** (high contrast). Every text pairing meets WCAG AA (4.5:1), and field and control borders reach at least 3:1 against the background.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@2a87dadfc1e05c96803f9e79edbe35589af567d7/design-system/pandora.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@3d9b720cdc7b742ddd9068431e2b982aa410cbb1/design-system/pandora.css">
 <html data-theme="claro">
 ```
 

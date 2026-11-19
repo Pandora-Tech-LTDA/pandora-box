@@ -115,7 +115,7 @@ Se não conseguir abrir o link, use este resumo do Pandora Claro:
 ```markdown
 ### Padrão visual: Pandora DS v1, tema Pandora Claro
 
-- Folha de estilo: https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@2a87dadfc1e05c96803f9e79edbe35589af567d7/design-system/pandora.css com <html data-theme="claro">.
+- Folha de estilo: https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@3d9b720cdc7b742ddd9068431e2b982aa410cbb1/design-system/pandora.css com <html data-theme="claro">.
 - Fontes: Instrument Sans 600 nos títulos; Inter 400/500 no texto. Texto 14px; títulos 18, 24 e 32px; campos de formulário 16px.
 - Cores: fundo #FFFFFF · superfície #F6F4F8 · texto #161018 · secundário #4B4453 · apagado #6B6473 · borda #E3DFE8.
 - Destaque: #7024AE (texto branco), só em ação principal, foco, item ativo e link (#6A1FA6).
