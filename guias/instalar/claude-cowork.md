@@ -4,11 +4,11 @@
 
 **Para:** Cowork, no app desktop do Claude · **Tempo:** 3 minutos
 
-O Cowork usa as skills da sua conta do Claude. Se você já instalou pelo Claude.ai, não precisa fazer nada.
+O Cowork usa os plugins da sua conta do Claude. Se você já instalou pelo Claude.ai, não precisa fazer nada.
 
-1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória; baixe também [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) e [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
-2. **Envie cada skill.** Em *Configurações → Capacidades → Skills*, envie o .zip de cada skill, com a execução de código ativada.
-3. **Teste.** Abra o Cowork numa pasta de projeto e digite `/` no chat: as skills instaladas aparecem na lista.
+1. **Baixe o plugin [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip).**
+2. **Envie o plugin** em *Personalizar → Plugins → Adicionar → Enviar plugin* (*Customize → Plugins → Add → Upload plugin*).
+3. **Teste.** Abra o Cowork numa pasta de projeto e digite `/` no chat. As skills aparecem com o nome do plugin na frente, como `/pandora:sync-docs`.
 
 Como o Cowork trabalha numa pasta do seu computador, o `/sync-docs` grava o glossário e as decisões em `sync/`, e o `/sync-mva` grava os arquivos do MVA na mesma pasta.
 
@@ -24,11 +24,11 @@ Como o Cowork trabalha numa pasta do seu computador, o `/sync-docs` grava o glos
 
 **For:** Cowork, in the Claude desktop app · **Time:** 3 minutes
 
-Cowork uses the skills in your Claude account. If you already installed them through Claude.ai, there is nothing else to do.
+Cowork uses the plugins in your Claude account. If you already installed through Claude.ai, there is nothing else to do.
 
-1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required; also download [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) and [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
-2. **Upload each skill.** In *Settings → Capabilities → Skills*, upload the .zip of each skill, with code execution turned on.
-3. **Test it.** Open Cowork in a project folder and type `/` in the chat: installed skills show up in the list.
+1. **Download the plugin [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip).**
+2. **Upload it** in *Customize → Plugins → Add → Upload plugin*.
+3. **Test it.** Open Cowork in a project folder and type `/` in the chat. The skills show up with the plugin name in front, such as `/pandora:sync-docs`.
 
 Because Cowork works inside a folder on your computer, `/sync-docs` saves the glossary and decisions to `sync/`, and `/sync-mva` saves the MVA files to the same folder.
 

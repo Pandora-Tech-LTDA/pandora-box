@@ -1,0 +1,14 @@
+{
+  "name": "pandora-box",
+  "owner": { "name": "Pandora Tech" },
+  "metadata": {
+    "description": "Skills abertas da Pandora Box: conhecimento para trabalhar com IA com critério."
+  },
+  "plugins": [
+    {
+      "name": "pandora",
+      "source": "./skills",
+      "description": "Todas as skills da Pandora Box em um só plugin. Hoje: família Sync (sync-me, sync-docs, sync-mva, syncdb)."
+    }
+  ]
+}

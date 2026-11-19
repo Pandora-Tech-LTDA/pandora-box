@@ -4,21 +4,20 @@
 
 **Para:** Claude Code no terminal, no app desktop ou na extensão de IDE · **Tempo:** 2 minutos
 
-Abra o Claude Code em qualquer pasta, copie o prompt e cole no chat:
+No chat do Claude Code, rode:
 
-```text
-Instale para mim as skills da família "sync" do repositório público https://github.com/Pandora-Tech-LTDA/pandora-box (branch main, pasta skills/sync).
-
-Cada subpasta de skills/sync que tem um arquivo SKILL.md é uma skill. Ignore a pasta "references".
-
-Copie cada uma dessas subpastas, inteira, para ~/.claude/skills/<nome-da-subpasta>/. Se alguma já existir, me pergunte antes de substituir.
-
-Apague os arquivos temporários do download. No final, me mostre uma tabela com as skills instaladas e o que cada uma faz, e me diga como começar a usar.
+```
+/plugin install pandora --marketplace Pandora-Tech-LTDA/pandora-box
 ```
 
-O Claude pode pedir permissão para rodar comandos. Leia e aprove. Depois, reinicie o Claude Code e digite `/`: as skills instaladas aparecem na lista.
+Se a sua versão do Claude Code não aceitar esse comando, use os dois passos:
 
-**Só para um projeto:** troque `~/.claude/skills/` por `.claude/skills/` no prompt, com o Claude Code aberto na pasta do projeto.
+```
+/plugin marketplace add Pandora-Tech-LTDA/pandora-box
+/plugin install pandora@pandora-box
+```
+
+As skills aparecem com o nome do plugin na frente: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-mva` e `/pandora:syncdb`.
 
 [Voltar para todas as plataformas](../como-instalar-skills.md)
 
@@ -32,20 +31,19 @@ O Claude pode pedir permissão para rodar comandos. Leia e aprove. Depois, reini
 
 **For:** Claude Code in the terminal, desktop app or IDE extension · **Time:** 2 minutes
 
-Open Claude Code in any folder, copy the prompt and paste it into the chat:
+In the Claude Code chat, run:
 
-```text
-Install the "sync" skill family from the public repository https://github.com/Pandora-Tech-LTDA/pandora-box (branch main, folder skills/sync).
-
-Each subfolder of skills/sync that contains a SKILL.md file is a skill. Ignore the "references" folder.
-
-Copy each of these subfolders, in full, to ~/.claude/skills/<subfolder-name>/. If any already exists, ask me before replacing it.
-
-Delete the temporary download files. At the end, show me a table of the installed skills and what each one does, and tell me how to get started.
+```
+/plugin install pandora --marketplace Pandora-Tech-LTDA/pandora-box
 ```
 
-Claude may ask for permission to run commands. Read and approve them. Then restart Claude Code and type `/`: installed skills show up in the list.
+If your Claude Code version doesn't accept that command, use the two steps:
 
-**For a single project:** replace `~/.claude/skills/` with `.claude/skills/` in the prompt, with Claude Code open in the project folder.
+```
+/plugin marketplace add Pandora-Tech-LTDA/pandora-box
+/plugin install pandora@pandora-box
+```
+
+The skills show up with the plugin name in front: `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-mva` and `/pandora:syncdb`.
 
 [Back to all platforms](../como-instalar-skills.md#english)
