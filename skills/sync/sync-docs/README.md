@@ -1,3 +1,5 @@
+<img src="../../../assets/banners/sync-docs-pt.webp" alt="/pandora:sync-docs. Entenda e registre o projeto." width="100%">
+
 # /pandora:sync-docs
 
 **Português** · [English](#english)
@@ -55,6 +57,8 @@ Derivada da skill `grill-with-docs` de Matt Pocock ([mattpocock/skills](https://
 ---
 
 <a id="english"></a>
+
+<img src="../../../assets/banners/sync-docs-en.webp" alt="/pandora:sync-docs. Understand and record the project." width="100%">
 
 # /pandora:sync-docs
 

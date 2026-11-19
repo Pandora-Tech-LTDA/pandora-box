@@ -1,3 +1,5 @@
+<img src="../../../assets/banners/sync-spec-pt.webp" alt="/pandora:sync-spec. A spec para a IA de código." width="100%">
+
 # /pandora:sync-spec
 
 **Português** · [English](#english)
@@ -58,6 +60,8 @@ Ideias de `to-spec` (Matt Pocock, MIT), `wireframes` (ba-toolkit, MIT) e `aidlc-
 ---
 
 <a id="english"></a>
+
+<img src="../../../assets/banners/sync-spec-en.webp" alt="/pandora:sync-spec. The spec for a coding AI." width="100%">
 
 # /pandora:sync-spec
 

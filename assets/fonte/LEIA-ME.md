@@ -2,6 +2,7 @@
 
 - `banner.html` gera `../banner.png` (página principal).
 - `banner-sync.html` gera `../banner-sync.png` (produto /pandora:sync).
+- `gerar_banners_skills.py` gera, em `skills/`, os banners de cada skill (PT e EN). Capture cada HTML em 1280×440, escala 2×, e salve em `../banners/<skill>-<idioma>.webp` (WebP, qualidade 88).
 - `banner-en.html` e `banner-sync-en.html` geram as versões em inglês (`../banner-en.png` e `../banner-sync-en.png`), usadas na parte em inglês dos READMEs.
 - Para um produto novo, copie `banner-sync.html`, troque selo, título, texto e o elemento gráfico (um só por peça: cubo, anel, arco, marca de + ou coluna de pontos).
 
