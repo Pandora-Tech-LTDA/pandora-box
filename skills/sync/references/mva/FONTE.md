@@ -10,7 +10,7 @@
 |---|---|---|
 | Início do whitepaper | 22/09/2026 | commit [`d42b693`](https://github.com/Pandora-Tech-LTDA/mva-whitepaper/commit/d42b6930188b13767bd3b9dc00fd5d4eb96d40ef) ("docs: inicia whitepaper da metodologia MVA") |
 | Versão v0.1 (a copiada aqui) | 23/09/2026 | commit [`d07cf3e`](https://github.com/Pandora-Tech-LTDA/mva-whitepaper/commit/d07cf3ee44055ea26a5901ccfc0682bf8eac3466) |
-| Publicação pública neste wiki | 19/11/2026 | histórico do repositório Pandora-Tech-LTDA/wiki |
+| Publicação pública neste repositório | 19/11/2026 | histórico do repositório Pandora-Tech-LTDA/pandora-box (antes chamado `wiki`) |
 
 As datas vêm do histórico de commits do GitHub.
 

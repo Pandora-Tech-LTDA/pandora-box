@@ -44,7 +44,7 @@ arquivos, provavelmente é o **Cowork**. Se você digita comandos num terminal, 
 ```text
 Instale as skills da família "sync" para mim:
 
-1. Baixe a pasta skills/sync do repositório público https://github.com/Pandora-Tech-LTDA/wiki (branch main).
+1. Baixe a pasta skills/sync do repositório público https://github.com/Pandora-Tech-LTDA/pandora-box (branch main).
 2. Para cada subpasta de skills/sync que tenha um arquivo SKILL.md, copie a subpasta inteira para ~/.claude/skills/<nome-da-subpasta>/. Ignore a pasta "references".
 3. Se alguma skill já existir em ~/.claude/skills, me pergunte antes de substituir.
 4. Apague os arquivos temporários do download.
@@ -68,7 +68,7 @@ por skill. O Claude prepara os arquivos para você.
 ```text
 Prepare as skills da família "sync" para eu instalar:
 
-1. Baixe a pasta skills/sync do repositório público https://github.com/Pandora-Tech-LTDA/wiki (branch main).
+1. Baixe a pasta skills/sync do repositório público https://github.com/Pandora-Tech-LTDA/pandora-box (branch main).
 2. Para cada subpasta de skills/sync que tenha um arquivo SKILL.md, crie um arquivo <nome-da-subpasta>.zip nesta pasta, com a subpasta inteira dentro. Ignore a pasta "references".
 3. Apague os arquivos temporários do download.
 4. No final, liste os .zip criados e me explique, passo a passo e em linguagem simples, como enviar cada um nas configurações do Claude para ativar as skills.

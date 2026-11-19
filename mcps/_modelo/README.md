@@ -17,8 +17,8 @@
 ## Instalação
 
 ```bash
-git clone https://github.com/Pandora-Tech-LTDA/wiki.git
-cd wiki/mcps/nome-da-mcp
+git clone https://github.com/Pandora-Tech-LTDA/pandora-box.git
+cd pandora-box/mcps/nome-da-mcp
 npm install
 ```
 
@@ -33,7 +33,7 @@ cp .env.example .env
 ### Claude Code
 
 ```bash
-claude mcp add nome-da-mcp -- node /caminho/para/wiki/mcps/nome-da-mcp/dist/index.js
+claude mcp add nome-da-mcp -- node /caminho/para/pandora-box/mcps/nome-da-mcp/dist/index.js
 ```
 
 ### Claude Desktop (`claude_desktop_config.json`)
@@ -43,7 +43,7 @@ claude mcp add nome-da-mcp -- node /caminho/para/wiki/mcps/nome-da-mcp/dist/inde
   "mcpServers": {
     "nome-da-mcp": {
       "command": "node",
-      "args": ["/caminho/para/wiki/mcps/nome-da-mcp/dist/index.js"],
+      "args": ["/caminho/para/pandora-box/mcps/nome-da-mcp/dist/index.js"],
       "env": { "API_KEY": "sua-chave-aqui" }
     }
   }

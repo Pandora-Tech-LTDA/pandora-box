@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Pandora Box</title>
+  <desc id="d">Uma caixa aberta de onde sai um feixe de luz espalhando pontos de conhecimento pelo mundo; no fundo da caixa brilha uma pequena estrela dourada, a esperança. Ao lado, o texto: Pandora Box. Abra a caixa, espalhe o conhecimento.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0C24"/>
+      <stop offset="0.55" stop-color="#17153F"/>
+      <stop offset="1" stop-color="#2A1B4E"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.27" cy="0.62" r="0.45">
+      <stop offset="0" stop-color="#F5C451" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#A78BFA" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFF4D6" stop-opacity="0.75"/>
+      <stop offset="0.45" stop-color="#F5C451" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mouth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF4D6"/>
+      <stop offset="1" stop-color="#F5C451"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4C3A8C"/>
+      <stop offset="1" stop-color="#2B2163"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#36296E"/>
+      <stop offset="1" stop-color="#1D1747"/>
+    </linearGradient>
+    <linearGradient id="lid" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#5B47A6"/>
+      <stop offset="1" stop-color="#3A2D7A"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF4D6"/>
+      <stop offset="0.5" stop-color="#F5C451"/>
+      <stop offset="1" stop-color="#F0A35E"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1280" height="420" rx="24"/></clipPath>
+    <style>
+      .tw { animation: tw 4s ease-in-out infinite; }
+      .d1 { animation-delay: -1s } .d2 { animation-delay: -2s } .d3 { animation-delay: -3s }
+      @keyframes tw { 0%,100% { opacity: .35 } 50% { opacity: 1 } }
+      .hope { animation: hope 3s ease-in-out infinite; transform-origin: 352px 263px; }
+      @keyframes hope { 0%,100% { transform: scale(1) } 50% { transform: scale(1.15) } }
+      @media (prefers-reduced-motion: reduce) { .tw, .hope { animation: none } }
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="420" fill="url(#bg)"/>
+    <rect width="1280" height="420" fill="url(#halo)"/>
+
+    <!-- estrelas de fundo -->
+    <g fill="#FFFFFF" opacity="0.5">
+      <circle cx="60" cy="50" r="1"/><circle cx="150" cy="120" r="1.2"/><circle cx="510" cy="40" r="1"/>
+      <circle cx="1210" cy="60" r="1.2"/><circle cx="1120" cy="370" r="1"/><circle cx="980" cy="30" r="1"/>
+      <circle cx="90" cy="360" r="1.2"/><circle cx="720" cy="390" r="1"/><circle cx="1250" cy="250" r="1"/>
+      <circle cx="840" cy="350" r="1"/><circle cx="40" cy="220" r="1"/><circle cx="1180" cy="160" r="1"/>
+    </g>
+
+    <!-- feixe de luz saindo da caixa -->
+    <path d="M262 262 L442 262 L700 -10 L60 -10 Z" fill="url(#beam)"/>
+
+    <!-- conhecimento se espalhando -->
+    <g filter="url(#glow)">
+      <circle class="tw"    cx="300" cy="200" r="4"   fill="#FFF4D6"/>
+      <circle class="tw d1" cx="360" cy="160" r="3"   fill="#F5C451"/>
+      <circle class="tw d2" cx="250" cy="130" r="3.5" fill="#FFF4D6"/>
+      <circle class="tw d3" cx="410" cy="110" r="4"   fill="#67E8F9"/>
+      <circle class="tw d1" cx="200" cy="70"  r="3"   fill="#A78BFA"/>
+      <circle class="tw"    cx="330" cy="60"  r="2.5" fill="#F5C451"/>
+      <circle class="tw d2" cx="470" cy="55"  r="3"   fill="#FFF4D6"/>
+      <circle class="tw d3" cx="140" cy="30"  r="2.5" fill="#67E8F9"/>
+      <circle class="tw d1" cx="540" cy="150" r="2.5" fill="#F5C451"/>
+      <circle class="tw d2" cx="580" cy="80"  r="2"   fill="#A78BFA"/>
+      <circle class="tw"    cx="620" cy="170" r="2"   fill="#FFF4D6"/>
+      <circle class="tw d3" cx="110" cy="150" r="2"   fill="#F5C451"/>
+      <!-- pequenos símbolos: código, livro, ideia -->
+      <text class="tw d2" x="120" y="270" font-size="22" font-weight="700" fill="#67E8F9" opacity=".9">{ }</text>
+      <text class="tw d1" x="185" y="215" font-size="20" font-weight="700" fill="#A78BFA" opacity=".9">&lt;/&gt;</text>
+      <text class="tw d3" x="285" y="105" font-size="18" fill="#F5C451">✦</text>
+      <text class="tw"    x="545" y="40"  font-size="16" fill="#FFF4D6">✦</text>
+      <g class="tw d3" transform="translate(490 95)" fill="none" stroke="#FFF4D6" stroke-width="2" stroke-linejoin="round">
+        <path d="M0 4 Q9 0 18 4 L18 22 Q9 18 0 22 Z"/><path d="M18 4 Q27 0 36 4 L36 22 Q27 18 18 22"/>
+      </g>
+    </g>
+
+    <!-- a caixa -->
+    <g>
+      <ellipse cx="352" cy="372" rx="150" ry="18" fill="#000" opacity="0.35"/>
+      <!-- tampa aberta (atrás) -->
+      <polygon points="322,240 462,256 488,168 350,150" fill="url(#lid)" stroke="#8B7BE0" stroke-width="2" stroke-linejoin="round"/>
+      <polyline points="336,195 474,212" stroke="#F5C451" stroke-width="3" opacity="0.8" fill="none"/>
+      <!-- boca da caixa -->
+      <polygon points="242,262 382,282 462,256 322,240" fill="url(#mouth)"/>
+      <!-- esperança: estrela no fundo da caixa -->
+      <g class="hope" filter="url(#glow)">
+        <path d="M352 249 L356 259 L366 263 L356 267 L352 277 L348 267 L338 263 L348 259 Z" fill="#FFFFFF"/>
+      </g>
+      <!-- frente -->
+      <polygon points="242,262 382,282 382,372 242,352" fill="url(#front)" stroke="#8B7BE0" stroke-width="2" stroke-linejoin="round"/>
+      <!-- lateral -->
+      <polygon points="382,282 462,256 462,346 382,372" fill="url(#side)" stroke="#8B7BE0" stroke-width="2" stroke-linejoin="round"/>
+      <!-- faixas douradas -->
+      <polyline points="242,300 382,320 462,294" stroke="#F5C451" stroke-width="3" fill="none" opacity="0.85"/>
+      <circle cx="312" cy="326" r="7" fill="none" stroke="#F5C451" stroke-width="2.5"/>
+    </g>
+
+    <!-- texto -->
+    <text x="590" y="170" font-size="26" font-weight="600" fill="#A78BFA" letter-spacing="6">PANDORA TECH</text>
+    <text x="584" y="250" font-size="92" font-weight="800" fill="url(#title)" letter-spacing="-1">Pandora Box</text>
+    <text x="590" y="300" font-size="28" font-weight="500" fill="#EDE9FE">Abra a caixa. Espalhe o conhecimento.</text>
+    <text x="590" y="345" font-size="20" fill="#C4B5FD" opacity="0.9">Skills · MCPs · Guias · Prompts — aberto para qualquer pessoa</text>
+  </g>
+</svg>
