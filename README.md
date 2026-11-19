@@ -197,6 +197,8 @@ Encontrou um erro, tem uma dúvida ou quer sugerir um conteúdo? Abra uma [issue
 
 <div align="center">
 
+<img src="assets/banner-en.png" alt="Pandora Box. Open the box. Let knowledge spread. Skills, MCPs, guides and prompts for anyone to use. Beside it, an open isometric cube with points of light rising from it; at the bottom of the box, a white dot: hope." width="100%">
+
 **English** · [Português](#por-que-pandora-box)
 
 </div>
@@ -214,6 +216,8 @@ Here the box is opened on purpose. What comes out is knowledge: what Pandora lea
 Everything here is open. Read, copy, adapt and use it, with attribution.
 
 ### Products
+
+<a href="skills/sync/README.md#english"><img src="assets/banner-sync-en.png" alt="Sync. The AI asks. You decide. A family of skills that interviews you about your project until you share the same understanding, then delivers what you need to build your MVA." width="100%"></a>
 
 #### Sync
 

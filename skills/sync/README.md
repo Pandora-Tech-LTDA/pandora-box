@@ -73,6 +73,8 @@ Escolha a sua plataforma em [Como instalar as skills](../../guias/como-instalar-
 
 <a id="english"></a>
 
+<img src="../../assets/banner-sync-en.png" alt="Sync. The AI asks. You decide. A family of skills that interviews you about your project until you share the same understanding, then delivers what you need to build your MVA." width="100%">
+
 # Sync
 
 **English** · [Português](#sync)
