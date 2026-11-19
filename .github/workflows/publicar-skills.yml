@@ -54,4 +54,8 @@ jobs:
               --title "Skills da Pandora Box (versão mais recente)" \
               --notes "Arquivos .zip de cada skill, atualizados automaticamente a cada mudança em skills/. Para instalar no Claude.ai ou no Cowork, envie o .zip em Configurações → Capacidades → Skills. Guia: https://github.com/Pandora-Tech-LTDA/pandora-box/blob/main/guias/como-instalar-skills.md"
           fi
+          # remove arquivos de skills que não existem mais (por exemplo, depois de renomear uma skill)
+          for antigo in $(gh release view skills --json assets -q '.assets[].name'); do
+            [ -f "dist/$antigo" ] || gh release delete-asset skills "$antigo" -y
+          done
           gh release upload skills dist/*.zip --clobber

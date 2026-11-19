@@ -21,10 +21,10 @@ Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Te
 
 | Skill | Download |
 |---|---|
-| `syncing` (obrigatória: as outras skills Sync dependem dela) | [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) |
+| `sync-me` (obrigatória: as outras skills Sync dependem dela) | [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) |
 | Família Sync completa (um .zip com o .zip de cada skill) | [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) |
 
-> **Situação.** Da família Sync, só a `syncing` está publicada (v0.1, em teste). As demais entram nos downloads assim que forem publicadas.
+> **Situação.** Da família Sync, só a `sync-me` está publicada (v0.1, em teste). As demais entram nos downloads assim que forem publicadas.
 
 ## Depois de instalar
 
@@ -40,7 +40,7 @@ Comece pelo `/sync-docs`, que entrevista você sobre o projeto e registra vocabu
 |---|---|
 | A IA não usa a skill | Abra uma nova conversa ou reinicie o aplicativo. Confira se a skill aparece na lista de skills da plataforma. |
 | O envio do .zip falha | Envie um .zip por skill, não o `sync-todas.zip` inteiro. No Claude.ai e no Cowork, confira se a execução de código está ativada. |
-| A skill faz todas as perguntas de uma vez, sem sugestões | Ela não carregou a `syncing`. Instale a `syncing` e peça: "carregue a skill syncing". |
+| A skill faz todas as perguntas de uma vez, sem sugestões | Ela não carregou a `sync-me`. Instale a `sync-me` e peça: "carregue a skill sync-me". |
 | Quero continuar o projeto em outra conversa | Salve o registro que o `/sync-docs` entregou, ou trabalhe numa pasta de projeto para que ele grave os arquivos em `sync/`. |
 
 ---
@@ -70,10 +70,10 @@ All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pando
 
 | Skill | Download |
 |---|---|
-| `syncing` (required: the other Sync skills depend on it) | [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) |
+| `sync-me` (required: the other Sync skills depend on it) | [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) |
 | Full Sync family (one .zip containing each skill's .zip) | [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) |
 
-> **Status.** In the Sync family, only `syncing` is published (v0.1, testing). The others will be added to the downloads as they are released.
+> **Status.** In the Sync family, only `sync-me` is published (v0.1, testing). The others will be added to the downloads as they are released.
 
 ## After installing
 
@@ -89,5 +89,5 @@ Start with `/sync-docs`, which interviews you about the project and records its 
 |---|---|
 | The AI doesn't use the skill | Start a new conversation or restart the app. Check that the skill shows up in the platform's skill list. |
 | The .zip upload fails | Upload one .zip per skill, not the whole `sync-todas.zip`. On Claude.ai and Cowork, check that code execution is on. |
-| The skill asks everything at once, without suggestions | It didn't load `syncing`. Install `syncing` and say: "load the syncing skill". |
+| The skill asks everything at once, without suggestions | It didn't load `sync-me`. Install `sync-me` and say: "load the sync-me skill". |
 | I want to continue the project in another conversation | Save the record `/sync-docs` gave you, or work in a project folder so it saves the files to `sync/`. |
