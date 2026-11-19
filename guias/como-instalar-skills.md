@@ -1,115 +1,88 @@
 # Como instalar as skills
 
-**Nível:** Iniciante · **Tempo:** 5 a 10 minutos
+**Nível:** iniciante · **Tempo:** 5 minutos
 
-Este guia mostra como instalar as skills deste repositório no **Claude Code** ou no
-**Claude Cowork**. Você não precisa saber programar: em cada caso há um **prompt pronto**
-para copiar e colar, e o próprio Claude faz o trabalho pesado.
+As skills da Pandora Box funcionam no **Claude.ai** (navegador, app desktop e celular), no **Claude Cowork** e no **Claude Code**. Você não precisa saber programar.
 
-> 🚧 **Família `sync` em construção.** O guia já vale para quando as skills forem publicadas.
-> Até lá, o prompt vai avisar que ainda não há skills na pasta.
+> **Situação.** Da família Sync, só a `syncing` está publicada (v0.1, em teste). As demais entram nos links abaixo assim que forem publicadas.
 
 ---
 
-## Antes de começar: o que é uma skill?
+## O que é uma skill
 
-Uma **skill** é um pacote de instruções que ensina o Claude a fazer uma tarefa de um
-jeito específico. Depois de instalada, você a usa digitando uma **barra** seguida do nome
-dela no chat, por exemplo:
+Uma skill é um pacote de instruções que ensina o Claude a fazer uma tarefa de um jeito específico. Tecnicamente, é uma pasta com um arquivo `SKILL.md`. Depois de instalada, o Claude a usa quando o assunto pede, ou quando você a chama pelo nome, por exemplo `/sync-docs`.
 
-```
-/sync-docs
-```
+## Escolha onde você usa o Claude
 
-Cada skill é uma pasta com um arquivo `SKILL.md` dentro. Instalar é colocar essas pastas
-no lugar onde o Claude procura.
-
-## Qual ferramenta você usa?
-
-| Você usa… | Siga |
+| Você usa | Siga |
 |---|---|
-| **Claude Code** (no terminal, no app desktop ou na extensão do VS Code) | [Opção A](#opção-a-claude-code) |
-| **Claude Cowork** (no app desktop do Claude) | [Opção B](#opção-b-claude-cowork) |
+| **Claude.ai** ou **Claude Cowork** | [Opção A: baixar e enviar o arquivo](#opção-a-claudeai-e-claude-cowork) |
+| **Claude Code** | [Opção B: instalar com um prompt](#opção-b-claude-code) |
 
-Não sabe? Se você conversa com o Claude dentro de uma pasta do seu computador e ele mexe nos
-arquivos, provavelmente é o **Cowork**. Se você digita comandos num terminal, é o **Claude Code**.
-
----
-
-## Opção A: Claude Code
-
-1. Abra o Claude Code (em qualquer pasta).
-2. Copie o prompt abaixo e cole no chat:
-
-```text
-Instale as skills da família "sync" para mim:
-
-1. Baixe a pasta skills/sync do repositório público https://github.com/Pandora-Tech-LTDA/pandora-box (branch main).
-2. Para cada subpasta de skills/sync que tenha um arquivo SKILL.md, copie a subpasta inteira para ~/.claude/skills/<nome-da-subpasta>/. Ignore a pasta "references".
-3. Se alguma skill já existir em ~/.claude/skills, me pergunte antes de substituir.
-4. Apague os arquivos temporários do download.
-5. No final, me mostre uma tabela com as skills instaladas e uma frase sobre o que cada uma faz, e me diga qual usar primeiro.
-
-Se não houver nenhuma skill publicada ainda, apenas me avise.
-```
-
-3. O Claude pode pedir permissão para rodar comandos. Leia e aprove.
-4. **Feche e abra o Claude Code de novo** para ele carregar as skills.
-5. Teste digitando `/` no chat: as skills instaladas aparecem na lista. Enquanto as outras skills não forem publicadas, teste com `/syncing`.
-
-## Opção B: Claude Cowork
-
-No Cowork, as skills são instaladas na sua conta do Claude enviando um arquivo `.zip`
-por skill. O Claude prepara os arquivos para você.
-
-1. Abra o Cowork e escolha uma pasta do seu computador (por exemplo, `Downloads`).
-2. Copie o prompt abaixo e cole no chat:
-
-```text
-Prepare as skills da família "sync" para eu instalar:
-
-1. Baixe a pasta skills/sync do repositório público https://github.com/Pandora-Tech-LTDA/pandora-box (branch main).
-2. Para cada subpasta de skills/sync que tenha um arquivo SKILL.md, crie um arquivo <nome-da-subpasta>.zip nesta pasta, com a subpasta inteira dentro. Ignore a pasta "references".
-3. Apague os arquivos temporários do download.
-4. No final, liste os .zip criados e me explique, passo a passo e em linguagem simples, como enviar cada um nas configurações do Claude para ativar as skills.
-
-Se não houver nenhuma skill publicada ainda, apenas me avise.
-```
-
-3. Envie cada `.zip` nas configurações do Claude, na área de **Skills** (em geral, em
-   *Configurações → Capacidades*). Os nomes do menu podem mudar com o tempo; se não
-   encontrar, pergunte ao próprio Claude onde fica.
-4. **Envie todas as skills**, inclusive a `syncing`. As outras dependem dela.
-5. Abra uma nova conversa e teste digitando `/syncing` (ou `/sync-docs`, quando estiver publicada).
+As skills enviadas no Claude.ai ficam na sua conta e valem também no Cowork.
 
 ---
 
-## Qual skill usar primeiro?
+## Opção A: Claude.ai e Claude Cowork
+
+**1. Baixe as skills.**
+
+| Skill | Download |
+|---|---|
+| `syncing` (obrigatória: as outras dependem dela) | [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) |
+| Família Sync completa (um .zip com o .zip de cada skill) | [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) |
+
+Todos os arquivos estão na página [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills) e são atualizados automaticamente a cada nova versão.
+
+**2. Ative a execução de código.** Em *Configurações → Capacidades*, ative a execução de código e criação de arquivos. As skills dependem dela.
+
+**3. Envie cada skill.** Ainda em *Configurações → Capacidades*, na área **Skills**, clique em enviar e escolha o `.zip` de cada skill. Se você baixou o `sync-todas.zip`, abra-o antes: o Claude espera **um .zip por skill**.
+
+**4. Teste.** Abra uma nova conversa e escreva, por exemplo: *"Use a skill syncing para me ajudar a amadurecer a ideia de um agente que analisa a frequência dos funcionários."*
+
+Os nomes dos menus podem mudar com o tempo. Se não encontrar, pergunte ao próprio Claude onde ficam as skills nas configurações.
+
+---
+
+## Opção B: Claude Code
+
+Abra o Claude Code em qualquer pasta, copie o prompt abaixo e cole no chat:
+
+```text
+Instale para mim as skills da família "sync" do repositório público https://github.com/Pandora-Tech-LTDA/pandora-box (branch main, pasta skills/sync).
+
+Cada subpasta de skills/sync que tem um arquivo SKILL.md é uma skill. Ignore a pasta "references".
+
+Copie cada uma dessas subpastas, inteira, para ~/.claude/skills/<nome-da-subpasta>/. Se alguma já existir, me pergunte antes de substituir.
+
+Apague os arquivos temporários do download. No final, me mostre uma tabela com as skills instaladas e o que cada uma faz, e me diga como começar a usar.
+```
+
+O Claude pode pedir permissão para rodar comandos. Leia e aprove. Depois, feche e abra o Claude Code e digite `/` no chat: as skills instaladas aparecem na lista.
+
+---
+
+## Qual skill usar primeiro
 
 ```
 /sync-docs  →  /sync-mva  →  /syncdb
 ```
 
-1. **`/sync-docs`**: comece aqui. O Claude faz perguntas sobre o seu projeto e registra o
-   vocabulário e as decisões. Questione as sugestões dele: a ideia é você pensar, não só dizer "sim".
-2. **`/sync-mva`**: depois, monte o seu MVA. Ele usa o que o `/sync-docs` registrou e entrega
-   o prompt do agente, os documentos e o manual de montagem no Cowork.
-3. **`/syncdb`**: quando precisar de dados de exemplo (sintéticos) para testar, em CSV ou Markdown.
+1. **`/sync-docs`** entrevista você sobre o projeto e registra vocabulário e decisões. Comece por aqui.
+2. **`/sync-mva`** monta o MVA a partir desse registro: prompt do agente com testes, documentos e manual de montagem.
+3. **`/syncdb`** gera dados de exemplo (sintéticos) em CSV ou Markdown.
 
-Quer só conversar sobre uma ideia, sem gerar arquivos? Use **`/sync-me`**.
+Para conversar sobre uma ideia sem gerar arquivos, use **`/sync-me`**. Enquanto essas skills não forem publicadas, teste a `syncing` diretamente.
 
 ## Problemas comuns
 
 | Problema | O que fazer |
 |---|---|
-| Digito `/sync-docs` e nada acontece | Feche e abra o Claude de novo. Confira se a pasta ou o `.zip` da skill foi instalado. |
-| A skill faz todas as perguntas de uma vez, sem sugestões | Ela não carregou a `syncing`. Confira se a `syncing` está instalada e peça: "carregue a skill syncing". |
-| Quero continuar o projeto em outra conversa | Salve o registro que o `/sync-docs` entregou, ou trabalhe numa pasta/repositório para que ele grave os arquivos em `sync/`. |
+| O Claude não usa a skill | Abra uma nova conversa. Confira se a skill aparece em *Configurações → Capacidades → Skills* (Claude.ai e Cowork) ou em `~/.claude/skills/` (Claude Code). |
+| O envio do .zip falha | Envie um .zip por skill, não o `sync-todas.zip` inteiro. Confira se a execução de código está ativada. |
+| A skill faz todas as perguntas de uma vez, sem sugestões | Ela não carregou a `syncing`. Instale a `syncing` e peça: "carregue a skill syncing". |
+| Quero continuar o projeto em outra conversa | Salve o registro que o `/sync-docs` entregou, ou trabalhe numa pasta de projeto para que ele grave os arquivos em `sync/`. |
 
 ## Créditos
 
-As skills `syncing`, `/sync-me` e `/sync-docs` são derivadas das skills
-[`grilling`](https://www.aihero.dev/skills-grilling), [`grill-me`](https://www.aihero.dev/skills-grill-me)
-e [`grill-with-docs`](https://www.aihero.dev/skills-grill-with-docs) de **Matt Pocock**
-([mattpocock/skills](https://github.com/mattpocock/skills), licença MIT).
-O `/sync-mva` e o `/syncdb` seguem a metodologia MVA, © 2026 Pandora Tech LTDA.
+As skills `syncing`, `/sync-me` e `/sync-docs` são derivadas das skills [`grilling`](https://www.aihero.dev/skills-grilling), [`grill-me`](https://www.aihero.dev/skills-grill-me) e [`grill-with-docs`](https://www.aihero.dev/skills-grill-with-docs) de **Matt Pocock** ([mattpocock/skills](https://github.com/mattpocock/skills), licença MIT). O `/sync-mva` e o `/syncdb` seguem a metodologia MVA, ©2026 Pandora Tech LTDA.

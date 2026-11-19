@@ -1,0 +1,57 @@
+name: Publicar skills
+
+# Empacota cada skill (toda pasta skills/<família>/<skill>/ com SKILL.md) em um .zip
+# e publica na release "skills", com links fixos para download:
+# https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/<skill>.zip
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skills/**"
+      - ".github/workflows/publicar-skills.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-skills
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Empacotar skills
+        run: |
+          mkdir -p dist
+          for f in skills/*/*/SKILL.md; do
+            d="$(dirname "$f")"
+            nome="$(basename "$d")"
+            [ "$nome" = "_modelo" ] && continue
+            (cd "$(dirname "$d")" && zip -qr "$GITHUB_WORKSPACE/dist/$nome.zip" "$nome")
+            echo "empacotada: $nome"
+          done
+          for fam in skills/*/; do
+            fam="$(basename "$fam")"
+            ls "skills/$fam"/*/SKILL.md >/dev/null 2>&1 || continue
+            arquivos=""
+            for f in skills/$fam/*/SKILL.md; do arquivos="$arquivos $(basename "$(dirname "$f")").zip"; done
+            (cd dist && zip -q "$fam-todas.zip" $arquivos)
+            echo "pacote da família: $fam-todas.zip"
+          done
+          ls -la dist
+
+      - name: Publicar na release "skills"
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release view skills >/dev/null 2>&1; then
+            gh release create skills --target "$GITHUB_SHA" \
+              --title "Skills da Pandora Box (versão mais recente)" \
+              --notes "Arquivos .zip de cada skill, atualizados automaticamente a cada mudança em skills/. Para instalar no Claude.ai ou no Cowork, envie o .zip em Configurações → Capacidades → Skills. Guia: https://github.com/Pandora-Tech-LTDA/pandora-box/blob/main/guias/como-instalar-skills.md"
+          fi
+          gh release upload skills dist/*.zip --clobber

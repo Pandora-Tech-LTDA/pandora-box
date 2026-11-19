@@ -50,7 +50,12 @@ A maioria dos projetos com IA começa pela ferramenta e descobre o problema no m
 
 ## Instalação
 
-Use o prompt da [instalação rápida](../../README.md#instalação-rápida) ou siga o guia [Como instalar as skills](../../guias/como-instalar-skills.md). Funciona no Claude Code e no Claude Cowork.
+Funciona no Claude.ai, no Claude Cowork e no Claude Code.
+
+- **Claude.ai e Cowork:** baixe [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) (ou todos os arquivos em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)) e envie em *Configurações → Capacidades → Skills*.
+- **Claude Code:** use o prompt da [instalação rápida](../../README.md#instalação-rápida).
+
+Passo a passo completo: [Como instalar as skills](../../guias/como-instalar-skills.md).
 
 ---
 

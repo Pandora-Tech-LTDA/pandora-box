@@ -56,20 +56,23 @@ No fim, você sai com o projeto documentado e, se quiser, com o material para mo
 
 ## Instalação rápida
 
-Copie o prompt abaixo e cole no **Claude Code** ou no **Claude Cowork**. O próprio Claude baixa e instala as skills.
+As skills funcionam no **Claude.ai**, no **Claude Cowork** e no **Claude Code**.
+
+**Claude.ai e Cowork.** Baixe [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) e envie em *Configurações → Capacidades → Skills*, com a execução de código ativada. Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+
+**Claude Code.** Copie o prompt abaixo e cole no chat. O próprio Claude baixa e instala as skills.
 
 ```text
 Instale para mim as skills da família "sync" do repositório público https://github.com/Pandora-Tech-LTDA/pandora-box (branch main, pasta skills/sync).
 
 Cada subpasta de skills/sync que tem um arquivo SKILL.md é uma skill. Ignore a pasta "references".
 
-- Se você for o Claude Code: copie cada uma dessas subpastas, inteira, para ~/.claude/skills/<nome-da-subpasta>/. Se alguma já existir, me pergunte antes de substituir.
-- Se você for o Claude Cowork (ou não conseguir gravar em ~/.claude/skills): crie nesta pasta um arquivo <nome-da-subpasta>.zip para cada skill, com a subpasta inteira dentro, e me explique passo a passo como enviar cada .zip nas configurações do Claude, na área de Skills.
+Copie cada uma dessas subpastas, inteira, para ~/.claude/skills/<nome-da-subpasta>/. Se alguma já existir, me pergunte antes de substituir.
 
 Apague os arquivos temporários do download. No final, me mostre uma tabela com as skills instaladas e o que cada uma faz, e me diga como começar a usar.
 ```
 
-Depois de instalar, feche e abra o Claude de novo, ou abra uma nova conversa. O passo a passo detalhado e a solução de problemas estão em [Como instalar as skills](guias/como-instalar-skills.md).
+O passo a passo completo e a solução de problemas estão em [Como instalar as skills](guias/como-instalar-skills.md).
 
 ---
 
