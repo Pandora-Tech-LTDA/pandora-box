@@ -41,3 +41,19 @@ Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D
 - **Decisão:** a spec sempre traz um padrão visual do design system de referência (cores, tipografia, contraste, espaçamento), que a IA de código aplica quando o usuário não conecta um design system próprio. Se o usuário tiver um, ele substitui o padrão. Refina a D3.
 - **Motivo:** "ele serve para gerar alguma coisa que faça sentido mesmo sem conectar um design system. Senão você vai ter uma especificação que vai depender da estética do próprio modelo. Então a gente pelo menos garante que a leitura vai estar boa, os contrastes vão estar bons, que vai ser uma tela coerente."
 - **Alternativas descartadas:** usar o design system só na tela de referência; tirar o design system do `/sync-spec`.
+
+## D8. Plano de implementação em etapas e módulos
+- **Data:** 2026-11-19
+- **Decisão:** a spec inclui um plano de implementação em etapas e organiza o sistema em módulos. É uma versão 1, sem complexidade desnecessária, mas já com direcionamentos de segurança, eficiência e um repositório coerente.
+- **Motivo:** "é bom manter um plano de implementação e etapas e principalmente pensar em módulos; garantir que a especificação já vai trazer direcionamentos que vão trazer uma certa segurança no desenvolvimento. Não é para ser altamente complexo, porque é uma versão 1."
+- **Alternativas descartadas:** spec só com requisitos, deixando a ordem de construção para depois.
+
+## D9. Perfil de quem usa a spec e o que ela cobre
+- **Data:** 2026-11-19
+- **Decisão:** o usuário não é desenvolvedor avançado nem DevOps; ele vai colocar a spec num modelo e mandar rodar. Por isso a spec cobre o que um construtor comum não pensa sozinho: segurança (login, integração do login com outros serviços, 2FA, proteção de dados), eficiência, estrutura do repositório e modularização.
+- **Motivo:** "essa pessoa não é um DevOps, não é um desenvolvedor super avançado, ele vai só pegar essa especificação, botar dentro de um modelo e botar para rodar. A gente já tem que ter o cuidado de botar questões de segurança, de eficiência, de garantir um repositório coerente."
+
+## D10. Estilo da conversa: professoral, em blocos com saída para o padrão
+- **Data:** 2026-11-19
+- **Decisão:** o `/sync-spec` conduz a conversa em blocos temáticos (por exemplo, segurança e estética). Cada bloco começa explicando, em linguagem simples, por que aquele tema importa, e oferece uma saída: se o usuário cansar, a skill usa o padrão seguro do bloco e segue para o próximo.
+- **Motivo:** "o processo de construção desse documento tem que ser um processo professoral, quase. Eu vou falar um pouquinho de segurança com você; se você cansar, é só falar para a gente passar de segurança, que a gente usa o padrão."
