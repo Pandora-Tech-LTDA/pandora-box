@@ -1,12 +1,12 @@
 ---
 name: sync-docs
-description: Entrevista o usuário sobre um projeto ou processo e registra, durante a conversa, o glossário e as decisões em arquivos (sync/glossario.md e sync/decisoes.md). É o ponto de partida da família sync e, no fim, recomenda o próximo passo - /sync-spec para produtos com telas ou /sync-mva para automações e agentes.
+description: Entrevista o usuário sobre um projeto ou processo e registra, durante a conversa, o glossário e as decisões em arquivos (sync/glossario.md e sync/decisoes.md). É o ponto de partida da família sync e, no fim, recomenda o próximo passo - /pandora:sync-spec para produtos com telas ou /pandora:sync-mva para automações e agentes.
 disable-model-invocation: true
 ---
 
 # sync-docs
 
-Entreviste o usuário sobre o projeto dele até chegarem a um entendimento compartilhado e **registre o que for sendo resolvido**: os termos do projeto num glossário e as decisões num registro de decisões. O registro é o que permite continuar depois, em outra conversa, e é o ponto de partida do `/sync-spec` e do `/sync-mva`.
+Entreviste o usuário sobre o projeto dele até chegarem a um entendimento compartilhado e **registre o que for sendo resolvido**: os termos do projeto num glossário e as decisões num registro de decisões. O registro é o que permite continuar depois, em outra conversa, e é o ponto de partida do `/pandora:sync-spec` e do `/pandora:sync-mva`.
 
 ## O método de entrevista
 
@@ -83,7 +83,7 @@ Registre uma decisão **assim que o usuário a toma**, se ela muda o que vai ser
 
 Se uma decisão nova substitui uma antiga, não apague a antiga: marque-a como **substituída por D<n>**.
 
-Mantenha as seções **Visão**, **Em aberto**, **Suposições** e **Riscos** sempre atualizadas no topo do arquivo: é delas que o `/sync-spec` e o `/sync-mva` partem em outra conversa.
+Mantenha as seções **Visão**, **Em aberto**, **Suposições** e **Riscos** sempre atualizadas no topo do arquivo: é delas que o `/pandora:sync-spec` e o `/pandora:sync-mva` partem em outra conversa.
 
 Sem arquivos, mantenha os dois registros no chat e mostre a versão atualizada a cada duas ou três rodadas, para o usuário não perder nada.
 
@@ -94,9 +94,9 @@ Siga o encerramento do método: resumo do entendimento, confirmação do usuári
 1. Mostre o glossário e as decisões finais. Sem arquivos, entregue os dois num bloco pronto para copiar e salvar, com o nome de cada arquivo.
 2. Liste as **perguntas em aberto** e o que **precisa de protótipo**.
 3. **Recomende o próximo passo**, com o motivo em uma frase:
-   - **`/sync-spec`** quando o projeto é um **produto ou sistema com telas**, com pessoas usando, que vai ser desenvolvido. Ele gera a spec para uma IA de código construir.
-   - **`/sync-mva`** quando é uma **automação ou um agente** que trabalha sobre documentos e dados, sem telas próprias, e o objetivo é testar o valor rápido.
-   - **Os dois**, quando a automação depois vira produto: o `/sync-mva` primeiro, para provar o valor, e o `/sync-spec` depois, para construir direito.
+   - **`/pandora:sync-spec`** quando o projeto é um **produto ou sistema com telas**, com pessoas usando, que vai ser desenvolvido. Ele gera a spec para uma IA de código construir.
+   - **`/pandora:sync-mva`** quando é uma **automação ou um agente** que trabalha sobre documentos e dados, sem telas próprias, e o objetivo é testar o valor rápido.
+   - **Os dois**, quando a automação depois vira produto: o `/pandora:sync-mva` primeiro, para provar o valor, e o `/pandora:sync-spec` depois, para construir direito.
 
    A escolha é do usuário. Se ele não souber, explique a diferença em duas linhas e pergunte.
 

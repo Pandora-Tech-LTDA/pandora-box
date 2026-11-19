@@ -1,4 +1,4 @@
-# /sync-docs
+# /pandora:sync-docs
 
 **Português** · [English](#english)
 
@@ -6,7 +6,7 @@
 
 ## O que é
 
-O `/sync-docs` faz a mesma entrevista do `/sync-me`, mas começa pelo processo e pelo problema e **registra durante a conversa** o vocabulário do projeto (glossário) e as decisões, com o motivo de cada uma. Esse registro permite continuar em outra conversa e é a base do `/sync-spec` e do `/sync-mva`. No fim, recomenda qual dos dois seguir.
+O `/pandora:sync-docs` faz a mesma entrevista do `/pandora:sync-me`, mas começa pelo processo e pelo problema e **registra durante a conversa** o vocabulário do projeto (glossário) e as decisões, com o motivo de cada uma. Esse registro permite continuar em outra conversa e é a base do `/pandora:sync-spec` e do `/pandora:sync-mva`. No fim, recomenda qual dos dois seguir.
 
 ## Quando usar
 
@@ -14,14 +14,14 @@ O `/sync-docs` faz a mesma entrevista do `/sync-me`, mas começa pelo processo e
 - Quer que as decisões fiquem registradas, com o motivo.
 - Vai continuar o projeto em outra conversa ou passar para outra pessoa.
 
-**Quando não usar:** Só quer pensar uma ideia, sem registro: use o `/sync-me`.
+**Quando não usar:** Só quer pensar uma ideia, sem registro: use o `/pandora:sync-me`.
 
 ## Como usar
 
-Abra o Claude numa pasta de projeto (Cowork ou Claude Code), digite `/sync-docs` (ou `/pandora:sync-docs`) e descreva o projeto. Sem pasta de projeto, o registro fica no chat.
+Abra o Claude numa pasta de projeto (Cowork ou Claude Code), digite `/pandora:sync-docs` e descreva o projeto. Sem pasta de projeto, o registro fica no chat.
 
 ```
-/sync-docs quero automatizar a análise de frequência dos funcionários da unidade
+/pandora:sync-docs quero automatizar a análise de frequência dos funcionários da unidade
 ```
 
 Instalação: veja [Como instalar as skills](../../../guias/como-instalar-skills.md).
@@ -42,11 +42,11 @@ Instalação: veja [Como instalar as skills](../../../guias/como-instalar-skills
 
 - `sync/glossario.md`: os termos do projeto e o que significam.
 - `sync/decisoes.md`: cada decisão com data, motivo, alternativas descartadas e discordâncias.
-- A recomendação do próximo passo: `/sync-spec` ou `/sync-mva`.
+- A recomendação do próximo passo: `/pandora:sync-spec` ou `/pandora:sync-mva`.
 
 ## Próximo passo
 
-`/sync-spec` para um produto com telas; `/sync-mva` para uma automação ou um agente.
+`/pandora:sync-spec` para um produto com telas; `/pandora:sync-mva` para uma automação ou um agente.
 
 ## Créditos
 
@@ -56,15 +56,15 @@ Derivada da skill `grill-with-docs` de Matt Pocock ([mattpocock/skills](https://
 
 <a id="english"></a>
 
-# /sync-docs
+# /pandora:sync-docs
 
-**English** · [Português](#sync-docs)
+**English** · [Português](#pandorasync-docs)
 
 **Understand and document a project. Start here.**
 
 ## What it is
 
-`/sync-docs` runs the same interview as `/sync-me`, but starts from the process and the problem and **records during the conversation** the project's vocabulary (glossary) and decisions, each with its reason. That record lets you continue in another conversation and is the base for `/sync-spec` and `/sync-mva`. At the end, it recommends which one to follow.
+`/pandora:sync-docs` runs the same interview as `/pandora:sync-me`, but starts from the process and the problem and **records during the conversation** the project's vocabulary (glossary) and decisions, each with its reason. That record lets you continue in another conversation and is the base for `/pandora:sync-spec` and `/pandora:sync-mva`. At the end, it recommends which one to follow.
 
 ## When to use
 
@@ -72,14 +72,14 @@ Derivada da skill `grill-with-docs` de Matt Pocock ([mattpocock/skills](https://
 - You want decisions recorded, with reasons.
 - You will continue in another conversation or hand the project to someone.
 
-**When not to use:** You only want to think an idea through, without a record: use `/sync-me`.
+**When not to use:** You only want to think an idea through, without a record: use `/pandora:sync-me`.
 
 ## How to use
 
-Open Claude in a project folder (Cowork or Claude Code), type `/sync-docs` (or `/pandora:sync-docs`) and describe the project. Without a project folder, the record stays in the chat.
+Open Claude in a project folder (Cowork or Claude Code), type `/pandora:sync-docs` and describe the project. Without a project folder, the record stays in the chat.
 
 ```
-/sync-docs I want to automate the employee attendance analysis for our unit
+/pandora:sync-docs I want to automate the employee attendance analysis for our unit
 ```
 
 Installation: see [How to install the skills](../../../guias/como-instalar-skills.md#english).
@@ -100,11 +100,11 @@ Installation: see [How to install the skills](../../../guias/como-instalar-skill
 
 - `sync/glossario.md`: the project's terms and what they mean.
 - `sync/decisoes.md`: each decision with date, reason, discarded alternatives and disagreements.
-- A recommended next step: `/sync-spec` or `/sync-mva`.
+- A recommended next step: `/pandora:sync-spec` or `/pandora:sync-mva`.
 
 ## Next step
 
-`/sync-spec` for a product with screens; `/sync-mva` for an automation or agent.
+`/pandora:sync-spec` for a product with screens; `/pandora:sync-mva` for an automation or agent.
 
 ## Credits
 

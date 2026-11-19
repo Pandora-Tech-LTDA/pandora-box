@@ -1,4 +1,4 @@
-# /syncdb
+# /pandora:syncdb
 
 **Português** · [English](#english)
 
@@ -6,22 +6,22 @@
 
 ## O que é
 
-O `/syncdb` cria bases de dados **sintéticas**: fictícias, mas com a mesma estrutura, os mesmos formatos e o mesmo comportamento dos dados reais. Lê um arquivo de exemplo (planilha Excel, CSV, JSON, tabela em PDF) ou uma descrição, e nunca copia valores reais.
+O `/pandora:syncdb` cria bases de dados **sintéticas**: fictícias, mas com a mesma estrutura, os mesmos formatos e o mesmo comportamento dos dados reais. Lê um arquivo de exemplo (planilha Excel, CSV, JSON, tabela em PDF) ou uma descrição, e nunca copia valores reais.
 
 ## Quando usar
 
 - Você precisa testar um agente, uma automação ou um sistema sem usar dados de pessoas ou da empresa.
 - Quer dados com casos difíceis (faltas, duplicados, campos vazios) para ver se a solução aguenta.
-- O `/sync-mva` precisa dos documentos de referência de um MVA (ele chama o `/syncdb` sozinho).
+- O `/pandora:sync-mva` precisa dos documentos de referência de um MVA (ele chama o `/pandora:syncdb` sozinho).
 
 **Quando não usar:** Para análise de dados reais, não é esta skill.
 
 ## Como usar
 
-Digite `/syncdb` (ou `/pandora:syncdb`) e anexe um arquivo de exemplo, ou descreva os dados.
+Digite `/pandora:syncdb` e anexe um arquivo de exemplo, ou descreva os dados.
 
 ```
-/syncdb gere uma planilha de frequência de 40 funcionários para outubro, com uns 5% de atrasos (anexo a planilha real como exemplo)
+/pandora:syncdb gere uma planilha de frequência de 40 funcionários para outubro, com uns 5% de atrasos (anexo a planilha real como exemplo)
 ```
 
 Instalação: veja [Como instalar as skills](../../../guias/como-instalar-skills.md).
@@ -54,30 +54,30 @@ Segue o protocolo de contexto sintético da metodologia MVA, ©2026 Pandora Tech
 
 <a id="english"></a>
 
-# /syncdb
+# /pandora:syncdb
 
-**English** · [Português](#syncdb)
+**English** · [Português](#pandorasyncdb)
 
 **Realistic test data without exposing real data.**
 
 ## What it is
 
-`/syncdb` creates **synthetic** datasets: fictional, but with the same structure, formats and behavior as real data. It reads a sample file (Excel sheet, CSV, JSON, a table in a PDF) or a description, and never copies real values.
+`/pandora:syncdb` creates **synthetic** datasets: fictional, but with the same structure, formats and behavior as real data. It reads a sample file (Excel sheet, CSV, JSON, a table in a PDF) or a description, and never copies real values.
 
 ## When to use
 
 - You need to test an agent, automation or system without using personal or company data.
 - You want data with hard cases (absences, duplicates, empty fields) to see if the solution holds.
-- `/sync-mva` needs an MVA's reference documents (it calls `/syncdb` on its own).
+- `/pandora:sync-mva` needs an MVA's reference documents (it calls `/pandora:syncdb` on its own).
 
 **When not to use:** For analyzing real data, this is not the skill.
 
 ## How to use
 
-Type `/syncdb` (or `/pandora:syncdb`) and attach a sample file, or describe the data.
+Type `/pandora:syncdb` and attach a sample file, or describe the data.
 
 ```
-/syncdb generate an attendance sheet for 40 employees in October, with about 5% late arrivals (I'm attaching the real sheet as a sample)
+/pandora:syncdb generate an attendance sheet for 40 employees in October, with about 5% late arrivals (I'm attaching the real sheet as a sample)
 ```
 
 Installation: see [How to install the skills](../../../guias/como-instalar-skills.md#english).

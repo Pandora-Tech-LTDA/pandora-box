@@ -1,4 +1,4 @@
-# /sync-spec
+# /pandora:sync-spec
 
 **Português** · [English](#english)
 
@@ -6,7 +6,7 @@
 
 ## O que é
 
-O `/sync-spec` transforma o registro do `/sync-docs` na **spec** de um produto ou sistema com telas: propósito, estado de pronto, usuários e acesso, segurança e dados, telas e fluxos, arquitetura, padrão visual e um plano de etapas. Foi pensado para quem não é desenvolvedor experiente e vai entregar a spec a um modelo: conduz a conversa em blocos, explica por que cada tema importa e, se você cansar, aplica um padrão seguro.
+O `/pandora:sync-spec` transforma o registro do `/pandora:sync-docs` na **spec** de um produto ou sistema com telas: propósito, estado de pronto, usuários e acesso, segurança e dados, telas e fluxos, arquitetura, padrão visual e um plano de etapas. Foi pensado para quem não é desenvolvedor experiente e vai entregar a spec a um modelo: conduz a conversa em blocos, explica por que cada tema importa e, se você cansar, aplica um padrão seguro.
 
 ## Quando usar
 
@@ -14,14 +14,14 @@ O `/sync-spec` transforma o registro do `/sync-docs` na **spec** de um produto o
 - Você vai pedir a uma IA de código (Claude Code, Codex ou outra) para construir.
 - Quer começar com login, permissões, dados e organização do código bem resolvidos.
 
-**Quando não usar:** Se é uma automação ou um agente sem telas, use o `/sync-mva`. Se o problema ainda não está claro, rode o `/sync-docs` antes.
+**Quando não usar:** Se é uma automação ou um agente sem telas, use o `/pandora:sync-mva`. Se o problema ainda não está claro, rode o `/pandora:sync-docs` antes.
 
 ## Como usar
 
-Na mesma pasta do `/sync-docs`, digite `/sync-spec` (ou `/pandora:sync-spec`). Ele lê `sync/glossario.md` e `sync/decisoes.md` e pergunta só o que falta.
+Na mesma pasta do `/pandora:sync-docs`, digite `/pandora:sync-spec`. Ele lê `sync/glossario.md` e `sync/decisoes.md` e pergunta só o que falta.
 
 ```
-/sync-spec
+/pandora:sync-spec
 ```
 
 Instalação: veja [Como instalar as skills](../../../guias/como-instalar-skills.md).
@@ -59,15 +59,15 @@ Ideias de `to-spec` (Matt Pocock, MIT), `wireframes` (ba-toolkit, MIT) e `aidlc-
 
 <a id="english"></a>
 
-# /sync-spec
+# /pandora:sync-spec
 
-**English** · [Português](#sync-spec)
+**English** · [Português](#pandorasync-spec)
 
 **The spec a coding AI needs to build your system safely.**
 
 ## What it is
 
-`/sync-spec` turns the `/sync-docs` record into the **spec** for a product or system with screens: purpose, done state, users and access, security and data, screens and flows, architecture, visual standard and a step-by-step plan. It is made for people who are not experienced developers and will hand the spec to a model: it walks through topics, explains why each one matters and, if you get tired, applies a safe default.
+`/pandora:sync-spec` turns the `/pandora:sync-docs` record into the **spec** for a product or system with screens: purpose, done state, users and access, security and data, screens and flows, architecture, visual standard and a step-by-step plan. It is made for people who are not experienced developers and will hand the spec to a model: it walks through topics, explains why each one matters and, if you get tired, applies a safe default.
 
 ## When to use
 
@@ -75,14 +75,14 @@ Ideias de `to-spec` (Matt Pocock, MIT), `wireframes` (ba-toolkit, MIT) e `aidlc-
 - You will ask a coding AI (Claude Code, Codex or another) to build it.
 - You want login, permissions, data and code organization sorted out from the start.
 
-**When not to use:** If it is an automation or agent without screens, use `/sync-mva`. If the problem is not clear yet, run `/sync-docs` first.
+**When not to use:** If it is an automation or agent without screens, use `/pandora:sync-mva`. If the problem is not clear yet, run `/pandora:sync-docs` first.
 
 ## How to use
 
-In the same folder as `/sync-docs`, type `/sync-spec` (or `/pandora:sync-spec`). It reads `sync/glossario.md` and `sync/decisoes.md` and only asks what is missing.
+In the same folder as `/pandora:sync-docs`, type `/pandora:sync-spec`. It reads `sync/glossario.md` and `sync/decisoes.md` and only asks what is missing.
 
 ```
-/sync-spec
+/pandora:sync-spec
 ```
 
 Installation: see [How to install the skills](../../../guias/como-instalar-skills.md#english).

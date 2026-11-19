@@ -1,6 +1,6 @@
 # Resumo dos temas para a spec
 
-O `/sync-spec` copia para a spec o bloco do tema escolhido, sem alterar. Assim a IA de código aplica o padrão visual mesmo sem abrir o link. Ao mudar de versão o design system, este arquivo muda junto.
+O `/pandora:sync-spec` copia para a spec o bloco do tema escolhido, sem alterar. Assim a IA de código aplica o padrão visual mesmo sem abrir o link. Ao mudar de versão o design system, este arquivo muda junto.
 
 ## Pandora Claro
 

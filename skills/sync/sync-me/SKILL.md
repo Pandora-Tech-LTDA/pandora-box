@@ -1,6 +1,6 @@
 ---
 name: sync-me
-description: Entrevista o usuário sobre um projeto, plano ou ideia até os dois chegarem a um entendimento compartilhado. Começa pela visão do usuário, pergunta só o que sustenta essa visão e incentiva o usuário a questionar em vez de só concordar. Use quando o usuário quiser testar, clarear ou amadurecer uma ideia ou projeto, quando ele chamar /sync-me, ou quando /sync-docs, /sync-spec ou /sync-mva pedirem o método de entrevista.
+description: Entrevista o usuário sobre um projeto, plano ou ideia até os dois chegarem a um entendimento compartilhado. Começa pela visão do usuário, pergunta só o que sustenta essa visão e incentiva o usuário a questionar em vez de só concordar. Use quando o usuário quiser testar, clarear ou amadurecer uma ideia ou projeto, quando ele chamar /pandora:sync-me, ou quando /pandora:sync-docs, /pandora:sync-spec ou /pandora:sync-mva pedirem o método de entrevista.
 ---
 
 # sync-me
@@ -97,7 +97,7 @@ Perguntas que só se respondem vendo algo funcionar ("como essa tela deve ficar?
 - **o que precisa de protótipo**;
 - **termos** do projeto e o que significam.
 
-As skills que usam o `sync-me` como método (`/sync-docs`, `/sync-spec`, `/sync-mva`) usam essa lista para gerar o que entregam.
+As skills que usam o `sync-me` como método (`/pandora:sync-docs`, `/pandora:sync-spec`, `/pandora:sync-mva`) usam essa lista para gerar o que entregam.
 
 ## 9. Fechamento
 
@@ -107,12 +107,12 @@ Ao fechar:
 
 1. Mostre o resumo: a visão, as decisões, as suposições e o que ficou em aberto.
 2. Se houver riscos anotados e ainda não analisados, ofereça analisá-los.
-3. Pergunte se o usuário concorda que vocês chegaram lá. **Não construa, escreva ou gere nada antes da confirmação.** A exceção é o registro que a skill que te chamou mantém durante a conversa (por exemplo, o glossário e as decisões do `/sync-docs`): ele não é construção, é anotação.
+3. Pergunte se o usuário concorda que vocês chegaram lá. **Não construa, escreva ou gere nada antes da confirmação.** A exceção é o registro que a skill que te chamou mantém durante a conversa (por exemplo, o glossário e as decisões do `/pandora:sync-docs`): ele não é construção, é anotação.
 
 Depois da confirmação:
 
-- **Se outra skill te chamou** (`/sync-docs`, `/sync-spec`, `/sync-mva`), ela define o que acontece em seguida.
-- **Se o usuário chamou o `/sync-me` diretamente**, entregue no chat, sem gravar arquivos: a visão, as decisões (com motivo), as suposições, as discordâncias, as perguntas em aberto, os riscos e o que precisa de protótipo. Termine perguntando o que ele quer fazer agora e, se o projeto for seguir, sugira o `/sync-docs`.
+- **Se outra skill te chamou** (`/pandora:sync-docs`, `/pandora:sync-spec`, `/pandora:sync-mva`), ela define o que acontece em seguida.
+- **Se o usuário chamou o `/pandora:sync-me` diretamente**, entregue no chat, sem gravar arquivos: a visão, as decisões (com motivo), as suposições, as discordâncias, as perguntas em aberto, os riscos e o que precisa de protótipo. Termine perguntando o que ele quer fazer agora e, se o projeto for seguir, sugira o `/pandora:sync-docs`.
 
 ---
 

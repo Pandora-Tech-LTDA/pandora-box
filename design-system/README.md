@@ -2,7 +2,7 @@
 
 **Português** · [English](#english)
 
-O design system de referência da Pandora Box: simples, moderno e pensado para experimentos. Ele garante telas legíveis, com bom contraste e coerentes entre si quando o projeto ainda não tem um design system próprio. É o padrão visual que o `/sync-spec` aplica nas specs.
+O design system de referência da Pandora Box: simples, moderno e pensado para experimentos. Ele garante telas legíveis, com bom contraste e coerentes entre si quando o projeto ainda não tem um design system próprio. É o padrão visual que o `/pandora:sync-spec` aplica nas specs.
 
 > **Versão:** v1.1 · **Licença:** MIT · ©2026 Pandora Tech LTDA
 
@@ -36,7 +36,7 @@ Os componentes usam classes com o prefixo `ds-`, por exemplo `ds-btn ds-btn--pri
 |---|---|
 | [`pandora.css`](pandora.css) | Tokens, os quatro temas e os componentes |
 | [`tokens.json`](tokens.json) | Os mesmos tokens em JSON, para outras ferramentas |
-| [`resumo-para-spec.md`](resumo-para-spec.md) | O resumo de cada tema que o `/sync-spec` coloca na spec |
+| [`resumo-para-spec.md`](resumo-para-spec.md) | O resumo de cada tema que o `/pandora:sync-spec` coloca na spec |
 | [`exemplo.html`](exemplo.html) | Cores e componentes básicos |
 | [`exemplos/perfil.html`](exemplos/perfil.html) | Uma página de perfil completa |
 | [`exemplos/componentes.html`](exemplos/componentes.html) | Componentes menos comuns: indicadores, etapas, arraste de arquivo, linha do tempo, acordeão e outros |
@@ -47,7 +47,7 @@ Botões, campos, seleção, área de texto, caixa de seleção, interruptor, car
 
 ## Trocar pelo seu design system
 
-O Pandora DS é só o ponto de partida. Para usar o seu, troque a folha de estilo e os valores do resumo na spec pelos do seu design system. O `/sync-spec` faz essa troca quando você pede.
+O Pandora DS é só o ponto de partida. Para usar o seu, troque a folha de estilo e os valores do resumo na spec pelos do seu design system. O `/pandora:sync-spec` faz essa troca quando você pede.
 
 ---
 
@@ -57,7 +57,7 @@ O Pandora DS é só o ponto de partida. Para usar o seu, troque a folha de estil
 
 **English** · [Português](#pandora-ds)
 
-Pandora Box's reference design system: simple, modern and made for experiments. It keeps screens readable, with good contrast and consistent with each other, when a project has no design system of its own. It is the visual default `/sync-spec` applies to specs.
+Pandora Box's reference design system: simple, modern and made for experiments. It keeps screens readable, with good contrast and consistent with each other, when a project has no design system of its own. It is the visual default `/pandora:sync-spec` applies to specs.
 
 > **Version:** v1.1 · **License:** MIT · ©2026 Pandora Tech LTDA
 
@@ -68,4 +68,4 @@ Themes: **Pandora Claro** (light, default), **Pandora Escuro** (dark), **Neutro*
 <html data-theme="claro">
 ```
 
-Components use `ds-` classes. See [`exemplo.html`](exemplo.html), [`exemplos/perfil.html`](exemplos/perfil.html) and [`exemplos/componentes.html`](exemplos/componentes.html). To use your own design system, replace the stylesheet and the summary values in the spec; `/sync-spec` does this when you ask.
+Components use `ds-` classes. See [`exemplo.html`](exemplo.html), [`exemplos/perfil.html`](exemplos/perfil.html) and [`exemplos/componentes.html`](exemplos/componentes.html). To use your own design system, replace the stylesheet and the summary values in the spec; `/pandora:sync-spec` does this when you ask.

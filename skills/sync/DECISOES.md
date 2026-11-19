@@ -66,6 +66,8 @@
 - **Revisão pós-auditoria (plugin 0.3.1):** registro do `/sync-docs` com seções Visão, Em aberto, Suposições e Riscos; contradições entre `sync-me`, `sync-docs` e `sync-mva` resolvidas; eficiência no `/sync-spec`; Pandora DS v1.1 com contraste corrigido; `sync-me` na versão 0.2 nas páginas.
 - **Licença do MVA:** o material da metodologia MVA (`skills/sync/references/mva/`) é © Pandora Tech LTDA, sob **CC BY-NC 4.0** (uso não comercial, com crédito). As skills (texto e código) seguem MIT; o restante do conteúdo do repositório, CC BY 4.0.
 
+- **Nome dos comandos na documentação:** sempre com o prefixo do plugin, `/pandora:sync-me`, `/pandora:sync-docs`, `/pandora:sync-spec`, `/pandora:sync-mva` e `/pandora:syncdb`. O guia de instalação explica que, nas skills avulsas, o comando fica sem o prefixo.
+
 ## Em aberto
 
 - Testar a `/sync-spec` num projeto real e ajustar.

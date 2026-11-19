@@ -10,14 +10,14 @@ Ajude o usuário a montar um **MVA (Minimum Viable Automation)**: a menor automa
 
 O resultado é um **pacote**: o prompt do agente com autoteste, os documentos de referência e um manual para montar o agente no Cowork.
 
-## 1. Encontrar o registro do `/sync-docs`
+## 1. Encontrar o registro do `/pandora:sync-docs`
 
-O `/sync-mva` parte do que o `/sync-docs` registrou. Procure, nesta ordem:
+O `/pandora:sync-mva` parte do que o `/pandora:sync-docs` registrou. Procure, nesta ordem:
 
 1. o registro na **conversa atual**;
 2. os arquivos **`sync/glossario.md`** e **`sync/decisoes.md`** na pasta de trabalho;
 3. peça ao usuário que **cole ou anexe** o registro;
-4. se não existir registro, recomende rodar o **`/sync-docs`** antes, explicando em uma frase por quê: o MVA fica melhor quando o problema já está claro. Se o usuário preferir seguir mesmo assim, siga, mas comece pelas perguntas do problema.
+4. se não existir registro, recomende rodar o **`/pandora:sync-docs`** antes, explicando em uma frase por quê: o MVA fica melhor quando o problema já está claro. Se o usuário preferir seguir mesmo assim, siga, mas comece pelas perguntas do problema.
 
 ## 2. Diagnosticar as lacunas
 
@@ -38,7 +38,7 @@ Não pergunte o que já está identificado.
 
 ## 3. Entrevistar só o que falta
 
-Carregue a skill **`sync-me`** e siga o método dela. A visão já está no registro do `/sync-docs` (seção Visão): devolva-a em um parágrafo em vez de perguntar de novo.
+Carregue a skill **`sync-me`** e siga o método dela. A visão já está no registro do `/pandora:sync-docs` (seção Visão): devolva-a em um parágrafo em vez de perguntar de novo.
 
 Se não conseguir carregar o `sync-me`, aplique estas regras mínimas:
 
