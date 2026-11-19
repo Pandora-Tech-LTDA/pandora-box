@@ -4,58 +4,59 @@
 
 <br>
 
-**A caixa de conhecimento aberto da Pandora Tech.**<br>
-Skills, MCPs, guias e prompts para qualquer pessoa usar, do primeiro passo ao avançado.
+**A caixa de conhecimento aberto da Pandora.**<br>
+Skills, MCPs, guias e prompts para trabalhar com IA com critério, do primeiro passo ao uso avançado.
 
 <br>
 
 [![Licença do código: MIT](https://img.shields.io/badge/c%C3%B3digo-MIT-7024AE?style=flat-square)](LICENSE)
 [![Licença do conteúdo: CC BY 4.0](https://img.shields.io/badge/conte%C3%BAdo-CC%20BY%204.0-7024AE?style=flat-square)](LICENSE-CONTEUDO.md)
 [![Idioma: português do Brasil](https://img.shields.io/badge/idioma-pt--BR-161018?style=flat-square)](#)
-[![Contribuições bem-vindas](https://img.shields.io/badge/contribui%C3%A7%C3%B5es-bem--vindas-161018?style=flat-square)](CONTRIBUTING.md)
+[![Contribuições abertas](https://img.shields.io/badge/contribui%C3%A7%C3%B5es-abertas-161018?style=flat-square)](CONTRIBUTING.md)
 
-[**⚡ Instalar as skills**](#-instalação-rápida) · [**🧰 O que tem aqui**](#-ferramentas-e-skills-disponíveis) · [**🚀 Por onde começar**](#-por-onde-começar) · [**🤝 Contribuir**](#-contribuindo)
+[Produtos](#produtos) · [Instalação rápida](#instalação-rápida) · [Organização](#como-o-repositório-está-organizado) · [Contribuir](#contribuir)
 
 </div>
 
 ---
 
-## 📦 Por que Pandora Box?
+## Por que Pandora Box
 
-No mito grego, Pandora abre uma caixa e tudo o que estava lá dentro se espalha pelo mundo.
-Só uma coisa fica guardada no fundo: **a esperança**.
+No mito, Pandora abre a caixa e tudo o que havia dentro se espalha pelo mundo. Só a esperança fica guardada no fundo.
 
-Aqui a caixa é aberta de propósito. O que sai dela é **conhecimento**: tudo o que aprendemos
-construindo com IA, organizado para que qualquer pessoa possa usar. E o que fica guardado no
-fundo, dentro do repositório, é a nossa esperança: **que cada vez mais pessoas abram a caixa também.**
+Aqui a caixa é aberta de propósito. O que sai dela é conhecimento: o que a Pandora aprende construindo com IA, organizado para que qualquer pessoa possa aplicar no próprio trabalho. O que fica guardado, dentro deste repositório, é a esperança de que mais pessoas abram a caixa também.
 
-Tudo aqui é aberto: leia, copie, adapte e use nos seus projetos.
+Todo o material é aberto. Leia, copie, adapte e use, citando a fonte.
 
-## 🗺️ Como navegar
+---
 
-| Seção | O que você encontra |
-|---|---|
-| [`mcps/`](mcps/) | Servidores MCP (Model Context Protocol) que desenvolvi, com instruções de instalação e uso |
-| [`skills/`](skills/) | Skills para Claude e outros agentes — instruções empacotadas para tarefas recorrentes |
-| [`guias/`](guias/) | Tutoriais passo a passo, do básico ao avançado |
-| [`dicas/`](dicas/) | Dicas rápidas, atalhos e boas práticas — leitura de 2 minutos |
-| [`prompts/`](prompts/) | Prompts prontos e testados para copiar e adaptar |
-| [`recursos/`](recursos/) | Links, ferramentas, cursos e referências que recomendo |
+## Produtos
 
-## 🧰 Ferramentas e skills disponíveis
+<a href="skills/sync/"><img src="assets/banner-sync.png" alt="Sync. A IA pergunta. Você decide. Uma família de skills que entrevista você sobre o seu projeto até haver entendimento compartilhado e, no fim, entrega o material para montar o seu MVA." width="100%"></a>
 
-| Nome | Tipo | Para que serve | Status |
-|---|---|---|---|
-| [Família `sync`](skills/sync/) | Skills | Entrevistas guiadas para você entender, documentar e montar o próprio projeto, até um MVA pronto para usar no Claude | 🚧 Em construção |
-| ↳ `/sync-me` | Skill | Conversa livre que questiona a sua ideia até ela ficar clara. Não grava arquivos. | 🚧 |
-| ↳ `/sync-docs` | Skill | Mesma conversa, registrando glossário e decisões do projeto. **Comece por aqui.** | 🚧 |
-| ↳ `/sync-mva` | Skill | Monta um MVA a partir do `/sync-docs`: prompt do agente com testes, documentos e manual de montagem no Cowork | 🚧 |
-| ↳ `/syncdb` | Skill | Gera bases de dados sintéticas (CSV ou Markdown) a partir de um arquivo de exemplo | 🚧 |
-| ↳ [`syncing`](skills/sync/syncing/) | Skill (interna) | O método de entrevista usado pelas outras. Você não precisa chamá-la. | 🧪 v0.1 |
+### Sync
 
-### ⚡ Instalação rápida
+**Skills para o Claude que entrevistam você sobre o seu projeto antes de qualquer linha ser escrita.**
 
-Copie o prompt abaixo e cole no **Claude Code** ou no **Claude Cowork**. O próprio Claude baixa e instala as skills para você.
+A maioria dos projetos com IA começa pela ferramenta. O Sync começa pelas perguntas: o que você quer resolver, para quem, com quais dados e com qual critério de sucesso. A IA pergunta em rodadas, sugere e mostra o custo de cada sugestão. As decisões ficam com você, e um "sim" sem motivo não fecha nenhuma delas.
+
+No fim, você sai com o projeto documentado e, se quiser, com o material para montar um MVA no Claude: o prompt do agente com testes, os documentos de referência e o manual de montagem.
+
+| Skill | O que faz | Situação |
+|---|---|---|
+| `/sync-docs` | Entrevista sobre o projeto e registra glossário e decisões. **Ponto de partida.** | Em construção |
+| `/sync-mva` | Monta o MVA a partir do que o `/sync-docs` registrou | Em construção |
+| `/syncdb` | Gera bases de dados sintéticas em CSV ou Markdown a partir de um arquivo de exemplo | Em construção |
+| `/sync-me` | Entrevista livre sobre uma ideia, sem gerar arquivos | Em construção |
+| [`syncing`](skills/sync/syncing/) | O método de entrevista usado pelas outras skills | v0.1, em teste |
+
+[Conhecer o Sync ↗](skills/sync/) · [Instalar](#instalação-rápida)
+
+---
+
+## Instalação rápida
+
+Copie o prompt abaixo e cole no **Claude Code** ou no **Claude Cowork**. O próprio Claude baixa e instala as skills.
 
 ```text
 Instale para mim as skills da família "sync" do repositório público https://github.com/Pandora-Tech-LTDA/pandora-box (branch main, pasta skills/sync).
@@ -68,21 +69,32 @@ Cada subpasta de skills/sync que tem um arquivo SKILL.md é uma skill. Ignore a 
 Apague os arquivos temporários do download. No final, me mostre uma tabela com as skills instaladas e o que cada uma faz, e me diga como começar a usar.
 ```
 
-Depois de instalar, **feche e abra o Claude de novo** (ou abra uma nova conversa). Passo a passo detalhado e solução de problemas: [Como instalar as skills](guias/como-instalar-skills.md).
+Depois de instalar, feche e abra o Claude de novo, ou abra uma nova conversa. O passo a passo detalhado e a solução de problemas estão em [Como instalar as skills](guias/como-instalar-skills.md).
 
-## 🚀 Por onde começar
+---
 
-- **Nunca usou MCP?** Comece por [`guias/o-que-e-mcp.md`](guias/o-que-e-mcp.md).
-- **Quer instalar uma MCP específica?** Veja a lista em [`mcps/`](mcps/).
-- **Quer usar uma skill?** Veja o guia [Como instalar as skills](guias/como-instalar-skills.md) e o catálogo em [`skills/`](skills/).
+## Como o repositório está organizado
 
-## 🤝 Contribuindo
+| Pasta | Conteúdo |
+|---|---|
+| [`skills/`](skills/) | Skills para o Claude: instruções empacotadas para tarefas recorrentes |
+| [`mcps/`](mcps/) | Servidores MCP (Model Context Protocol), com instalação e uso |
+| [`guias/`](guias/) | Tutoriais passo a passo, do básico ao avançado |
+| [`dicas/`](dicas/) | Dicas curtas e boas práticas |
+| [`prompts/`](prompts/) | Prompts testados, prontos para adaptar |
+| [`recursos/`](recursos/) | Ferramentas, leituras e referências recomendadas |
 
-Encontrou um erro, tem uma dúvida ou uma sugestão? Abra uma
-[issue](../../issues/new/choose). Quer contribuir com conteúdo? Leia o
-[CONTRIBUTING.md](CONTRIBUTING.md).
+**Por onde começar.** Se você nunca usou uma skill, siga [Como instalar as skills](guias/como-instalar-skills.md). Se nunca ouviu falar de MCP, leia [O que é MCP](guias/o-que-e-mcp.md).
 
-## ⚖️ Licença
+---
 
-- **Código** (MCPs, scripts, exemplos): [MIT](LICENSE)
-- **Conteúdo** (textos, guias, dicas): [CC BY 4.0](LICENSE-CONTEUDO.md) — use à vontade, citando a fonte.
+## Contribuir
+
+Encontrou um erro, tem uma dúvida ou quer sugerir um conteúdo? Abra uma [issue](../../issues/new/choose). Para contribuir com material, leia o [guia de contribuição](CONTRIBUTING.md).
+
+## Licença
+
+- **Código** (MCPs, scripts e exemplos): [MIT](LICENSE).
+- **Conteúdo** (textos, guias e dicas): [CC BY 4.0](LICENSE-CONTEUDO.md). Use à vontade, citando a fonte.
+
+<sub>©2026 Pandora Tech LTDA</sub>

@@ -1,4 +1,9 @@
-# Fonte do banner
+# Fonte dos banners
+
+- `banner.html` gera `../banner.png` (página principal).
+- `banner-sync.html` gera `../banner-sync.png` (produto Sync).
+- Para um produto novo, copie `banner-sync.html`, troque selo, título, texto e o elemento gráfico (um só por peça: cubo, anel, arco, marca de + ou coluna de pontos).
+
 
 `banner.html` gera `../banner.png` (1280×440, renderizado a 2×) seguindo o design system da Pandora:
 fundo `#0A0A0B`, luz roxa de um canto, malha de pontos de 34px, Instrument Sans + Newsreader itálico,
