@@ -22,9 +22,12 @@
 - **Resposta recomendada:** aparece por padrão, e o aluno tem a opção de escondê-la, para responder sem ver a sugestão da IA.
 - **`/sync-mva` usa as etapas 3 a 5 do MVA** (modelagem → hipótese → contexto) como árvore de decisões. Referência principal: `references/mva/templates/agente-construtor-mva-v0.1.md`.
 - **Pacote do `/sync-mva` (v1):**
-  - o prompt do agente, já com teste automatizado;
+  - o prompt do agente, já com teste automatizado: alguns casos de teste (entrada + saída esperada) que o próprio agente executa para se avaliar antes de começar a trabalhar;
   - os documentos de referência (gerados com o `syncdb` quando forem dados sintéticos);
   - um manual de como montar o agente no Cowork.
+- **Formato dos dados do `syncdb`:** a saída é sempre CSV ou Markdown, qualquer que seja o formato de entrada. Nunca Excel, Docs, PDF etc.
+- **Entregável do `/sync-me`:** um resumo no chat ao final, com decisões tomadas, pontos de discordância do aluno, perguntas que ficaram sem resposta e o que só um protótipo resolve. Não grava arquivos.
+- **Fatos:** como no `grilling`, a IA pesquisa os fatos sozinha, mas explica ao aluno o que encontrou e onde.
 - **`syncdb` também pode ser invocada pelo modelo**, além de pelo aluno (`/syncdb`) e pelo `/sync-mva`.
 - **Passagem do `/sync-docs` para o `/sync-mva`:** funciona em qualquer ambiente, com ou sem repositório.
   - **Registro do `/sync-docs`:** se houver sistema de arquivos ou repositório conectado, grava `sync/glossario.md` e `sync/decisoes.md` no projeto do aluno durante a sessão. Sem arquivos, entrega o registro no chat, em um bloco pronto para salvar.
@@ -38,6 +41,4 @@
 
 ## Em aberto
 
-- Entregável final do `/sync-me` (proposta: resumo no chat com decisões, discordâncias, perguntas sem resposta e o que só um protótipo responde) e do `syncdb` (formatos de saída).
-- Quem pesquisa os fatos: a IA, como no `grilling`, ou parte da pesquisa vira tarefa do aluno?
-- O que exatamente é o "teste automatizado" no prompt do `/sync-mva`: casos de teste que o próprio agente executa, um checklist de autoavaliação ou outro formato.
+Nenhum ponto em aberto. Próximo passo: escrever as skills.
