@@ -65,5 +65,3 @@
 - `/sync-spec`: formato das telas (wireframe em texto, prévia visual em HTML, indicação de protótipo).
 - `/sync-spec`: copiar as fontes (to-spec, prototype, wireframes, aidlc-requirements) para `references/`, com licença e commit.
 - Design system de referência: quais paletas além de Pandora claro e escuro; o que entra (tokens, componentes, exemplos); onde fica e como as skills o usam.
-
-Nenhum ponto em aberto. Próximo passo: escrever as skills.
