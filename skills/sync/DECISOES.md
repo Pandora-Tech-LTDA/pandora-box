@@ -16,7 +16,11 @@
   - O aluno começa pelo `/sync-docs`. O `/sync-mva` constrói o MVA a partir do que o `/sync-docs` produziu.
   - Se o aluno começar direto pelo `/sync-mva`, a skill sugere passar pelo `/sync-docs` antes.
   - O `/sync-mva` usa o `syncdb` para criar a base sintética do MVA.
-- **`syncdb`:** skill específica para construir bases de dados com dados sintéticos. Pode receber um arquivo de referência (XLS, CSV ou qualquer outro formato de dados) e gerar dados sintéticos de acordo com ele.
+- **`syncdb`:** skill específica para construir bases de dados com dados sintéticos. Pode receber um arquivo de referência (XLS, CSV ou qualquer outro formato de dados) e gerar dados sintéticos de acordo com ele. Funciona nos dois modos: chamada pelo `/sync-mva` ou direto pelo aluno (`/syncdb`).
+- **Passagem do `/sync-docs` para o `/sync-mva`:** funciona em qualquer ambiente, com ou sem repositório.
+  - **Registro do `/sync-docs`:** se houver sistema de arquivos ou repositório conectado, grava `sync/glossario.md` e `sync/decisoes.md` no projeto do aluno durante a sessão. Sem arquivos, entrega o registro no chat, em um bloco pronto para salvar.
+  - **Aviso:** no início, o `/sync-docs` diz ao aluno onde o registro vai ficar. Se não houver onde gravar, avisa que, para continuar em outra conversa, ele precisa salvar o registro ou conectar um repositório.
+  - **Busca do `/sync-mva`, nesta ordem:** (1) registro do `/sync-docs` na conversa atual; (2) arquivos em `sync/`; (3) pede ao aluno que cole ou anexe o registro; (4) se não existir, sugere rodar o `/sync-docs` antes.
 - **Objetivo do `/sync-mva`:** é uma skill nova (usa o método de entrevista do `syncing`, mas não tem equivalente no original). Serve para **montar um MVA**: entender o processo que o aluno quer automatizar, quais documentos e base de dados ele precisa e, ao final, gerar os materiais para ele montar o MVA como um projeto no Claude:
   - os documentos de contexto necessários (ex.: para uma análise de frequência de funcionários, a planilha de frequência);
   - o prompt (instruções) do projeto;
@@ -28,8 +32,6 @@
 - Uma pergunta por vez ou rodadas (o original usa rodadas e aceita voltar para uma por vez).
 - Como tratar a resposta recomendada para não induzir passividade.
 - Qual entregável cada skill gera ao final.
-- Onde o `/sync-docs` grava os registros no ambiente dos alunos.
 - Como o `/sync-mva` usa as etapas e os elementos do núcleo do MVA como árvore de decisões (referência principal: `references/mva/templates/agente-construtor-mva-v0.1.md`).
-- `syncdb`: pode ser chamada diretamente pelo aluno (`/syncdb`) além de pelo `/sync-mva`? Pode ser invocada pelo modelo?
-- Como o `/sync-mva` encontra o que o `/sync-docs` produziu (mesma conversa ou arquivos em local conhecido) e como detecta que o `/sync-docs` não foi feito.
+- `syncdb`: além de ser chamada pelo aluno e pelo `/sync-mva`, o modelo pode invocá-la por conta própria?
 - Formato exato do pacote final do `/sync-mva` (o que entra além de documentos, prompt e guia de montagem: casos de teste? critérios de sucesso? lista de suposições?).
