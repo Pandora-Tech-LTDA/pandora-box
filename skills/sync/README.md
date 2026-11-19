@@ -14,15 +14,17 @@ A maioria dos projetos com IA começa pela ferramenta e descobre o problema no m
 
 ## Como funciona
 
-**A IA pergunta em rodadas.** O projeto é tratado como uma árvore de decisões. Em cada rodada, a IA faz todas as perguntas que já podem ser respondidas e espera as suas respostas antes de seguir. Cada resposta libera as perguntas seguintes.
+**A IA começa pela sua visão.** A primeira pergunta é como você imagina o projeto funcionando. A IA devolve essa visão em um parágrafo e mostra quantas decisões faltam para ela ficar de pé.
+
+**A IA pergunta em rodadas, e só o que importa.** O projeto é tratado como uma árvore de decisões. Em cada rodada, a IA faz todas as perguntas que já podem ser respondidas e espera as suas respostas antes de seguir. Cada resposta libera as perguntas seguintes. O que é reversível ou de baixo impacto a IA assume e lista como "assumi", para você corrigir se quiser.
 
 **Cada sugestão mostra o que custa.** A IA recomenda um caminho e diz o que se perde com ele. Assim você tem um motivo concreto para concordar ou discordar. Se preferir pensar sem influência, peça para esconder as sugestões.
 
-**As decisões são suas.** Um "sim" sem motivo não fecha uma decisão. Se você aceitar tudo em uma rodada, a próxima começa com um desafio. Discordar é parte do método.
+**As decisões são suas.** Nas decisões que sustentam a visão, um "sim" sem motivo não basta. Discordar é parte do método. Os riscos ficam anotados, e a IA oferece analisá-los quando fizer sentido.
 
 **Os fatos são da IA.** O que dá para descobrir nos seus arquivos ou documentos, a IA pesquisa sozinha e mostra onde encontrou.
 
-**Nada é construído sem confirmação.** A sessão termina com um resumo do entendimento compartilhado. Só depois do seu aceite a IA passa para a próxima etapa.
+**Nada é construído sem confirmação.** Quando a visão está clara, a IA oferece fechar, mesmo com pontos em aberto, e termina com um resumo do entendimento compartilhado. Só depois do seu aceite a IA passa para a próxima etapa.
 
 ---
 
@@ -86,15 +88,17 @@ Most AI projects start with the tool and discover the problem halfway through. S
 
 ## How it works
 
-**The AI asks in rounds.** The project is treated as a decision tree. In each round, the AI asks every question that can already be answered and waits for your answers before moving on. Each answer unlocks the next questions.
+**The AI starts from your vision.** The first question is how you picture the project working. The AI plays that vision back in one paragraph and shows how many decisions are left to make it stand.
+
+**The AI asks in rounds, and only what matters.** The project is treated as a decision tree. In each round, the AI asks every question that can already be answered and waits for your answers before moving on. Each answer unlocks the next questions. Anything reversible or low-impact the AI assumes and lists as "assumed", for you to correct if you want.
 
 **Every suggestion shows its cost.** The AI recommends a path and says what you give up with it, so you have a concrete reason to agree or disagree. If you prefer to think without influence, ask it to hide the suggestions.
 
-**Decisions are yours.** A "yes" without a reason doesn't close a decision. If you accept everything in a round, the next one opens with a challenge. Disagreeing is part of the method.
+**Decisions are yours.** On decisions that hold up the vision, a "yes" without a reason is not enough. Disagreeing is part of the method. Risks are noted, and the AI offers to go through them when it makes sense.
 
 **Facts are the AI's job.** Whatever can be found in your files or documents, the AI looks up on its own and shows you where it found it.
 
-**Nothing gets built without confirmation.** The session ends with a summary of the shared understanding. Only after you agree does the AI move to the next step.
+**Nothing gets built without confirmation.** Once the vision is clear, the AI offers to wrap up, even with open points, and ends with a summary of the shared understanding. Only after you agree does the AI move to the next step.
 
 ## The skills
 

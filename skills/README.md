@@ -8,7 +8,7 @@ Skills abertas da Pandora para trabalhar com IA com critério. Este plugin reún
 
 ## Família Sync
 
-Skills que entrevistam você sobre o seu projeto antes de qualquer linha ser escrita. A IA pergunta em rodadas, sugere e mostra o que cada sugestão custa. As decisões ficam com você, e um "sim" sem motivo não fecha nenhuma delas.
+Skills que entrevistam você sobre o seu projeto antes de qualquer linha ser escrita. A IA pergunta em rodadas, sugere e mostra o que cada sugestão custa. As decisões ficam com você, e nas que importam um "sim" sem motivo não basta.
 
 | Skill | Para quê |
 |---|---|
@@ -45,7 +45,7 @@ Pandora's open skills for working with AI with sound judgment. This plugin bundl
 
 ## Sync family
 
-Skills that interview you about your project before a single line is written. The AI asks in rounds, makes suggestions and shows what each suggestion costs. You make the decisions, and a "yes" without a reason closes none of them.
+Skills that interview you about your project before a single line is written. The AI asks in rounds, makes suggestions and shows what each suggestion costs. You make the decisions, and on the ones that matter a "yes" without a reason is not enough.
 
 | Skill | Purpose |
 |---|---|

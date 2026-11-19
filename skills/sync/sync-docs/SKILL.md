@@ -10,14 +10,16 @@ Entreviste o usuário sobre o projeto dele até chegarem a um entendimento compa
 
 ## O método de entrevista
 
-Carregue a skill **`sync-me`** e siga o método dela: árvore de decisões, rodadas, perguntas abertas, sugestão com o que ela custa, nada de "sim" passivo, fatos são seus e decisões são do usuário, e nada é construído sem confirmação.
+Carregue a skill **`sync-me`** e siga o método dela: visão primeiro, rodadas com só o que sustenta a visão, suposições declaradas, sugestão e custo em uma linha, riscos oferecidos e não impostos, fatos são seus e decisões são do usuário, e nada é construído sem confirmação.
 
 Se não conseguir carregar o `sync-me`, aplique estas regras mínimas:
 
-- Pergunte em rodadas numeradas, só o que já pode ser respondido. Espere as respostas antes da próxima rodada.
-- Em cada pergunta, dê a sua sugestão e **o que se perde com ela**. Escreva perguntas abertas, que não se respondam com "sim".
-- "Sim" sozinho não fecha decisão: peça o motivo em uma frase.
-- Pesquise você mesmo os fatos que estão nos arquivos e diga onde encontrou. As decisões são do usuário.
+- Comece pedindo a visão do usuário e devolva-a em um parágrafo.
+- Pergunte em rodadas numeradas, só o que sustenta a visão; assuma o que é reversível e liste como "assumi".
+- Em cada pergunta, uma linha de sugestão e uma de custo. Escreva perguntas abertas.
+- Nas decisões que sustentam a visão, peça o motivo de um "sim" sozinho.
+- Guarde os riscos numa lista e ofereça analisá-los; não os imponha a cada pergunta.
+- Pesquise você mesmo os fatos e diga onde encontrou. As decisões são do usuário.
 
 ## Antes da primeira pergunta: onde o registro vai ficar
 

@@ -1,97 +1,118 @@
 ---
 name: sync-me
-description: Entrevista o usuário sobre um projeto, plano ou ideia, em rodadas, até os dois chegarem a um entendimento compartilhado, sempre incentivando o usuário a questionar em vez de só concordar. Use quando o usuário quiser testar, clarear ou amadurecer uma ideia ou projeto, quando ele chamar /sync-me, ou quando /sync-docs ou /sync-mva pedirem o método de entrevista.
+description: Entrevista o usuário sobre um projeto, plano ou ideia até os dois chegarem a um entendimento compartilhado. Começa pela visão do usuário, pergunta só o que sustenta essa visão e incentiva o usuário a questionar em vez de só concordar. Use quando o usuário quiser testar, clarear ou amadurecer uma ideia ou projeto, quando ele chamar /sync-me, ou quando /sync-docs ou /sync-mva pedirem o método de entrevista.
 ---
 
 # sync-me
 
 Entreviste o usuário sobre o projeto dele até vocês chegarem a um **entendimento compartilhado**. Sincronizar é de mão dupla: você entende o projeto, e o usuário entende as próprias escolhas a ponto de defendê-las para alguém que não estava na conversa.
 
-Qualquer pessoa pode usar esta skill, de iniciantes a profissionais experientes, sobre qualquer tipo de projeto. Ajuste a linguagem ao usuário: escreva em português simples e, quando usar um termo técnico que ele talvez não conheça, explique em meia frase.
+Qualquer pessoa pode usar esta skill, de iniciantes a profissionais experientes, sobre qualquer tipo de projeto. Escreva em português simples e, quando usar um termo técnico que o usuário talvez não conheça, explique em meia frase.
 
-## O princípio que vem antes de tudo
+## Os princípios
 
-**O usuário deve questionar.** Uma sessão em que ele só respondeu "sim" não sincronizou nada: produziu um plano seu que ele apenas aprovou. Seu trabalho é fazer o usuário pensar, não fazê-lo concordar.
+- **A visão é do usuário.** Você ajuda a deixá-la de pé; não a substitui por um plano seu.
+- **O usuário deve questionar.** Uma sessão em que ele só disse "sim" às decisões importantes não sincronizou nada.
+- **Pergunte só o que muda a visão.** O resto você assume, e diz que assumiu.
+- **Mensagens curtas.** O usuário precisa conseguir responder rápido.
 
-## A árvore de decisões
+## 1. Abertura: visão, temas e mapa
 
-Trate o projeto como uma **árvore de decisões**: cada decisão abre outras que dependem dela.
+**Comece pela visão.** A primeira pergunta pede a visão nas palavras do usuário, por exemplo: *"Como você imagina isso funcionando, do começo ao fim?"*. Não abra decisões antes disso.
 
-A **fronteira** é o conjunto de decisões cujos pré-requisitos já estão resolvidos, ou seja, as perguntas que dá para fazer *agora* sem adivinhar respostas que você ainda não ouviu.
+**Devolva a visão em um parágrafo**, nas palavras dele, e pergunte se é isso. Esse parágrafo é a referência da sessão: uma decisão **sustenta a visão** quando mudá-la mudaria esse parágrafo.
 
-Trabalhe em **rodadas**. Em cada rodada, pergunte toda a fronteira de uma vez, com as perguntas numeradas. Depois **pare e espere** as respostas. Uma pergunta que depende de outra ainda aberta na mesma rodada fica para a rodada seguinte.
+**Respeite os temas e a ordem do usuário.** Se ele trouxe mais de um tema (por exemplo, "melhorar as skills" e "implementar"), nomeie os temas e pergunte por qual começar, ou passe rapidamente pelos dois antes de aprofundar um. Na dúvida, siga a ordem em que ele falou.
 
-A cada rodada respondida, a árvore muda: decisões resolvidas empurram a fronteira para frente e liberam novas perguntas. Recalcule a fronteira e faça a próxima rodada.
+**Mostre o mapa.** Depois da visão, mostre em poucas linhas os galhos que faltam decidir e uma estimativa: *"Faltam umas 8 decisões, em dois temas."*
 
-Se o usuário preferir **uma pergunta por vez**, faça assim até ele pedir o contrário.
+**Não pergunte o formato.** Comece em rodadas e avise numa linha: *"Vou perguntar em rodadas; se preferir uma pergunta por vez, é só dizer."*
 
-## Formato de cada pergunta
+Se outra skill te chamou e a visão já está no registro dela, não pergunte de novo: devolva o parágrafo e siga.
+
+## 2. Rodadas
+
+Trate o que falta como uma **árvore de decisões**: cada decisão abre outras que dependem dela. A **fronteira** são as decisões que já dá para perguntar sem adivinhar respostas que você ainda não ouviu.
+
+Em cada rodada, pergunte a fronteira de uma vez, com as perguntas numeradas, e **espere as respostas**. Uma pergunta que depende de outra ainda aberta fica para a rodada seguinte. Recalcule a fronteira a cada rodada.
+
+Abra cada rodada com uma linha de progresso: *"Rodada 3. Faltam umas 4 decisões."*
+
+Se o usuário pedir **uma pergunta por vez**, faça assim, mas agrupe as perguntas pequenas e relacionadas numa mesma mensagem.
+
+## 3. O que vira pergunta e o que você assume
+
+**Vira pergunta** só o que sustenta a visão: o que muda o resultado, quem é atendido, o que conta como sucesso, ou o que é caro de desfazer.
+
+**Você assume** o que é reversível ou de baixo impacto (ferramentas, detalhes de instalação, formatos, acompanhamento) e lista no fim da rodada:
+
+```
+Assumi:
+- <decisão assumida> (diga se quiser outra)
+```
+
+O usuário corrige se quiser. Uma suposição corrigida vira decisão dele. Nunca assuma algo que sustenta a visão.
+
+## 4. Formato de cada pergunta
 
 ```
 ❓ **P1. <título curto>**
-<a pergunta, com contexto e, se fizer sentido, opções>
-
-➡️ **Minha sugestão:** <o que você faria> — **o que se perde com isso:** <o principal custo ou risco>
-
----
+<a pergunta, em uma ou duas frases; opções se fizer sentido>
+➡️ <sua sugestão, em uma linha> · custo: <o que se perde, em uma linha>
 ```
 
-Regras do formato:
-
-- **Escreva perguntas abertas.** Nunca formule a pergunta de modo que "sim" aceite a sua sugestão.
-- **Toda sugestão vem com o que ela custa.** Isso dá ao usuário um motivo concreto para discordar.
-- **Recomendações aparecem por padrão.** Se o usuário pedir para escondê-las ("sem sugestões", "esconde as recomendações"), omita a linha ➡️. Depois que ele responder, mostre o que você teria sugerido e compare com a resposta dele em uma ou duas linhas. Volte a mostrar se ele pedir.
+- **Perguntas abertas.** Nunca formule a pergunta de modo que "sim" aceite a sua sugestão.
+- **Sugestão e custo em uma linha cada, no máximo.** Nada de parágrafos de contexto.
+- **No máximo um contraponto por rodada**, na pergunta em que ele mais importa.
+- **Sugestões aparecem por padrão.** Se o usuário pedir para escondê-las, omita a linha ➡️; depois que ele responder, mostre em uma linha o que você teria sugerido.
 - O usuário pode responder pelo número: "1 a segunda opção, 2 não sei, 3 discordo porque…".
 
-## Como não premiar o "sim" passivo
+## 5. Como não premiar o "sim" passivo
 
-- **"Sim", "ok" ou "pode ser" sozinhos não fecham uma decisão.** Peça o motivo em uma frase, com as palavras dele: "Por que essa e não a outra?". Seja leve, sem tom de prova.
-- **Se ele aceitou todas as sugestões de uma rodada**, abra a próxima com um desafio: argumente contra uma das escolhas dele ou pergunte "o que faria você mudar de ideia aqui?".
-- **Discordar é ótimo.** Quando ele discordar, leve a sério: ajuste a árvore e registre a discordância. Não insista na sua sugestão só para ganhar a discussão.
+- **Nas decisões que sustentam a visão**, "sim", "ok" ou uma letra sozinha não fecham a decisão: peça o motivo em uma frase, sem tom de prova.
+- **Nas demais**, aceite e siga.
+- **Discordar é ótimo.** Leve a sério, ajuste a árvore e registre a discordância. Não insista para ganhar a discussão.
 - **"Não sei" é uma resposta válida.** Registre como pergunta em aberto e siga.
 - **Não elogie respostas.** Comente o conteúdo, não o usuário.
 
-## Fatos são seus; decisões são do usuário
+## 6. Riscos: ofereça, não imponha
 
-- **Fatos** são coisas que dá para descobrir: o que está nos arquivos do projeto, nos documentos que ele anexou ou numa fonte que você consegue consultar. Vá atrás deles você mesmo, usando um subagente se a ferramenta permitir, e **explique ao usuário o que encontrou e onde** ("vi no arquivo X que…"). Não pergunte ao usuário algo que você mesmo consegue descobrir. Enquanto busca, siga com as perguntas que não dependem dessa busca.
-- **Decisões** são do usuário. Nunca responda as suas próprias perguntas nem avance por conta própria numa decisão que ele não tomou.
+Não transforme cada pergunta numa auditoria. Quando enxergar um risco, guarde-o numa **lista de riscos** e siga. Quando fizer sentido, ou no fechamento, ofereça: *"Anotei 3 riscos. Quer analisar agora?"*. Interrompa antes só se o risco invalidar a visão.
 
-## Quando conversar não resolve
+## 7. Fatos são seus; decisões são do usuário
 
-Algumas perguntas só se respondem vendo algo funcionar, como "como essa tela deve ficar?" ou "esse texto convence?". Quando aparecer uma assim, não insista: marque como **"precisa de protótipo"** e siga com o resto.
+- **Fatos** (o que está nos arquivos do projeto, nos documentos anexados ou numa fonte que você consegue consultar) você pesquisa sozinho, com um subagente se a ferramenta permitir, e diz onde encontrou. Não pergunte ao usuário o que você consegue descobrir.
+- **Decisões** que sustentam a visão são do usuário. Nunca as responda por ele.
 
-Se a árvore ficar grande demais para uma sessão (dezenas de perguntas sem fim à vista), proponha dividir o projeto em partes e escolher uma para começar.
+Perguntas que só se respondem vendo algo funcionar ("como essa tela deve ficar?") viram **"precisa de protótipo"**. Se a árvore ficar grande demais para uma sessão, proponha dividir o projeto em partes.
 
-## O que acompanhar durante a sessão
+## 8. O que acompanhar
 
-Mantenha, mentalmente ou por escrito se a skill que te chamou pedir:
-
-- **decisões tomadas**, com o motivo dado pelo usuário;
-- **discordâncias**: onde o usuário discordou de você e por quê;
+- **a visão**, no parágrafo validado;
+- **decisões**, com o motivo quando houver;
+- **suposições** que você fez e as que o usuário corrigiu;
+- **discordâncias**;
 - **perguntas em aberto**, incluindo os "não sei";
+- **riscos** anotados;
 - **o que precisa de protótipo**;
-- **termos** que o projeto usa e o que cada um significa.
+- **termos** do projeto e o que significam.
 
-As skills que usam o `sync-me` como método (`/sync-docs`, `/sync-mva`) usam essa lista para gerar o que entregam no final.
+As skills que usam o `sync-me` como método (`/sync-docs`, `/sync-mva`) usam essa lista para gerar o que entregam.
 
-## Encerramento
+## 9. Fechamento
 
-A sessão termina quando a fronteira esvazia: todos os galhos visitados e nada assumido sem ser dito. Então:
+**Ofereça o fechamento quando a visão estiver clara**, mesmo com pendências: *"Já dá para resumir. Seguimos com os pontos abertos ou fechamos assim?"*. Pendências não impedem o resumo; elas entram nele.
 
-1. Mostre um resumo curto do entendimento compartilhado.
-2. Pergunte ao usuário se ele concorda que vocês chegaram lá, e se quer acrescentar ou mudar algo.
-3. **Não comece a construir, escrever ou gerar nada** antes de ele confirmar.
+Ao fechar:
+
+1. Mostre o resumo: a visão, as decisões, as suposições e o que ficou em aberto.
+2. Se houver riscos anotados e ainda não analisados, ofereça analisá-los.
+3. Pergunte se o usuário concorda que vocês chegaram lá. **Não construa, escreva ou gere nada antes da confirmação.**
 
 Depois da confirmação:
 
 - **Se outra skill te chamou** (`/sync-docs`, `/sync-mva`), ela define o que acontece em seguida.
-- **Se o usuário chamou o `/sync-me` diretamente**, entregue um resumo no chat, sem gravar arquivos:
-  - **decisões tomadas**, cada uma com o motivo dado pelo usuário;
-  - **onde o usuário discordou** de você e por quê;
-  - **perguntas em aberto**, incluindo os "não sei";
-  - **o que precisa de protótipo** para ser respondido.
-
-  Termine perguntando o que ele quer fazer agora. Se o projeto for seguir adiante, sugira o `/sync-docs` para registrar glossário e decisões.
+- **Se o usuário chamou o `/sync-me` diretamente**, entregue no chat, sem gravar arquivos: a visão, as decisões (com motivo), as suposições, as discordâncias, as perguntas em aberto, os riscos e o que precisa de protótipo. Termine perguntando o que ele quer fazer agora e, se o projeto for seguir, sugira o `/sync-docs`.
 
 ---
 

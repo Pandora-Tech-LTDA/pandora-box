@@ -45,6 +45,17 @@
 
 - **Instalação em um passo:** o repositório é um marketplace de plugins (`.claude-plugin/marketplace.json`) com o plugin `pandora` (raiz em `skills/`, manifesto em `skills/.claude-plugin/plugin.json`), que reúne todas as skills. O workflow publica `pandora.zip` (o plugin) e um .zip por skill; nos avulsos, a chave `disable-model-invocation` é removida porque o envio avulso de skills no Claude.ai não a aceita. Instaladas pelo plugin, as skills aparecem como `/pandora:<skill>`.
 
+- **Revisão do `sync-me` (v0.2, a partir do primeiro teste real):**
+  1. começa pela visão do usuário e a devolve em um parágrafo, antes de abrir decisões;
+  2. assume o que é reversível ou de baixo impacto e lista como "assumi"; só vira pergunta o que sustenta a visão;
+  3. riscos ficam numa lista e são oferecidos ("quer analisar os riscos?"), não impostos a cada pergunta;
+  4. mostra o mapa dos temas e uma estimativa de quantas decisões faltam, atualizada a cada rodada;
+  5. respeita os temas e a ordem que o usuário trouxe;
+  6. pede o motivo de um "sim" só nas decisões que sustentam a visão (substitui a regra anterior, que valia para toda decisão, e a de abrir com desafio quando o usuário aceita tudo);
+  7. não pergunta o formato: começa em rodadas e avisa que dá para mudar; em "uma por vez", agrupa as perguntas pequenas;
+  8. oferece o fechamento quando a visão está clara, mesmo com pendências;
+  9. mensagens curtas: sugestão e custo em uma linha cada, no máximo um contraponto por rodada.
+
 ## Em aberto
 
 Nenhum ponto em aberto. Próximo passo: escrever as skills.
