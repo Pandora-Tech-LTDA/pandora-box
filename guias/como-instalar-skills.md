@@ -22,9 +22,12 @@ Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Te
 | Skill | Download |
 |---|---|
 | `sync-me` (obrigatória: as outras skills Sync dependem dela) | [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) |
+| `sync-docs` | [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) |
+| `sync-mva` | [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) |
+| `syncdb` | [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) |
 | Família Sync completa (um .zip com o .zip de cada skill) | [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) |
 
-> **Situação.** Da família Sync, só a `sync-me` está publicada (v0.1, em teste). As demais entram nos downloads assim que forem publicadas.
+> **Situação.** As quatro skills da família Sync estão publicadas na versão 0.1, em teste.
 
 ## Depois de instalar
 
@@ -71,9 +74,12 @@ All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pando
 | Skill | Download |
 |---|---|
 | `sync-me` (required: the other Sync skills depend on it) | [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) |
+| `sync-docs` | [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) |
+| `sync-mva` | [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) |
+| `syncdb` | [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) |
 | Full Sync family (one .zip containing each skill's .zip) | [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) |
 
-> **Status.** In the Sync family, only `sync-me` is published (v0.1, testing). The others will be added to the downloads as they are released.
+> **Status.** All four Sync skills are published at version 0.1, in testing.
 
 ## After installing
 

@@ -4,7 +4,7 @@
 
 **Para:** Claude no navegador, no app desktop e no celular · **Tempo:** 3 minutos
 
-1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória. Os demais arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória; baixe também [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) e [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Ative a execução de código.** Em *Configurações → Capacidades*, ative a execução de código e criação de arquivos.
 3. **Envie cada skill.** Ainda em *Configurações → Capacidades*, na área **Skills**, envie o .zip de cada skill. Se baixou o `sync-todas.zip`, abra-o antes: o Claude espera um .zip por skill.
 4. **Teste.** Em uma nova conversa, escreva: *"Use a skill sync-me para me ajudar a amadurecer a ideia de um agente que analisa a frequência dos funcionários."*
@@ -23,7 +23,7 @@ As skills enviadas no Claude.ai ficam na sua conta e valem também no Cowork. Os
 
 **For:** Claude on the web, desktop app and mobile · **Time:** 3 minutes
 
-1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required. All other files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required; also download [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) and [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Turn on code execution.** In *Settings → Capabilities*, turn on code execution and file creation.
 3. **Upload each skill.** Still in *Settings → Capabilities*, in the **Skills** section, upload the .zip of each skill. If you downloaded `sync-todas.zip`, unzip it first: Claude expects one .zip per skill.
 4. **Test it.** In a new conversation, write: *"Use the sync-me skill to help me refine the idea of an agent that analyzes employee attendance."*
