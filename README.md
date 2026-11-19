@@ -49,8 +49,7 @@ No fim, você sai com o projeto documentado e, se quiser, com o material para mo
 | `/sync-docs` | Entrevista sobre o projeto e registra glossário e decisões. **Ponto de partida.** | Em construção |
 | `/sync-mva` | Monta o MVA a partir do que o `/sync-docs` registrou | Em construção |
 | `/syncdb` | Gera bases de dados sintéticas em CSV ou Markdown a partir de um arquivo de exemplo | Em construção |
-| `/sync-me` | Entrevista livre sobre uma ideia, sem gerar arquivos | Em construção |
-| [`syncing`](skills/sync/syncing/) | O método de entrevista usado pelas outras skills | v0.1, em teste |
+| [`/sync-me`](skills/sync/sync-me/) | Entrevista sobre uma ideia ou projeto, sem gerar arquivos. É também o método de entrevista que as outras skills usam. | v0.1, em teste |
 
 [Conhecer o Sync ↗](skills/sync/) · [Instalar](#instalação)
 
@@ -60,17 +59,17 @@ No fim, você sai com o projeto documentado e, se quiser, com o material para mo
 
 As skills seguem o formato aberto [Agent Skills](https://agentskills.io) e funcionam no Claude e em outros agentes compatíveis. Elas são escritas para o Claude; nas demais plataformas, o formato é compatível, mas o comportamento ainda não foi validado.
 
-Downloads: [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) · [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) · [todos os arquivos](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)
+Downloads: [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) · [todos os arquivos](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)
 
 Clique na sua plataforma:
 
 <details>
 <summary><strong>Claude.ai (navegador, desktop e celular)</strong> · Suportado</summary>
 
-1. **Baixe as skills.** [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) é obrigatória. Os demais arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória. Os demais arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Ative a execução de código.** Em *Configurações → Capacidades*, ative a execução de código e criação de arquivos.
 3. **Envie cada skill.** Ainda em *Configurações → Capacidades*, na área **Skills**, envie o .zip de cada skill. Se baixou o `sync-todas.zip`, abra-o antes: o Claude espera um .zip por skill.
-4. **Teste.** Em uma nova conversa, escreva: *"Use a skill syncing para me ajudar a amadurecer a ideia de um agente que analisa a frequência dos funcionários."*
+4. **Teste.** Em uma nova conversa, escreva: *"Use a skill sync-me para me ajudar a amadurecer a ideia de um agente que analisa a frequência dos funcionários."*
 
 As skills enviadas no Claude.ai ficam na sua conta e valem também no Cowork. Os nomes dos menus podem mudar; se não encontrar, pergunte ao próprio Claude onde ficam as skills nas configurações.
 
@@ -81,7 +80,7 @@ As skills enviadas no Claude.ai ficam na sua conta e valem também no Cowork. Os
 
 O Cowork usa as skills da sua conta do Claude. Se você já instalou pelo Claude.ai, não precisa fazer nada.
 
-1. **Baixe as skills.** [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) é obrigatória. Os demais arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória. Os demais arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Envie cada skill.** Em *Configurações → Capacidades → Skills*, envie o .zip de cada skill, com a execução de código ativada.
 3. **Teste.** Abra o Cowork numa pasta de projeto e digite `/` no chat: as skills instaladas aparecem na lista.
 
@@ -127,7 +126,7 @@ Apague os arquivos temporários do download. No final, me mostre uma tabela com 
 
 O Codex detecta skills novas sozinho. Se alguma não aparecer, reinicie.
 
-**Atenção:** as skills foram escritas para o Claude. No Codex, o comportamento pode variar, principalmente quando uma skill chama outra (as portas do Sync chamam a `syncing`).
+**Atenção:** as skills foram escritas para o Claude. No Codex, o comportamento pode variar, principalmente quando uma skill chama outra (as portas do Sync chamam a `sync-me`).
 
 </details>
 
@@ -157,7 +156,7 @@ Depois, digite `/skills` no chat do modo agente para conferir se elas aparecem.
 
 [Agent Skills](https://agentskills.io) é um formato aberto adotado por outros agentes. Os locais mais comuns são `.agents/skills/` na raiz do projeto (só aquele projeto) e `~/.agents/skills/` (todos os projetos). Alguns agentes usam uma pasta própria, como `.<nome-do-agente>/skills/`, ou também leem `.claude/skills/`. Confira a documentação do seu agente.
 
-- **Manual:** baixe o .zip de cada skill em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills), descompacte e coloque a pasta da skill (por exemplo, `syncing/`, com o `SKILL.md` dentro) no local indicado.
+- **Manual:** baixe o .zip de cada skill em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills), descompacte e coloque a pasta da skill (por exemplo, `sync-me/`, com o `SKILL.md` dentro) no local indicado.
 - **Por prompt:** se o seu agente roda comandos, use o prompt do Codex, trocando a pasta de destino pela do seu agente.
 
 </details>
@@ -232,8 +231,7 @@ You end up with a documented project and, if you want, everything you need to bu
 | `/sync-docs` | Interviews you about the project and records a glossary and decisions. **Start here.** | In progress |
 | `/sync-mva` | Builds the MVA from what `/sync-docs` recorded | In progress |
 | `/syncdb` | Generates synthetic datasets in CSV or Markdown from a sample file | In progress |
-| `/sync-me` | Free-form interview about an idea, no files created | In progress |
-| [`syncing`](skills/sync/syncing/) | The interview method used by the other skills | v0.1, testing |
+| [`/sync-me`](skills/sync/sync-me/) | Interview about an idea or project, no files created. It is also the interview method the other skills use. | v0.1, testing |
 
 [Learn about Sync ↗](skills/sync/README.md#english)
 
@@ -241,17 +239,17 @@ You end up with a documented project and, if you want, everything you need to bu
 
 The skills follow the open [Agent Skills](https://agentskills.io) format and work in Claude and other compatible agents. They are written for Claude; on other platforms the format is compatible, but behavior has not been validated yet.
 
-Downloads: [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) · [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) (all Sync skills) · [all files](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)
+Downloads: [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) (all Sync skills) · [all files](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)
 
 Click your platform:
 
 <details>
 <summary><strong>Claude.ai (web, desktop and mobile)</strong> · Supported</summary>
 
-1. **Download the skills.** [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) is required. All other files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required. All other files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Turn on code execution.** In *Settings → Capabilities*, turn on code execution and file creation.
 3. **Upload each skill.** Still in *Settings → Capabilities*, in the **Skills** section, upload the .zip of each skill. If you downloaded `sync-todas.zip`, unzip it first: Claude expects one .zip per skill.
-4. **Test it.** In a new conversation, write: *"Use the syncing skill to help me refine the idea of an agent that analyzes employee attendance."*
+4. **Test it.** In a new conversation, write: *"Use the sync-me skill to help me refine the idea of an agent that analyzes employee attendance."*
 
 Skills uploaded to Claude.ai belong to your account and also work in Cowork. Menu names may change; if you can't find them, ask Claude where skills are in the settings.
 
@@ -262,7 +260,7 @@ Skills uploaded to Claude.ai belong to your account and also work in Cowork. Men
 
 Cowork uses the skills in your Claude account. If you already installed them through Claude.ai, there is nothing else to do.
 
-1. **Download the skills.** [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) is required. All other files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required. All other files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Upload each skill.** In *Settings → Capabilities → Skills*, upload the .zip of each skill, with code execution turned on.
 3. **Test it.** Open Cowork in a project folder and type `/` in the chat: installed skills show up in the list.
 
@@ -308,7 +306,7 @@ Delete the temporary download files. At the end, show me a table of the installe
 
 Codex picks up new skills automatically. If one doesn't show up, restart it.
 
-**Note:** these skills were written for Claude. In Codex, behavior may differ, especially when one skill calls another (the Sync entry points call `syncing`).
+**Note:** these skills were written for Claude. In Codex, behavior may differ, especially when one skill calls another (the Sync entry points call `sync-me`).
 
 </details>
 
@@ -338,7 +336,7 @@ Then type `/skills` in agent mode chat to check that they show up.
 
 [Agent Skills](https://agentskills.io) is an open format adopted by other agents. The most common locations are `.agents/skills/` at the project root (that project only) and `~/.agents/skills/` (all projects). Some agents use their own folder, such as `.<agent-name>/skills/`, or also read `.claude/skills/`. Check your agent's documentation.
 
-- **Manually:** download each skill's .zip from [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills), unzip it and place the skill folder (for example, `syncing/`, with `SKILL.md` inside) in that location.
+- **Manually:** download each skill's .zip from [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills), unzip it and place the skill folder (for example, `sync-me/`, with `SKILL.md` inside) in that location.
 - **With a prompt:** if your agent can run commands, use the Codex prompt and change the destination folder to your agent's.
 
 </details>

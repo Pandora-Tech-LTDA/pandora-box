@@ -8,7 +8,7 @@
 
 A maioria dos projetos com IA começa pela ferramenta e descobre o problema no meio do caminho. O Sync inverte a ordem: primeiro vêm as perguntas, depois a construção.
 
-> **Situação.** A `syncing`, o método de entrevista, está na versão 0.1, em teste. As demais skills estão em construção.
+> **Situação.** O `/sync-me`, que também é o método de entrevista das outras skills, está na versão 0.1, em teste. As demais skills estão em construção.
 
 ---
 
@@ -33,8 +33,7 @@ A maioria dos projetos com IA começa pela ferramenta e descobre o problema no m
 | `/sync-docs` | Entender e documentar um projeto. **Comece por aqui.** | `sync/glossario.md` e `sync/decisoes.md` no seu projeto, ou um registro no chat | Em construção |
 | `/sync-mva` | Montar um MVA a partir do registro do `/sync-docs` | Prompt do agente com testes automatizados, documentos de referência e manual de montagem no Cowork | Em construção |
 | `/syncdb` | Criar dados de exemplo sem expor dados reais | Bases sintéticas em CSV ou Markdown, a partir de um arquivo de exemplo | Em construção |
-| `/sync-me` | Amadurecer uma ideia solta, sem gerar arquivos | Resumo com decisões, discordâncias e perguntas em aberto | Em construção |
-| [`syncing`](syncing/) | O método de entrevista usado pelas outras skills | Não é chamada diretamente | v0.1, em teste |
+| [`/sync-me`](sync-me/) | Amadurecer uma ideia ou projeto, sem gerar arquivos. É também o método de entrevista usado pelas outras skills. | Resumo com decisões, discordâncias e perguntas em aberto | v0.1, em teste |
 
 ### O fluxo recomendado
 
@@ -54,13 +53,13 @@ A maioria dos projetos com IA começa pela ferramenta e descobre o problema no m
 
 Funciona no Claude.ai, no Claude Cowork e no Claude Code, e é compatível com o OpenAI Codex, o VS Code com GitHub Copilot e outros agentes que leem o formato Agent Skills.
 
-Escolha a sua plataforma em [Como instalar as skills](../../guias/como-instalar-skills.md). Para o Claude.ai e o Cowork, o download direto é [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip).
+Escolha a sua plataforma em [Como instalar as skills](../../guias/como-instalar-skills.md). Para o Claude.ai e o Cowork, o download direto é [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip).
 
 ---
 
 ## Créditos e licenças
 
-- `syncing`, `/sync-me` e `/sync-docs` são derivadas das skills [`grilling`](https://www.aihero.dev/skills-grilling), [`grill-me`](https://www.aihero.dev/skills-grill-me) e [`grill-with-docs`](https://www.aihero.dev/skills-grill-with-docs) de **Matt Pocock** ([mattpocock/skills](https://github.com/mattpocock/skills), licença MIT; cópia em [`references/mattpocock-skills/LICENSE`](references/mattpocock-skills/LICENSE)).
+- `/sync-me` e `/sync-docs` são derivadas das skills [`grilling`](https://www.aihero.dev/skills-grilling), [`grill-me`](https://www.aihero.dev/skills-grill-me) e [`grill-with-docs`](https://www.aihero.dev/skills-grill-with-docs) de **Matt Pocock** ([mattpocock/skills](https://github.com/mattpocock/skills), licença MIT; cópia em [`references/mattpocock-skills/LICENSE`](references/mattpocock-skills/LICENSE)).
 - `/sync-mva` e `/syncdb` seguem a metodologia MVA, ©2026 Pandora Tech LTDA ([`references/mva/FONTE.md`](references/mva/FONTE.md)).
 
 ## Para quem mantém o projeto
@@ -83,7 +82,7 @@ Escolha a sua plataforma em [Como instalar as skills](../../guias/como-instalar-
 
 Most AI projects start with the tool and discover the problem halfway through. Sync reverses the order: questions first, building second.
 
-> **Status.** `syncing`, the interview method, is at version 0.1, in testing. The other skills are in progress.
+> **Status.** `/sync-me`, which is also the interview method for the other skills, is at version 0.1, in testing. The other skills are in progress.
 
 ## How it works
 
@@ -104,8 +103,7 @@ Most AI projects start with the tool and discover the problem halfway through. S
 | `/sync-docs` | Understand and document a project. **Start here.** | `sync/glossario.md` and `sync/decisoes.md` in your project, or a record in the chat | In progress |
 | `/sync-mva` | Build an MVA (Minimum Viable Automation) from the `/sync-docs` record | Agent prompt with automated tests, reference documents and a Cowork setup manual | In progress |
 | `/syncdb` | Create sample data without exposing real data | Synthetic datasets in CSV or Markdown, from a sample file | In progress |
-| `/sync-me` | Develop a loose idea, without creating files | Summary of decisions, disagreements and open questions | In progress |
-| [`syncing`](syncing/) | The interview method used by the other skills | Not called directly | v0.1, testing |
+| [`/sync-me`](sync-me/) | Develop an idea or project, without creating files. It is also the interview method the other skills use. | Summary of decisions, disagreements and open questions | v0.1, testing |
 
 ### Recommended flow
 
@@ -123,11 +121,11 @@ Most AI projects start with the tool and discover the problem halfway through. S
 
 Works on Claude.ai, Claude Cowork and Claude Code, and is compatible with OpenAI Codex, VS Code with GitHub Copilot and other agents that read the Agent Skills format.
 
-Pick your platform in [How to install the skills](../../guias/como-instalar-skills.md#english). For Claude.ai and Cowork, the direct download is [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip).
+Pick your platform in [How to install the skills](../../guias/como-instalar-skills.md#english). For Claude.ai and Cowork, the direct download is [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip).
 
 ## Credits and licenses
 
-- `syncing`, `/sync-me` and `/sync-docs` are derived from the [`grilling`](https://www.aihero.dev/skills-grilling), [`grill-me`](https://www.aihero.dev/skills-grill-me) and [`grill-with-docs`](https://www.aihero.dev/skills-grill-with-docs) skills by **Matt Pocock** ([mattpocock/skills](https://github.com/mattpocock/skills), MIT license; copy in [`references/mattpocock-skills/LICENSE`](references/mattpocock-skills/LICENSE)).
+- `/sync-me` and `/sync-docs` are derived from the [`grilling`](https://www.aihero.dev/skills-grilling), [`grill-me`](https://www.aihero.dev/skills-grill-me) and [`grill-with-docs`](https://www.aihero.dev/skills-grill-with-docs) skills by **Matt Pocock** ([mattpocock/skills](https://github.com/mattpocock/skills), MIT license; copy in [`references/mattpocock-skills/LICENSE`](references/mattpocock-skills/LICENSE)).
 - `/sync-mva` and `/syncdb` follow the MVA methodology, ©2026 Pandora Tech LTDA ([`references/mva/FONTE.md`](references/mva/FONTE.md)).
 
 The skills themselves are written in Brazilian Portuguese and work in any language the conversation uses.

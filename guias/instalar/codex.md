@@ -18,7 +18,7 @@ Apague os arquivos temporários do download. No final, me mostre uma tabela com 
 
 O Codex detecta skills novas sozinho. Se alguma não aparecer, reinicie.
 
-**Atenção:** as skills foram escritas para o Claude. No Codex, o comportamento pode variar, principalmente quando uma skill chama outra (as portas do Sync chamam a `syncing`).
+**Atenção:** as skills foram escritas para o Claude. No Codex, o comportamento pode variar, principalmente quando uma skill chama outra (as portas do Sync chamam a `sync-me`).
 
 Se testar e encontrar diferenças, conte numa [issue](https://github.com/Pandora-Tech-LTDA/pandora-box/issues/new/choose).
 
@@ -48,7 +48,7 @@ Delete the temporary download files. At the end, show me a table of the installe
 
 Codex picks up new skills automatically. If one doesn't show up, restart it.
 
-**Note:** these skills were written for Claude. In Codex, behavior may differ, especially when one skill calls another (the Sync entry points call `syncing`).
+**Note:** these skills were written for Claude. In Codex, behavior may differ, especially when one skill calls another (the Sync entry points call `sync-me`).
 
 If you test it and find differences, tell us in an [issue](https://github.com/Pandora-Tech-LTDA/pandora-box/issues/new/choose).
 

@@ -1,9 +1,9 @@
 ---
-name: syncing
-description: Método de entrevista da família sync. Questiona o usuário sobre um projeto, plano ou ideia, em rodadas, até os dois chegarem a um entendimento compartilhado, sempre incentivando o usuário a questionar em vez de só concordar. Use quando o usuário quiser testar, clarear ou amadurecer o próprio projeto, ou quando /sync-me, /sync-docs ou /sync-mva pedirem.
+name: sync-me
+description: Entrevista o usuário sobre um projeto, plano ou ideia, em rodadas, até os dois chegarem a um entendimento compartilhado, sempre incentivando o usuário a questionar em vez de só concordar. Use quando o usuário quiser testar, clarear ou amadurecer uma ideia ou projeto, quando ele chamar /sync-me, ou quando /sync-docs ou /sync-mva pedirem o método de entrevista.
 ---
 
-# syncing
+# sync-me
 
 Entreviste o usuário sobre o projeto dele até vocês chegarem a um **entendimento compartilhado**. Sincronizar é de mão dupla: você entende o projeto, e o usuário entende as próprias escolhas a ponto de defendê-las para alguém que não estava na conversa.
 
@@ -72,7 +72,7 @@ Mantenha, mentalmente ou por escrito se a skill que te chamou pedir:
 - **o que precisa de protótipo**;
 - **termos** que o projeto usa e o que cada um significa.
 
-As skills que chamam a `syncing` usam essa lista para gerar o que entregam no final.
+As skills que usam o `sync-me` como método (`/sync-docs`, `/sync-mva`) usam essa lista para gerar o que entregam no final.
 
 ## Encerramento
 
@@ -80,8 +80,19 @@ A sessão termina quando a fronteira esvazia: todos os galhos visitados e nada a
 
 1. Mostre um resumo curto do entendimento compartilhado.
 2. Pergunte ao usuário se ele concorda que vocês chegaram lá, e se quer acrescentar ou mudar algo.
-3. **Não comece a construir, escrever ou gerar nada** antes de ele confirmar. O que acontece depois da confirmação é definido pela skill que chamou a `syncing`. Se ninguém chamou, pergunte ao usuário o que ele quer fazer em seguida.
+3. **Não comece a construir, escrever ou gerar nada** antes de ele confirmar.
+
+Depois da confirmação:
+
+- **Se outra skill te chamou** (`/sync-docs`, `/sync-mva`), ela define o que acontece em seguida.
+- **Se o usuário chamou o `/sync-me` diretamente**, entregue um resumo no chat, sem gravar arquivos:
+  - **decisões tomadas**, cada uma com o motivo dado pelo usuário;
+  - **onde o usuário discordou** de você e por quê;
+  - **perguntas em aberto**, incluindo os "não sei";
+  - **o que precisa de protótipo** para ser respondido.
+
+  Termine perguntando o que ele quer fazer agora. Se o projeto for seguir adiante, sugira o `/sync-docs` para registrar glossário e decisões.
 
 ---
 
-*Derivada da skill [`grilling`](https://www.aihero.dev/skills-grilling) de Matt Pocock ([mattpocock/skills](https://github.com/mattpocock/skills), licença MIT; ver `LICENSE` nesta pasta). Adaptada pela Pandora Tech LTDA.*
+*Derivada das skills [`grilling`](https://www.aihero.dev/skills-grilling) e [`grill-me`](https://www.aihero.dev/skills-grill-me) de Matt Pocock ([mattpocock/skills](https://github.com/mattpocock/skills), licença MIT; ver `LICENSE` nesta pasta). Adaptada pela Pandora Tech LTDA.*
