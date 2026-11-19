@@ -20,9 +20,11 @@ Todas as combinações de texto passam no contraste mínimo WCAG AA (4,5:1).
 ## Como usar
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@design-system-v1/design-system/pandora.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@2a87dadfc1e05c96803f9e79edbe35589af567d7/design-system/pandora.css">
 <html data-theme="claro">
 ```
+
+O endereço aponta para o commit da v1, então não muda mesmo quando o design system evoluir. Para experimentar a versão mais recente, troque o commit por `main`.
 
 Os componentes usam classes com o prefixo `ds-`, por exemplo `ds-btn ds-btn--primary`, `ds-input`, `ds-card`, `ds-table`. Veja todos funcionando nos exemplos.
 
@@ -60,7 +62,7 @@ Pandora Box's reference design system: simple, modern and made for experiments. 
 Themes: **Pandora Claro** (light, default), **Pandora Escuro** (dark), **Neutro** (graphite with a muted blue accent) and **Alto contraste** (high contrast). Every text pairing meets WCAG AA (4.5:1).
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@design-system-v1/design-system/pandora.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@2a87dadfc1e05c96803f9e79edbe35589af567d7/design-system/pandora.css">
 <html data-theme="claro">
 ```
 

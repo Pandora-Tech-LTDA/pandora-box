@@ -97,3 +97,8 @@ Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D
 - **Data:** 2026-11-19
 - **Decisão:** o `/sync-spec` reconhece quando o usuário quer usar o próprio design system, em qualquer momento da conversa ou depois da spec pronta, e troca o padrão da Pandora por ele: registra a origem, resume os tokens do design system do usuário no lugar do resumo da Pandora e remove o link da Pandora.
 - **Motivo:** "a skill precisa entender quando o usuário quiser trocar por um DS dele".
+
+## D17. Versão fixa do design system
+- **Data:** 2026-11-19
+- **Decisão:** a v1 do Pandora DS é fixada pelo commit `2a87dadfc1e05c96803f9e79edbe35589af567d7` no link do CDN (`cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@<commit>/design-system/pandora.css`), no lugar da tag `design-system-v1`, que o ambiente de trabalho não conseguiu publicar. Se a tag for criada depois, os links podem passar a usá-la.
+- **Motivo:** a spec precisa apontar para uma versão que não muda (D15).
