@@ -10,7 +10,7 @@ O Cowork usa os plugins da sua conta do Claude. Se você já instalou pelo Claud
 2. **Envie o plugin** em *Personalizar → Plugins → Adicionar → Enviar plugin* (*Customize → Plugins → Add → Upload plugin*).
 3. **Teste.** Abra o Cowork numa pasta de projeto e digite `/` no chat. As skills aparecem com o nome do plugin na frente, como `/pandora:sync-docs`.
 
-Como o Cowork trabalha numa pasta do seu computador, o `/sync-docs` grava o glossário e as decisões em `sync/`, o `/sync-spec` grava a spec em `sync/spec.md` e o `/sync-mva` grava os arquivos do MVA na mesma pasta.
+Como o Cowork trabalha numa pasta do seu computador, o `/pandora:sync-docs` grava o glossário e as decisões em `sync/`, o `/pandora:sync-spec` grava a spec em `sync/spec.md` e o `/pandora:sync-mva` grava os arquivos do MVA na mesma pasta.
 
 [Voltar para todas as plataformas](../como-instalar-skills.md)
 
@@ -30,6 +30,6 @@ Cowork uses the plugins in your Claude account. If you already installed through
 2. **Upload it** in *Customize → Plugins → Add → Upload plugin*.
 3. **Test it.** Open Cowork in a project folder and type `/` in the chat. The skills show up with the plugin name in front, such as `/pandora:sync-docs`.
 
-Because Cowork works inside a folder on your computer, `/sync-docs` saves the glossary and decisions to `sync/`, `/sync-spec` saves the spec to `sync/spec.md` and `/sync-mva` saves the MVA files to the same folder.
+Because Cowork works inside a folder on your computer, `/pandora:sync-docs` saves the glossary and decisions to `sync/`, `/pandora:sync-spec` saves the spec to `sync/spec.md` and `/pandora:sync-mva` saves the MVA files to the same folder.
 
 [Back to all platforms](../como-instalar-skills.md#english)

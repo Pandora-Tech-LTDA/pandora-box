@@ -1,6 +1,6 @@
 # Fontes do sync-spec
 
-O `/sync-spec` aproveita ideias destas skills, escritas com as nossas palavras. Nenhum trecho foi copiado literalmente.
+O `/pandora:sync-spec` aproveita ideias destas skills, escritas com as nossas palavras. Nenhum trecho foi copiado literalmente.
 
 | Fonte | Licença | Commit | O que aproveitamos |
 |---|---|---|---|
@@ -8,4 +8,4 @@ O `/sync-spec` aproveita ideias destas skills, escritas com as nossas palavras. 
 | [`wireframes`](https://github.com/TakhirKudusov/ba-toolkit/blob/d0a125f3e5b4f92192c7fffb43f5fa98bb80565c/skills/wireframes/SKILL.md), do ba-toolkit | MIT | `d0a125f` | Telas com estados (carregando, vazio, erro, sucesso) e caminho entre telas. |
 | [`aidlc-requirements`](https://github.com/aws-samples/sample-aidlc-decisions-driven-skill/blob/7e4026e2c5624705fcb5dbc15a0f17c7ef20b2e4/skills/aidlc-requirements/SKILL.md), da AWS | MIT-0 | `7e4026e` | Conferir conflitos antes de gerar; oferecer as recomendações como caminho padrão. |
 
-As decisões que moldaram a skill estão em [`sync/decisoes.md`](../../../sync/decisoes.md) (D1 a D17).
+As decisões que moldaram a skill estão em [`sync/decisoes.md`](../../../sync/decisoes.md) (D1 a D19).

@@ -1,4 +1,4 @@
-# /sync-me
+# /pandora:sync-me
 
 **Português** · [English](#english)
 
@@ -6,7 +6,7 @@
 
 ## O que é
 
-O `/sync-me` entrevista você sobre uma ideia, um plano ou um projeto até vocês chegarem a um entendimento compartilhado. Começa pela sua visão, devolve essa visão em um parágrafo e pergunta só o que sustenta essa visão. O que é reversível ou de baixo impacto ele assume e avisa. Não grava arquivos. Também é o método de entrevista que as outras skills da família usam.
+O `/pandora:sync-me` entrevista você sobre uma ideia, um plano ou um projeto até vocês chegarem a um entendimento compartilhado. Começa pela sua visão, devolve essa visão em um parágrafo e pergunta só o que sustenta essa visão. O que é reversível ou de baixo impacto ele assume e avisa. Não grava arquivos. Também é o método de entrevista que as outras skills da família usam.
 
 ## Quando usar
 
@@ -14,14 +14,14 @@ O `/sync-me` entrevista você sobre uma ideia, um plano ou um projeto até você
 - Quer testar um plano ou uma decisão com alguém que pergunte e discorde.
 - Não quer gerar documentos, só clareza.
 
-**Quando não usar:** Se o projeto vai seguir adiante e você quer registrar as decisões, use o `/sync-docs`.
+**Quando não usar:** Se o projeto vai seguir adiante e você quer registrar as decisões, use o `/pandora:sync-docs`.
 
 ## Como usar
 
-Digite `/sync-me` (ou `/pandora:sync-me`, se instalou pelo plugin) e descreva a ideia em poucas linhas.
+Digite `/pandora:sync-me` e descreva a ideia em poucas linhas.
 
 ```
-/sync-me quero criar um agente que avise a gestora quando alguém da equipe acumula atrasos
+/pandora:sync-me quero criar um agente que avise a gestora quando alguém da equipe acumula atrasos
 ```
 
 Instalação: veja [Como instalar as skills](../../../guias/como-instalar-skills.md).
@@ -47,7 +47,7 @@ Instalação: veja [Como instalar as skills](../../../guias/como-instalar-skills
 
 ## Próximo passo
 
-Se o projeto vai seguir, rode o `/sync-docs` para registrar o glossário e as decisões.
+Se o projeto vai seguir, rode o `/pandora:sync-docs` para registrar o glossário e as decisões.
 
 ## Créditos
 
@@ -57,15 +57,15 @@ Derivada das skills `grilling` e `grill-me` de Matt Pocock ([mattpocock/skills](
 
 <a id="english"></a>
 
-# /sync-me
+# /pandora:sync-me
 
-**English** · [Português](#sync-me)
+**English** · [Português](#pandorasync-me)
 
 **Develop an idea before deciding what to build.**
 
 ## What it is
 
-`/sync-me` interviews you about an idea, plan or project until you share the same understanding. It starts from your vision, plays it back in one paragraph and only asks what holds that vision up. Anything reversible or low-impact it assumes and tells you. It creates no files. It is also the interview method the other skills in the family use.
+`/pandora:sync-me` interviews you about an idea, plan or project until you share the same understanding. It starts from your vision, plays it back in one paragraph and only asks what holds that vision up. Anything reversible or low-impact it assumes and tells you. It creates no files. It is also the interview method the other skills in the family use.
 
 ## When to use
 
@@ -73,14 +73,14 @@ Derivada das skills `grilling` e `grill-me` de Matt Pocock ([mattpocock/skills](
 - You want to test a plan or decision with someone who asks and pushes back.
 - You want clarity, not documents.
 
-**When not to use:** If the project will move forward and you want to record decisions, use `/sync-docs`.
+**When not to use:** If the project will move forward and you want to record decisions, use `/pandora:sync-docs`.
 
 ## How to use
 
-Type `/sync-me` (or `/pandora:sync-me` if installed through the plugin) and describe the idea in a few lines.
+Type `/pandora:sync-me` and describe the idea in a few lines.
 
 ```
-/sync-me I want an agent that alerts the manager when someone on the team keeps arriving late
+/pandora:sync-me I want an agent that alerts the manager when someone on the team keeps arriving late
 ```
 
 Installation: see [How to install the skills](../../../guias/como-instalar-skills.md#english).
@@ -106,7 +106,7 @@ Installation: see [How to install the skills](../../../guias/como-instalar-skill
 
 ## Next step
 
-If the project moves forward, run `/sync-docs` to record the glossary and decisions.
+If the project moves forward, run `/pandora:sync-docs` to record the glossary and decisions.
 
 ## Credits
 

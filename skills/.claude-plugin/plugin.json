@@ -2,7 +2,7 @@
   "name": "pandora",
   "displayName": "Pandora Box",
   "version": "0.3.1",
-  "description": "Skills abertas da Pandora para trabalhar com IA com critério. Família Sync: entrevistas que transformam uma ideia em projeto documentado e, depois, numa spec para uma IA de código construir ou num MVA para testar (sync-me, sync-docs, sync-spec, sync-mva, syncdb).",
+  "description": "Skills abertas da Pandora para trabalhar com IA com critério. Família /pandora:sync: entrevistas que transformam uma ideia em projeto documentado e, depois, numa spec para uma IA de código construir ou num MVA para testar (sync-me, sync-docs, sync-spec, sync-mva, syncdb).",
   "author": { "name": "Pandora Tech", "url": "https://github.com/Pandora-Tech-LTDA" },
   "homepage": "https://github.com/Pandora-Tech-LTDA/pandora-box",
   "repository": "https://github.com/Pandora-Tech-LTDA/pandora-box",

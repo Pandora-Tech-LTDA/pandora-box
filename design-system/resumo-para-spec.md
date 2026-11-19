@@ -7,7 +7,7 @@ O `/sync-spec` copia para a spec o bloco do tema escolhido, sem alterar. Assim a
 ```markdown
 ### Padrão visual: Pandora DS v1, tema Pandora Claro
 
-- **Folha de estilo:** `https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@2a87dadfc1e05c96803f9e79edbe35589af567d7/design-system/pandora.css` com `<html data-theme="claro">`. Sem acesso ao link, use os valores abaixo.
+- **Folha de estilo:** `https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@3d9b720cdc7b742ddd9068431e2b982aa410cbb1/design-system/pandora.css` com `<html data-theme="claro">`. Sem acesso ao link, use os valores abaixo.
 - **Fontes:** Instrument Sans 600 nos títulos (tracking -0.02em); Inter 400/500 no texto; JetBrains Mono para código.
 - **Tamanhos:** texto 14px; rótulos e metadados 11 a 12,5px; títulos 18, 24 e 32px; **campos de formulário 16px**.
 - **Cores:** fundo `#FFFFFF` · superfície `#F6F4F8` · texto `#161018` · texto secundário `#4B4453` · apagado `#6B6473` · borda `#E3DFE8`.
@@ -24,7 +24,7 @@ O `/sync-spec` copia para a spec o bloco do tema escolhido, sem alterar. Assim a
 ```markdown
 ### Padrão visual: Pandora DS v1, tema Pandora Escuro
 
-- **Folha de estilo:** `https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@2a87dadfc1e05c96803f9e79edbe35589af567d7/design-system/pandora.css` com `<html data-theme="escuro">`. Sem acesso ao link, use os valores abaixo.
+- **Folha de estilo:** `https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@3d9b720cdc7b742ddd9068431e2b982aa410cbb1/design-system/pandora.css` com `<html data-theme="escuro">`. Sem acesso ao link, use os valores abaixo.
 - **Fontes:** Instrument Sans 600 nos títulos (tracking -0.02em); Inter 400/500 no texto; JetBrains Mono para código.
 - **Tamanhos:** texto 14px; rótulos e metadados 11 a 12,5px; títulos 18, 24 e 32px; **campos de formulário 16px**.
 - **Cores:** fundo `#0A0A0B` · superfície `#141216` · texto `#EDEBEF` · texto secundário `#BDB7C3` · apagado `#8F8996` · borda `#2B2831`.
@@ -41,7 +41,7 @@ O `/sync-spec` copia para a spec o bloco do tema escolhido, sem alterar. Assim a
 ```markdown
 ### Padrão visual: Pandora DS v1, tema Neutro
 
-- **Folha de estilo:** `https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@2a87dadfc1e05c96803f9e79edbe35589af567d7/design-system/pandora.css` com `<html data-theme="neutro">`. Sem acesso ao link, use os valores abaixo.
+- **Folha de estilo:** `https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@3d9b720cdc7b742ddd9068431e2b982aa410cbb1/design-system/pandora.css` com `<html data-theme="neutro">`. Sem acesso ao link, use os valores abaixo.
 - **Fontes:** Instrument Sans 600 nos títulos (tracking -0.02em); Inter 400/500 no texto; JetBrains Mono para código.
 - **Tamanhos:** texto 14px; rótulos e metadados 11 a 12,5px; títulos 18, 24 e 32px; **campos de formulário 16px**.
 - **Cores:** fundo `#FFFFFF` · superfície `#F5F5F4` · texto `#1C1917` · texto secundário `#44403C` · apagado `#6B6560` · borda `#E5E2DE`.
@@ -58,7 +58,7 @@ O `/sync-spec` copia para a spec o bloco do tema escolhido, sem alterar. Assim a
 ```markdown
 ### Padrão visual: Pandora DS v1, tema Alto contraste
 
-- **Folha de estilo:** `https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@2a87dadfc1e05c96803f9e79edbe35589af567d7/design-system/pandora.css` com `<html data-theme="alto-contraste">`. Sem acesso ao link, use os valores abaixo.
+- **Folha de estilo:** `https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@3d9b720cdc7b742ddd9068431e2b982aa410cbb1/design-system/pandora.css` com `<html data-theme="alto-contraste">`. Sem acesso ao link, use os valores abaixo.
 - **Fontes:** Instrument Sans 600 nos títulos (tracking -0.02em); Inter 400/500 no texto; JetBrains Mono para código.
 - **Tamanhos:** texto 14px; rótulos e metadados 11 a 12,5px; títulos 18, 24 e 32px; **campos de formulário 16px**.
 - **Cores:** fundo `#000000` · superfície `#000000` · texto `#FFFFFF` · texto secundário `#FFFFFF` · apagado `#E6E6E6` · borda `#FFFFFF`.

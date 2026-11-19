@@ -24,16 +24,18 @@ Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Te
 | [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip) | **Plugin com todas as skills.** Um arquivo só, para Claude.ai, Cowork e Claude Code |
 | [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-spec.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-spec.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) | Skills avulsas, para instalar só uma ou usar em outros agentes |
 
-> **Situação.** As cinco skills da família Sync estão publicadas e em teste (`sync-me` na versão 0.2, as demais na 0.1).
+> **Situação.** As cinco skills da família `/pandora:sync` estão publicadas e em teste (`sync-me` na versão 0.2, as demais na 0.1).
 
 ## Depois de instalar
 
+Nesta documentação, os comandos aparecem sempre com o nome do plugin: `/pandora:sync-docs`, `/pandora:sync-spec` e assim por diante. Se você instalou as skills avulsas (um .zip por skill, ou copiando as pastas), o comando fica sem o prefixo: `/sync-docs`, `/sync-spec`.
+
 ```
-/sync-me (opcional) → /sync-docs → /sync-spec  (produto com telas)
-                                 → /sync-mva → /syncdb  (automação ou agente)
+/pandora:sync-me (opcional) → /pandora:sync-docs → /pandora:sync-spec  (produto com telas)
+                                 → /pandora:sync-mva → /pandora:syncdb  (automação ou agente)
 ```
 
-Comece pelo `/sync-docs`, que entrevista você sobre o projeto e registra vocabulário e decisões. Instaladas pelo plugin, as skills aparecem como `/pandora:sync-docs` e assim por diante. Veja a página do [Sync](../skills/sync/) para entender o fluxo completo.
+Comece pelo `/pandora:sync-docs`, que entrevista você sobre o projeto e registra vocabulário e decisões. Instaladas pelo plugin, as skills aparecem como `/pandora:sync-docs` e assim por diante. Veja a página do [Sync](../skills/sync/) para entender o fluxo completo.
 
 ## Problemas comuns
 
@@ -42,7 +44,7 @@ Comece pelo `/sync-docs`, que entrevista você sobre o projeto e registra vocabu
 | A IA não usa a skill | Abra uma nova conversa ou reinicie o aplicativo. Confira se a skill aparece na lista de skills da plataforma. |
 | O envio falha | O `pandora.zip` vai em *Personalizar → Plugins*; os .zip avulsos vão em *Personalizar → Skills*. Confira se a execução de código está ativada. |
 | A skill faz todas as perguntas de uma vez, sem sugestões | Ela não carregou o `sync-me`. Instale o plugin completo e peça: "carregue a skill sync-me". |
-| Quero continuar o projeto em outra conversa | Salve o registro que o `/sync-docs` entregou, ou trabalhe numa pasta de projeto para que ele grave os arquivos em `sync/`. |
+| Quero continuar o projeto em outra conversa | Salve o registro que o `/pandora:sync-docs` entregou, ou trabalhe numa pasta de projeto para que ele grave os arquivos em `sync/`. |
 
 ---
 
@@ -74,16 +76,18 @@ All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pando
 | [pandora.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip) | **Plugin with every skill.** A single file for Claude.ai, Cowork and Claude Code |
 | [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-spec.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-spec.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) | Individual skills, to install just one or use with other agents |
 
-> **Status.** All five Sync skills are published and in testing (`sync-me` at version 0.2, the others at 0.1).
+> **Status.** All five `/pandora:sync` skills are published and in testing (`sync-me` at version 0.2, the others at 0.1).
 
 ## After installing
 
+In this documentation, commands always include the plugin name: `/pandora:sync-docs`, `/pandora:sync-spec` and so on. If you installed the individual skills (one .zip per skill, or by copying the folders), the command has no prefix: `/sync-docs`, `/sync-spec`.
+
 ```
-/sync-me (optional) → /sync-docs → /sync-spec  (product with screens)
-                                 → /sync-mva → /syncdb  (automation or agent)
+/pandora:sync-me (optional) → /pandora:sync-docs → /pandora:sync-spec  (product with screens)
+                                 → /pandora:sync-mva → /pandora:syncdb  (automation or agent)
 ```
 
-Start with `/sync-docs`, which interviews you about the project and records its vocabulary and decisions. Installed through the plugin, the skills show up as `/pandora:sync-docs` and so on. See the [Sync](../skills/sync/README.md#english) page for the full flow.
+Start with `/pandora:sync-docs`, which interviews you about the project and records its vocabulary and decisions. Installed through the plugin, the skills show up as `/pandora:sync-docs` and so on. See the [Sync](../skills/sync/README.md#english) page for the full flow.
 
 ## Troubleshooting
 
@@ -92,4 +96,4 @@ Start with `/sync-docs`, which interviews you about the project and records its 
 | The AI doesn't use the skill | Start a new conversation or restart the app. Check that the skill shows up in the platform's skill list. |
 | The upload fails | `pandora.zip` goes in *Customize → Plugins*; individual .zip files go in *Customize → Skills*. Check that code execution is on. |
 | The skill asks everything at once, without suggestions | It didn't load `sync-me`. Install the full plugin and say: "load the sync-me skill". |
-| I want to continue the project in another conversation | Save the record `/sync-docs` gave you, or work in a project folder so it saves the files to `sync/`. |
+| I want to continue the project in another conversation | Save the record `/pandora:sync-docs` gave you, or work in a project folder so it saves the files to `sync/`. |
