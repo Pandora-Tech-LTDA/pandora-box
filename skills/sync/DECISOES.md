@@ -1,0 +1,47 @@
+# Decisões: família de skills `sync`
+
+## Decididas
+
+- **Quem usa:** o aluno roda a skill sozinho, sobre o próprio projeto; o professor media depois.
+- **Princípio pedagógico:** o aluno deve sempre questionar. A skill não pode premiar o "sim" passivo.
+- **Nome da família:** `sync` (sincronizar é de mão dupla; o objetivo é entendimento compartilhado).
+- **Arquitetura**, espelhando a do original:
+  - `syncing`: núcleo com o método de entrevista, invocável pelo modelo (equivale ao `grilling`).
+  - `/sync-me`: entrevista livre, sem gerar arquivos (equivale ao `grill-me`).
+  - `/sync-docs`: entrevista que registra glossário e decisões durante a sessão (equivale ao `grill-with-docs`).
+  - `/sync-mva`: entrevista guiada pelas etapas e pelo núcleo da metodologia MVA.
+  - `syncdb`: construção de bases de dados sintéticas (ver abaixo).
+  - As três portas têm `disable-model-invocation: true` e delegam para `syncing`.
+- **Fluxo recomendado:** `/sync-docs` → `/sync-mva` → `syncdb`.
+  - O aluno começa pelo `/sync-docs`. O `/sync-mva` constrói o MVA a partir do que o `/sync-docs` produziu.
+  - Se o aluno começar direto pelo `/sync-mva`, a skill sugere passar pelo `/sync-docs` antes.
+  - O `/sync-mva` usa o `syncdb` para criar a base sintética do MVA.
+- **`syncdb`:** skill específica para construir bases de dados com dados sintéticos. Pode receber um arquivo de referência (XLS, CSV ou qualquer outro formato de dados) e gerar dados sintéticos de acordo com ele. Funciona nos dois modos: chamada pelo `/sync-mva` ou direto pelo aluno (`/syncdb`).
+- **Ambiente dos alunos:** Claude Cowork ou Claude Code, à escolha do aluno. As skills precisam funcionar nos dois.
+- **Ritmo da entrevista:** igual ao `grilling`, em rodadas com todas as perguntas que já podem ser feitas, numeradas. Também aceita uma pergunta por vez.
+- **Resposta recomendada:** aparece por padrão, e o aluno tem a opção de escondê-la, para responder sem ver a sugestão da IA.
+- **`/sync-mva` usa as etapas 3 a 5 do MVA** (modelagem → hipótese → contexto) como árvore de decisões. Referência principal: `references/mva/templates/agente-construtor-mva-v0.1.md`.
+- **Pacote do `/sync-mva` (v1):**
+  - o prompt do agente, já com teste automatizado: alguns casos de teste (entrada + saída esperada) que o próprio agente executa para se avaliar antes de começar a trabalhar;
+  - os documentos de referência (gerados com o `syncdb` quando forem dados sintéticos);
+  - um manual de como montar o agente no Cowork.
+- **Formato dos dados do `syncdb`:** a saída é sempre CSV ou Markdown, qualquer que seja o formato de entrada. Nunca Excel, Docs, PDF etc.
+- **Entregável do `/sync-me`:** um resumo no chat ao final, com decisões tomadas, pontos de discordância do aluno, perguntas que ficaram sem resposta e o que só um protótipo resolve. Não grava arquivos.
+- **Fatos:** como no `grilling`, a IA pesquisa os fatos sozinha, mas explica ao aluno o que encontrou e onde.
+- **`syncdb` também pode ser invocada pelo modelo**, além de pelo aluno (`/syncdb`) e pelo `/sync-mva`.
+- **Passagem do `/sync-docs` para o `/sync-mva`:** funciona em qualquer ambiente, com ou sem repositório.
+  - **Registro do `/sync-docs`:** se houver sistema de arquivos ou repositório conectado, grava `sync/glossario.md` e `sync/decisoes.md` no projeto do aluno durante a sessão. Sem arquivos, entrega o registro no chat, em um bloco pronto para salvar.
+  - **Aviso:** no início, o `/sync-docs` diz ao aluno onde o registro vai ficar. Se não houver onde gravar, avisa que, para continuar em outra conversa, ele precisa salvar o registro ou conectar um repositório.
+  - **Busca do `/sync-mva`, nesta ordem:** (1) registro do `/sync-docs` na conversa atual; (2) arquivos em `sync/`; (3) pede ao aluno que cole ou anexe o registro; (4) se não existir, sugere rodar o `/sync-docs` antes.
+- **Objetivo do `/sync-mva`:** é uma skill nova (usa o método de entrevista do `syncing`, mas não tem equivalente no original). Serve para **montar um MVA**: entender o processo que o aluno quer automatizar, quais documentos e base de dados ele precisa e, ao final, gerar os materiais para ele montar o MVA como um projeto no Claude:
+  - os documentos de contexto necessários (ex.: para uma análise de frequência de funcionários, a planilha de frequência);
+  - o prompt (instruções) do projeto;
+  - o passo a passo de como colar tudo isso no projeto dentro do Claude.
+- **Encerramento do `/sync-mva`:** a entrevista segue até a própria skill concluir que entendeu. Então ela diz algo como: "Já entendi. Se você tiver mais alguma informação, me diga; senão, posso gerar agora os materiais para você montar o seu MVA." Os materiais só são gerados depois da resposta do aluno.
+- **Estrutura de pastas:** cada skill fica em `skills/sync/<nome>/SKILL.md` (`syncing`, `sync-me`, `sync-docs`, `sync-mva`, `syncdb`). O guia de instalação copia toda subpasta com `SKILL.md`, exceto `references/`.
+- **Créditos:** `syncing`, `/sync-me` e `/sync-docs` citam Matt Pocock com link para [mattpocock/skills](https://github.com/mattpocock/skills) e para a página da skill de origem. `/sync-mva` e `/syncdb` citam a metodologia MVA da Pandora Tech LTDA.
+- **Documentação para iniciantes:** o README raiz lista as ferramentas e skills, e o guia `guias/como-instalar-skills.md` traz prompts prontos para instalar no Claude Code e no Cowork.
+
+## Em aberto
+
+Nenhum ponto em aberto. Próximo passo: escrever as skills.
