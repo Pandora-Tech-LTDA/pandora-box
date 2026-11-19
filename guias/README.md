@@ -1,4 +1,4 @@
-# 📖 Guias
+# Guias
 
 Tutoriais passo a passo. Cada guia tem um objetivo claro e termina com algo funcionando.
 

@@ -1,4 +1,4 @@
-# 🔗 Recursos
+# Recursos
 
 Ferramentas, links, cursos e referências que eu recomendo.
 

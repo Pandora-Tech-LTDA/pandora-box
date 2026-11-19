@@ -13,10 +13,10 @@ Evitar: PRD, especificação técnica (a spec é mais ampla que a parte técnica
 
 **Tema**: uma variação de cores do design system de referência (por exemplo, Pandora Claro e Pandora Escuro).
 
-**Bloco**: um tema da conversa do `/sync-spec` (por exemplo, segurança ou estética), que começa com uma explicação de por que importa.
+**Bloco**: um tema da conversa do `/sync-spec` (por exemplo, usuários e acesso, ou arquitetura e repositório), que começa com uma explicação de por que importa.
 
 **Padrão seguro**: a escolha que o `/sync-spec` usa num bloco quando o usuário prefere não decidir; é conservadora e explicada na spec.
 Evitar: default (use "padrão").
 
-**Estado de pronto**: a descrição observável de como o sistema está quando a versão 1 está terminada; é o critério que a IA de código usa para saber que acabou.
-Evitar: "definição de pronto" em sentido de processo ágil.
+**Estado de pronto**: a descrição observável de como o sistema está quando a versão 1 está terminada; é o critério que a IA de código usa para saber que acabou. Em inglês: *done state*.
+Evitar: "definição de pronto" e *definition of done*, que são termos de processo ágil.

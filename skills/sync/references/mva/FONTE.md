@@ -4,6 +4,10 @@
 
 **© 2026 Pandora Tech LTDA.** A metodologia MVA (textos, etapas e templates desta pasta) é de propriedade da Pandora Tech LTDA. Ao usar ou citar este material, indique a Pandora Tech LTDA como autora e a fonte abaixo.
 
+## Licença
+
+O material da metodologia MVA está licenciado sob [Creative Commons Atribuição-NãoComercial 4.0 Internacional (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.pt_BR): pode ser copiado e adaptado para fins não comerciais, com crédito à Pandora Tech LTDA. Para uso comercial, fale com a Pandora.
+
 ## Datas
 
 | Marco | Data | Registro |

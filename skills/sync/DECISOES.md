@@ -11,9 +11,9 @@
   - `/sync-mva`: entrevista guiada pelas etapas e pelo núcleo da metodologia MVA.
   - `/sync-spec`: spec de um produto com telas para uma IA de código construir (decisões em `sync/decisoes.md`, D1 a D17).
   - `syncdb`: construção de bases de dados sintéticas (ver abaixo).
-  - `/sync-docs` e `/sync-mva` têm `disable-model-invocation: true` e usam o método do `sync-me`.
-- **Fluxo recomendado:** `/sync-docs` → `/sync-mva` → `syncdb`.
-  - O usuário começa pelo `/sync-docs`. O `/sync-mva` constrói o MVA a partir do que o `/sync-docs` produziu.
+  - `/sync-docs`, `/sync-spec` e `/sync-mva` têm `disable-model-invocation: true` e usam o método do `sync-me`.
+- **Fluxo recomendado:** `/sync-me` (opcional) → `/sync-docs` → `/sync-spec` (produto com telas) ou `/sync-mva` → `syncdb` (automação ou agente).
+  - O usuário começa pelo `/sync-docs`. O `/sync-spec` e o `/sync-mva` partem do que o `/sync-docs` produziu.
   - Se o usuário começar direto pelo `/sync-mva`, a skill sugere passar pelo `/sync-docs` antes.
   - O `/sync-mva` usa o `syncdb` para criar a base sintética do MVA.
 - **`syncdb`:** skill específica para construir bases de dados com dados sintéticos. Pode receber um arquivo de referência (XLS, CSV ou qualquer outro formato de dados) e gerar dados sintéticos de acordo com ele. Funciona nos dois modos: chamada pelo `/sync-mva` ou direto pelo usuário (`/syncdb`).
@@ -36,13 +36,13 @@
 - **Objetivo do `/sync-mva`:** é uma skill nova (usa o método de entrevista do `sync-me`, mas não tem equivalente no original). Serve para **montar um MVA**: entender o processo que o usuário quer automatizar, quais documentos e base de dados ele precisa e, ao final, gerar os materiais para ele montar o MVA como um projeto no Claude:
   - os documentos de contexto necessários (ex.: para uma análise de frequência de funcionários, a planilha de frequência);
   - o prompt (instruções) do projeto;
-  - o passo a passo de como colar tudo isso no projeto dentro do Claude.
+  - o manual de montagem do agente no Cowork (ver o pacote do `/sync-mva`, mais acima).
 - **Encerramento do `/sync-mva`:** a entrevista segue até a própria skill concluir que entendeu. Então ela diz algo como: "Já entendi. Se você tiver mais alguma informação, me diga; senão, posso gerar agora os materiais para você montar o seu MVA." Os materiais só são gerados depois da resposta do usuário.
-- **Estrutura de pastas:** cada skill fica em `skills/sync/<nome>/SKILL.md` (`sync-me`, `sync-docs`, `sync-mva`, `syncdb`). O guia de instalação copia toda subpasta com `SKILL.md`, exceto `references/`.
+- **Estrutura de pastas:** cada skill fica em `skills/sync/<nome>/SKILL.md` (`sync-me`, `sync-docs`, `sync-spec`, `sync-mva`, `syncdb`). O guia de instalação copia toda subpasta com `SKILL.md`, exceto `references/`.
 - **Créditos:** `/sync-me` e `/sync-docs` citam Matt Pocock com link para [mattpocock/skills](https://github.com/mattpocock/skills) e para a página da skill de origem. `/sync-mva` e `/syncdb` citam a metodologia MVA da Pandora Tech LTDA.
 - **Documentação para iniciantes:** o README raiz lista as ferramentas e skills, e o guia `guias/como-instalar-skills.md` traz prompts prontos para instalar no Claude Code e no Cowork.
 
-- **Situação (2026-11-19):** as quatro skills (`sync-me`, `sync-docs`, `sync-mva`, `syncdb`) estão publicadas na versão 0.1, em teste.
+- **Situação (2026-11-19, primeira publicação):** `sync-me`, `sync-docs`, `sync-mva` e `syncdb` publicadas na versão 0.1, em teste. (Atualizada mais abaixo.)
 
 - **Instalação em um passo:** o repositório é um marketplace de plugins (`.claude-plugin/marketplace.json`) com o plugin `pandora` (raiz em `skills/`, manifesto em `skills/.claude-plugin/plugin.json`), que reúne todas as skills. O workflow publica `pandora.zip` (o plugin) e um .zip por skill; nos avulsos, a chave `disable-model-invocation` é removida porque o envio avulso de skills no Claude.ai não a aceita. Instaladas pelo plugin, as skills aparecem como `/pandora:<skill>`.
 
@@ -57,11 +57,14 @@
   8. oferece o fechamento quando a visão está clara, mesmo com pendências;
   9. mensagens curtas: sugestão e custo em uma linha cada, no máximo um contraponto por rodada.
 
-- **Nova skill `/sync-spec` (decidido o nome e o papel):** gera o mapa de requisitos (`sync/requisitos.md`), a documentação necessária para começar a desenvolver, incluindo a parte visual: referências, direção visual, telas e wireframes. Parte do registro do `/sync-docs` sem reentrevistar o que já foi decidido. Fontes a derivar: `to-spec` e `prototype` (Matt Pocock, MIT), `wireframes` (ba-toolkit, MIT) e `aidlc-requirements` (AWS, MIT-0).
+- **Nova skill `/sync-spec` (decidido o nome e o papel):** gera o mapa de requisitos (`sync/spec.md`; o nome inicial `sync/requisitos.md` foi substituído, ver D18 em `sync/decisoes.md`), a documentação necessária para começar a desenvolver, incluindo a parte visual: referências, direção visual, telas e wireframes. Parte do registro do `/sync-docs` sem reentrevistar o que já foi decidido. Fontes: só as ideias de `to-spec` (Matt Pocock, MIT), `wireframes` (ba-toolkit, MIT) e `aidlc-requirements` (AWS, MIT-0), com crédito em `sync-spec/FONTES.md` (D14).
 - **Próximo passo depois do `/sync-docs`:** o `/sync-docs` recomenda, com o motivo, o caminho mais coerente: **`/sync-mva`** quando o projeto é uma automação ou um agente que trabalha sobre documentos e dados e precisa testar valor rápido; **`/sync-spec`** quando é um produto ou software com telas, que vai ser desenvolvido. Quando for os dois (uma automação que depois vira produto), recomenda MVA primeiro e spec depois. A escolha final é do usuário.
 - **Design system de referência:** a família terá um design system básico, pronto para usar quando o usuário não tiver marca, com pelo menos dois temas genéricos da Pandora: **claro** e **escuro**. Serve de padrão para a direção visual e as prévias do `/sync-spec`.
 
 - **Situação (2026-11-19):** `/sync-spec` publicada na versão 0.1, em teste, junto com o Pandora DS v1 (`design-system/`). Cada skill tem uma página própria (`README.md` na pasta da skill) com o que é, quando usar, como usar e resultados esperados. Plugin 0.3.0.
+
+- **Revisão pós-auditoria (plugin 0.3.1):** registro do `/sync-docs` com seções Visão, Em aberto, Suposições e Riscos; contradições entre `sync-me`, `sync-docs` e `sync-mva` resolvidas; eficiência no `/sync-spec`; Pandora DS v1.1 com contraste corrigido; `sync-me` na versão 0.2 nas páginas.
+- **Licença do MVA:** o material da metodologia MVA (`skills/sync/references/mva/`) é © Pandora Tech LTDA, sob **CC BY-NC 4.0** (uso não comercial, com crédito). As skills (texto e código) seguem MIT; o restante do conteúdo do repositório, CC BY 4.0.
 
 ## Em aberto
 

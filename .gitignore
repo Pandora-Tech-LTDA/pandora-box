@@ -22,3 +22,6 @@ Thumbs.db
 .vscode/
 .idea/
 .claude/settings.local.json
+
+# Exceção: tokens do design system (não são credenciais)
+!design-system/tokens.json

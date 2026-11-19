@@ -2,7 +2,7 @@
 
 > Uma frase dizendo o que essa MCP faz e para quem ela é útil.
 
-**Status:** 🧪 Beta · **Linguagem:** TypeScript/Python · **Transporte:** stdio / HTTP
+**Situação:** beta · **Linguagem:** TypeScript/Python · **Transporte:** stdio / HTTP
 
 ## O que ela faz
 

@@ -34,7 +34,7 @@ Todo o material é aberto. Leia, copie, adapte e use, citando a fonte.
 
 ## Produtos
 
-<a href="skills/sync/"><img src="assets/banner-sync.png" alt="Sync. A IA pergunta. Você decide. Uma família de skills que entrevista você sobre o seu projeto até haver entendimento compartilhado e, no fim, entrega o material para montar o seu MVA." width="100%"></a>
+<a href="skills/sync/"><img src="assets/banner-sync.png" alt="Sync. A IA pergunta. Você decide. Uma família de skills que entrevista você sobre o seu projeto até haver entendimento compartilhado e, no fim, entrega a spec ou o MVA do projeto." width="100%"></a>
 
 ### Sync
 
@@ -57,7 +57,7 @@ Cada skill tem uma página com o que é, quando usar, como usar e o que esperar:
 | [`/sync-spec`](skills/sync/sync-spec/) | Monta a spec de um produto com telas para uma IA de código construir com segurança | v0.1, em teste |
 | [`/sync-mva`](skills/sync/sync-mva/) | Monta o MVA de uma automação ou agente a partir do que o `/sync-docs` registrou | v0.1, em teste |
 | [`/syncdb`](skills/sync/syncdb/) | Gera bases de dados sintéticas em CSV ou Markdown a partir de um arquivo de exemplo | v0.1, em teste |
-| [`/sync-me`](skills/sync/sync-me/) | Entrevista sobre uma ideia ou projeto, sem gerar arquivos. É também o método de entrevista que as outras skills usam. | v0.1, em teste |
+| [`/sync-me`](skills/sync/sync-me/) | Entrevista sobre uma ideia ou projeto, sem gerar arquivos. É também o método de entrevista que as outras skills usam. | v0.2, em teste |
 
 [Conhecer o Sync ↗](skills/sync/) · [Instalar](#instalação)
 
@@ -150,7 +150,7 @@ Instale para mim as skills da família "sync" do repositório público https://g
 
 Cada subpasta de skills/sync que tem um arquivo SKILL.md é uma skill. Ignore a pasta "references".
 
-Copie cada uma dessas subpastas, inteira, para .agents/skills/ (na raiz deste projeto) <nome-da-subpasta>/. Se alguma já existir, me pergunte antes de substituir.
+Copie cada uma dessas subpastas, inteira, para .agents/skills/<nome-da-subpasta>/, na raiz deste projeto. Se alguma já existir, me pergunte antes de substituir.
 
 Apague os arquivos temporários do download. No final, me mostre uma tabela com as skills instaladas e o que cada uma faz, e me diga como começar a usar.
 ```
@@ -197,8 +197,9 @@ Encontrou um erro, tem uma dúvida ou quer sugerir um conteúdo? Abra uma [issue
 
 ## Licença
 
-- **Código** (MCPs, scripts e exemplos): [MIT](LICENSE).
+- **Código e skills** (MCPs, scripts, exemplos e as skills): [MIT](LICENSE).
 - **Conteúdo** (textos, guias e dicas): [CC BY 4.0](LICENSE-CONTEUDO.md). Use à vontade, citando a fonte.
+- **Metodologia MVA** (`skills/sync/references/mva/`): © Pandora Tech LTDA, [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): uso não comercial, com crédito.
 
 ---
 ---
@@ -227,7 +228,7 @@ Everything here is open. Read, copy, adapt and use it, with attribution.
 
 ### Products
 
-<a href="skills/sync/README.md#english"><img src="assets/banner-sync-en.png" alt="Sync. The AI asks. You decide. A family of skills that interviews you about your project until you share the same understanding, then delivers what you need to build your MVA." width="100%"></a>
+<a href="skills/sync/README.md#english"><img src="assets/banner-sync-en.png" alt="Sync. The AI asks. You decide. A family of skills that interviews you about your project until you share the same understanding, then delivers your project's spec or MVA." width="100%"></a>
 
 #### Sync
 
@@ -250,7 +251,7 @@ Each skill has its own page with what it is, when to use it, how to use it and w
 | [`/sync-spec`](skills/sync/sync-spec/) | Builds the spec of a product with screens so a coding AI can build it safely | v0.1, testing |
 | [`/sync-mva`](skills/sync/sync-mva/) | Builds the MVA of an automation or agent from what `/sync-docs` recorded | v0.1, testing |
 | [`/syncdb`](skills/sync/syncdb/) | Generates synthetic datasets in CSV or Markdown from a sample file | v0.1, testing |
-| [`/sync-me`](skills/sync/sync-me/) | Interview about an idea or project, no files created. It is also the interview method the other skills use. | v0.1, testing |
+| [`/sync-me`](skills/sync/sync-me/) | Interview about an idea or project, no files created. It is also the interview method the other skills use. | v0.2, testing |
 
 [Learn about Sync ↗](skills/sync/README.md#english)
 
@@ -341,7 +342,7 @@ Install the "sync" skill family from the public repository https://github.com/Pa
 
 Each subfolder of skills/sync that contains a SKILL.md file is a skill. Ignore the "references" folder.
 
-Copy each of these subfolders, in full, to .agents/skills/ (at the root of this project) <subfolder-name>/. If any already exists, ask me before replacing it.
+Copy each of these subfolders, in full, to .agents/skills/<subfolder-name>/, at the root of this project. If any already exists, ask me before replacing it.
 
 Delete the temporary download files. At the end, show me a table of the installed skills and what each one does, and tell me how to get started.
 ```
@@ -382,7 +383,8 @@ Found a mistake, have a question or want to suggest content? Open an [issue](../
 
 ### License
 
-- **Code** (MCPs, scripts and examples): [MIT](LICENSE).
+- **Code and skills** (MCPs, scripts, examples and the skills): [MIT](LICENSE).
 - **Content** (texts, guides and tips): [CC BY 4.0](LICENSE-CONTEUDO.md). Free to use with attribution.
+- **MVA methodology** (`skills/sync/references/mva/`): © Pandora Tech LTDA, [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): non-commercial use, with attribution.
 
 <sub>©2026 Pandora Tech LTDA</sub>

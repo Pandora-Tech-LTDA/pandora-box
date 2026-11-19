@@ -38,7 +38,16 @@ Não pergunte o que já está identificado.
 
 ## 3. Entrevistar só o que falta
 
-Carregue a skill **`sync-me`** e siga o método dela (visão primeiro, rodadas só com o que sustenta a visão, suposições declaradas, sugestão e custo em uma linha, riscos oferecidos e não impostos). A visão já está no registro do `/sync-docs`: devolva-a em um parágrafo em vez de perguntar de novo. Se não conseguir carregar, pergunte em rodadas numeradas, com uma sugestão e o seu custo em cada pergunta, e peça o motivo de cada "sim".
+Carregue a skill **`sync-me`** e siga o método dela. A visão já está no registro do `/sync-docs` (seção Visão): devolva-a em um parágrafo em vez de perguntar de novo.
+
+Se não conseguir carregar o `sync-me`, aplique estas regras mínimas:
+
+- Devolva a visão em um parágrafo antes de abrir decisões.
+- Pergunte em rodadas numeradas, só o que sustenta a visão; assuma o que é reversível e liste como "assumi".
+- Em cada pergunta, uma linha de sugestão e uma de custo. Escreva perguntas abertas.
+- Nas decisões que sustentam a visão, peça o motivo de um "sim" sozinho.
+- Guarde os riscos numa lista e ofereça analisá-los; não os imponha a cada pergunta.
+- Pesquise você mesmo os fatos e diga onde encontrou. As decisões são do usuário.
 
 Use as etapas do MVA como galhos da árvore:
 

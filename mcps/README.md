@@ -1,4 +1,4 @@
-# 🔌 MCPs
+# MCPs
 
 Servidores **MCP (Model Context Protocol)** que desenvolvi. Uma MCP conecta um
 assistente de IA (Claude, Cursor, etc.) a ferramentas e dados externos.
@@ -12,7 +12,7 @@ assistente de IA (Claude, Cursor, etc.) a ferramentas e dados externos.
 | _em breve_ | | |
 
 <!-- Ao adicionar uma MCP, inclua uma linha acima:
-| [nome-da-mcp](nome-da-mcp/) | Descrição curta | ✅ Estável / 🧪 Beta / 🚧 Em construção |
+| [nome-da-mcp](nome-da-mcp/) | Descrição curta | Estável / Beta / Em construção |
 -->
 
 ## Como adicionar uma nova MCP
