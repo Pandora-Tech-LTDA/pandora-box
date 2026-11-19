@@ -6,7 +6,7 @@
 
 O Cowork usa as skills da sua conta do Claude. Se você já instalou pelo Claude.ai, não precisa fazer nada.
 
-1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória. Os demais arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória; baixe também [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) e [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Envie cada skill.** Em *Configurações → Capacidades → Skills*, envie o .zip de cada skill, com a execução de código ativada.
 3. **Teste.** Abra o Cowork numa pasta de projeto e digite `/` no chat: as skills instaladas aparecem na lista.
 
@@ -26,7 +26,7 @@ Como o Cowork trabalha numa pasta do seu computador, o `/sync-docs` grava o glos
 
 Cowork uses the skills in your Claude account. If you already installed them through Claude.ai, there is nothing else to do.
 
-1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required. All other files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required; also download [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) and [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Upload each skill.** In *Settings → Capabilities → Skills*, upload the .zip of each skill, with code execution turned on.
 3. **Test it.** Open Cowork in a project folder and type `/` in the chat: installed skills show up in the list.
 

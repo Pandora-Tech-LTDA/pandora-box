@@ -8,7 +8,7 @@
 
 A maioria dos projetos com IA começa pela ferramenta e descobre o problema no meio do caminho. O Sync inverte a ordem: primeiro vêm as perguntas, depois a construção.
 
-> **Situação.** O `/sync-me`, que também é o método de entrevista das outras skills, está na versão 0.1, em teste. As demais skills estão em construção.
+> **Situação.** As quatro skills estão publicadas na versão 0.1, em teste.
 
 ---
 
@@ -30,9 +30,9 @@ A maioria dos projetos com IA começa pela ferramenta e descobre o problema no m
 
 | Skill | Para quê | Entrega | Situação |
 |---|---|---|---|
-| `/sync-docs` | Entender e documentar um projeto. **Comece por aqui.** | `sync/glossario.md` e `sync/decisoes.md` no seu projeto, ou um registro no chat | Em construção |
-| `/sync-mva` | Montar um MVA a partir do registro do `/sync-docs` | Prompt do agente com testes automatizados, documentos de referência e manual de montagem no Cowork | Em construção |
-| `/syncdb` | Criar dados de exemplo sem expor dados reais | Bases sintéticas em CSV ou Markdown, a partir de um arquivo de exemplo | Em construção |
+| [`/sync-docs`](sync-docs/) | Entender e documentar um projeto. **Comece por aqui.** | `sync/glossario.md` e `sync/decisoes.md` no seu projeto, ou um registro no chat | v0.1, em teste |
+| [`/sync-mva`](sync-mva/) | Montar um MVA a partir do registro do `/sync-docs` | Prompt do agente com testes automatizados, documentos de referência e manual de montagem no Cowork | v0.1, em teste |
+| [`/syncdb`](syncdb/) | Criar dados de exemplo sem expor dados reais | Bases sintéticas em CSV ou Markdown, a partir de um arquivo de exemplo | v0.1, em teste |
 | [`/sync-me`](sync-me/) | Amadurecer uma ideia ou projeto, sem gerar arquivos. É também o método de entrevista usado pelas outras skills. | Resumo com decisões, discordâncias e perguntas em aberto | v0.1, em teste |
 
 ### O fluxo recomendado
@@ -53,7 +53,7 @@ A maioria dos projetos com IA começa pela ferramenta e descobre o problema no m
 
 Funciona no Claude.ai, no Claude Cowork e no Claude Code, e é compatível com o OpenAI Codex, o VS Code com GitHub Copilot e outros agentes que leem o formato Agent Skills.
 
-Escolha a sua plataforma em [Como instalar as skills](../../guias/como-instalar-skills.md). Para o Claude.ai e o Cowork, o download direto é [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip).
+Escolha a sua plataforma em [Como instalar as skills](../../guias/como-instalar-skills.md). Para o Claude.ai e o Cowork, os downloads diretos são [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip), [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) e [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip).
 
 ---
 
@@ -82,7 +82,7 @@ Escolha a sua plataforma em [Como instalar as skills](../../guias/como-instalar-
 
 Most AI projects start with the tool and discover the problem halfway through. Sync reverses the order: questions first, building second.
 
-> **Status.** `/sync-me`, which is also the interview method for the other skills, is at version 0.1, in testing. The other skills are in progress.
+> **Status.** All four skills are published at version 0.1, in testing.
 
 ## How it works
 
@@ -100,9 +100,9 @@ Most AI projects start with the tool and discover the problem halfway through. S
 
 | Skill | Purpose | Output | Status |
 |---|---|---|---|
-| `/sync-docs` | Understand and document a project. **Start here.** | `sync/glossario.md` and `sync/decisoes.md` in your project, or a record in the chat | In progress |
-| `/sync-mva` | Build an MVA (Minimum Viable Automation) from the `/sync-docs` record | Agent prompt with automated tests, reference documents and a Cowork setup manual | In progress |
-| `/syncdb` | Create sample data without exposing real data | Synthetic datasets in CSV or Markdown, from a sample file | In progress |
+| [`/sync-docs`](sync-docs/) | Understand and document a project. **Start here.** | `sync/glossario.md` and `sync/decisoes.md` in your project, or a record in the chat | v0.1, testing |
+| [`/sync-mva`](sync-mva/) | Build an MVA (Minimum Viable Automation) from the `/sync-docs` record | Agent prompt with automated tests, reference documents and a Cowork setup manual | v0.1, testing |
+| [`/syncdb`](syncdb/) | Create sample data without exposing real data | Synthetic datasets in CSV or Markdown, from a sample file | v0.1, testing |
 | [`/sync-me`](sync-me/) | Develop an idea or project, without creating files. It is also the interview method the other skills use. | Summary of decisions, disagreements and open questions | v0.1, testing |
 
 ### Recommended flow
@@ -121,7 +121,7 @@ Most AI projects start with the tool and discover the problem halfway through. S
 
 Works on Claude.ai, Claude Cowork and Claude Code, and is compatible with OpenAI Codex, VS Code with GitHub Copilot and other agents that read the Agent Skills format.
 
-Pick your platform in [How to install the skills](../../guias/como-instalar-skills.md#english). For Claude.ai and Cowork, the direct download is [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip).
+Pick your platform in [How to install the skills](../../guias/como-instalar-skills.md#english). For Claude.ai and Cowork, the direct downloads are [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip), [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) and [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip).
 
 ## Credits and licenses
 

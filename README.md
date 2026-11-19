@@ -46,9 +46,9 @@ No fim, você sai com o projeto documentado e, se quiser, com o material para mo
 
 | Skill | O que faz | Situação |
 |---|---|---|
-| `/sync-docs` | Entrevista sobre o projeto e registra glossário e decisões. **Ponto de partida.** | Em construção |
-| `/sync-mva` | Monta o MVA a partir do que o `/sync-docs` registrou | Em construção |
-| `/syncdb` | Gera bases de dados sintéticas em CSV ou Markdown a partir de um arquivo de exemplo | Em construção |
+| [`/sync-docs`](skills/sync/sync-docs/) | Entrevista sobre o projeto e registra glossário e decisões. **Ponto de partida.** | v0.1, em teste |
+| [`/sync-mva`](skills/sync/sync-mva/) | Monta o MVA a partir do que o `/sync-docs` registrou | v0.1, em teste |
+| [`/syncdb`](skills/sync/syncdb/) | Gera bases de dados sintéticas em CSV ou Markdown a partir de um arquivo de exemplo | v0.1, em teste |
 | [`/sync-me`](skills/sync/sync-me/) | Entrevista sobre uma ideia ou projeto, sem gerar arquivos. É também o método de entrevista que as outras skills usam. | v0.1, em teste |
 
 [Conhecer o Sync ↗](skills/sync/) · [Instalar](#instalação)
@@ -59,14 +59,14 @@ No fim, você sai com o projeto documentado e, se quiser, com o material para mo
 
 As skills seguem o formato aberto [Agent Skills](https://agentskills.io) e funcionam no Claude e em outros agentes compatíveis. Elas são escritas para o Claude; nas demais plataformas, o formato é compatível, mas o comportamento ainda não foi validado.
 
-Downloads: [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) · [todos os arquivos](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)
+Downloads: [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) · [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) · [todos os arquivos](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)
 
 Clique na sua plataforma:
 
 <details>
 <summary><strong>Claude.ai (navegador, desktop e celular)</strong> · Suportado</summary>
 
-1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória. Os demais arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória; baixe também [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) e [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Ative a execução de código.** Em *Configurações → Capacidades*, ative a execução de código e criação de arquivos.
 3. **Envie cada skill.** Ainda em *Configurações → Capacidades*, na área **Skills**, envie o .zip de cada skill. Se baixou o `sync-todas.zip`, abra-o antes: o Claude espera um .zip por skill.
 4. **Teste.** Em uma nova conversa, escreva: *"Use a skill sync-me para me ajudar a amadurecer a ideia de um agente que analisa a frequência dos funcionários."*
@@ -80,7 +80,7 @@ As skills enviadas no Claude.ai ficam na sua conta e valem também no Cowork. Os
 
 O Cowork usa as skills da sua conta do Claude. Se você já instalou pelo Claude.ai, não precisa fazer nada.
 
-1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória. Os demais arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Baixe as skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) é obrigatória; baixe também [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) e [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Envie cada skill.** Em *Configurações → Capacidades → Skills*, envie o .zip de cada skill, com a execução de código ativada.
 3. **Teste.** Abra o Cowork numa pasta de projeto e digite `/` no chat: as skills instaladas aparecem na lista.
 
@@ -228,9 +228,9 @@ You end up with a documented project and, if you want, everything you need to bu
 
 | Skill | What it does | Status |
 |---|---|---|
-| `/sync-docs` | Interviews you about the project and records a glossary and decisions. **Start here.** | In progress |
-| `/sync-mva` | Builds the MVA from what `/sync-docs` recorded | In progress |
-| `/syncdb` | Generates synthetic datasets in CSV or Markdown from a sample file | In progress |
+| [`/sync-docs`](skills/sync/sync-docs/) | Interviews you about the project and records a glossary and decisions. **Start here.** | v0.1, testing |
+| [`/sync-mva`](skills/sync/sync-mva/) | Builds the MVA from what `/sync-docs` recorded | v0.1, testing |
+| [`/syncdb`](skills/sync/syncdb/) | Generates synthetic datasets in CSV or Markdown from a sample file | v0.1, testing |
 | [`/sync-me`](skills/sync/sync-me/) | Interview about an idea or project, no files created. It is also the interview method the other skills use. | v0.1, testing |
 
 [Learn about Sync ↗](skills/sync/README.md#english)
@@ -239,14 +239,14 @@ You end up with a documented project and, if you want, everything you need to bu
 
 The skills follow the open [Agent Skills](https://agentskills.io) format and work in Claude and other compatible agents. They are written for Claude; on other platforms the format is compatible, but behavior has not been validated yet.
 
-Downloads: [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) (all Sync skills) · [all files](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)
+Downloads: [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) · [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip) · [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) · [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip) · [sync-todas.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-todas.zip) (all Sync skills) · [all files](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)
 
 Click your platform:
 
 <details>
 <summary><strong>Claude.ai (web, desktop and mobile)</strong> · Supported</summary>
 
-1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required. All other files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required; also download [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) and [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Turn on code execution.** In *Settings → Capabilities*, turn on code execution and file creation.
 3. **Upload each skill.** Still in *Settings → Capabilities*, in the **Skills** section, upload the .zip of each skill. If you downloaded `sync-todas.zip`, unzip it first: Claude expects one .zip per skill.
 4. **Test it.** In a new conversation, write: *"Use the sync-me skill to help me refine the idea of an agent that analyzes employee attendance."*
@@ -260,7 +260,7 @@ Skills uploaded to Claude.ai belong to your account and also work in Cowork. Men
 
 Cowork uses the skills in your Claude account. If you already installed them through Claude.ai, there is nothing else to do.
 
-1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required. All other files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+1. **Download the skills.** [sync-me.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-me.zip) is required; also download [sync-docs.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-docs.zip), [sync-mva.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/sync-mva.zip) and [syncdb.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncdb.zip). All files are on [Pandora Box Skills](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 2. **Upload each skill.** In *Settings → Capabilities → Skills*, upload the .zip of each skill, with code execution turned on.
 3. **Test it.** Open Cowork in a project folder and type `/` in the chat: installed skills show up in the list.
 

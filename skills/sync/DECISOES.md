@@ -41,6 +41,8 @@
 - **Créditos:** `/sync-me` e `/sync-docs` citam Matt Pocock com link para [mattpocock/skills](https://github.com/mattpocock/skills) e para a página da skill de origem. `/sync-mva` e `/syncdb` citam a metodologia MVA da Pandora Tech LTDA.
 - **Documentação para iniciantes:** o README raiz lista as ferramentas e skills, e o guia `guias/como-instalar-skills.md` traz prompts prontos para instalar no Claude Code e no Cowork.
 
+- **Situação (2026-11-19):** as quatro skills (`sync-me`, `sync-docs`, `sync-mva`, `syncdb`) estão publicadas na versão 0.1, em teste.
+
 ## Em aberto
 
 Nenhum ponto em aberto. Próximo passo: escrever as skills.
