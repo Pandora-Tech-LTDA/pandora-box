@@ -55,7 +55,7 @@ Se não houver nenhuma skill publicada ainda, apenas me avise.
 
 3. O Claude pode pedir permissão para rodar comandos. Leia e aprove.
 4. **Feche e abra o Claude Code de novo** para ele carregar as skills.
-5. Teste digitando `/sync-docs` no chat.
+5. Teste digitando `/` no chat: as skills instaladas aparecem na lista. Enquanto as outras skills não forem publicadas, teste com `/syncing`.
 
 ## Opção B: Claude Cowork
 
@@ -80,7 +80,7 @@ Se não houver nenhuma skill publicada ainda, apenas me avise.
    *Configurações → Capacidades*). Os nomes do menu podem mudar com o tempo; se não
    encontrar, pergunte ao próprio Claude onde fica.
 4. **Envie todas as skills**, inclusive a `syncing`. As outras dependem dela.
-5. Abra uma nova conversa e teste digitando `/sync-docs`.
+5. Abra uma nova conversa e teste digitando `/syncing` (ou `/sync-docs`, quando estiver publicada).
 
 ---
 
