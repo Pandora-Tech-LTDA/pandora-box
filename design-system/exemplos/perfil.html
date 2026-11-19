@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="claro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perfil · Pandora DS</title>
+<link rel="stylesheet" href="../pandora.css">
+<style>
+  .perfil-topo { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-5); padding: var(--space-7) 0 var(--space-5); }
+  .perfil-topo h1 { font-size: var(--text-2xl); margin: 0; }
+  .perfil-topo .ds-row { margin-top: var(--space-2); }
+  .perfil-acoes { margin-left: auto; }
+  .colunas { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: var(--space-4); padding: var(--space-5) 0 var(--space-8); }
+  .duas { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+  .linha-config { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-3) 0; border-bottom: var(--line) solid var(--border); }
+  .linha-config:last-child { border-bottom: 0; }
+  .linha-config strong { display: block; font-weight: 500; font-size: var(--text-sm); }
+  .colunas > *, .duas > * { min-width: 0; }
+  @media (max-width: 760px) { .colunas, .duas { grid-template-columns: 1fr; } .perfil-acoes { margin-left: 0; } }
+</style>
+</head>
+<body>
+<header class="ds-topbar">
+  <a class="ds-topbar__brand" href="#">Frequência</a>
+  <nav class="ds-nav" aria-label="Principal">
+    <a href="#">Painel</a>
+    <a href="#">Relatórios</a>
+    <a href="#" aria-current="page">Perfil</a>
+  </nav>
+  <div class="ds-row">
+    <select class="ds-select" id="tema" aria-label="Tema" style="width:auto;min-height:32px;font-size:var(--text-sm);padding:2px 8px">
+      <option value="claro">Pandora Claro</option>
+      <option value="escuro">Pandora Escuro</option>
+      <option value="neutro">Neutro</option>
+      <option value="alto-contraste">Alto contraste</option>
+    </select>
+    <span class="ds-avatar" aria-hidden="true">MS</span>
+  </div>
+</header>
+
+<main class="ds-container">
+  <section class="perfil-topo">
+    <span class="ds-avatar ds-avatar--lg" aria-hidden="true">MS</span>
+    <div>
+      <h1>Maria Silva</h1>
+      <div class="ds-meta">Analista de RH · Unidade Louveira</div>
+      <div class="ds-row">
+        <span class="ds-badge ds-badge--accent">Administradora</span>
+        <span class="ds-badge ds-badge--success">2FA ativo</span>
+      </div>
+    </div>
+    <div class="ds-row perfil-acoes">
+      <button class="ds-btn ds-btn--secondary">Ver como outros veem</button>
+      <button class="ds-btn ds-btn--primary">Salvar alterações</button>
+    </div>
+  </section>
+
+  <nav class="ds-tabs" aria-label="Seções do perfil">
+    <a href="#" aria-current="page">Dados pessoais</a>
+    <a href="#">Segurança</a>
+    <a href="#">Notificações</a>
+    <a href="#">Atividade</a>
+  </nav>
+
+  <div class="colunas">
+    <div class="ds-stack">
+      <section class="ds-card ds-stack">
+        <div>
+          <h3>Dados pessoais</h3>
+          <p class="ds-meta" style="margin:0">Essas informações aparecem nos relatórios que você gera.</p>
+        </div>
+        <div class="duas">
+          <div class="ds-field"><label class="ds-label" for="nome">Nome</label><input class="ds-input" id="nome" value="Maria Silva"></div>
+          <div class="ds-field"><label class="ds-label" for="cargo">Cargo</label><input class="ds-input" id="cargo" value="Analista de RH"></div>
+          <div class="ds-field"><label class="ds-label" for="email">E-mail</label><input class="ds-input" id="email" type="email" value="maria.silva@empresa.com.br"></div>
+          <div class="ds-field ds-field--error"><label class="ds-label" for="tel">Telefone</label><input class="ds-input" id="tel" value="(11) 9999"><span class="ds-help">Informe o número completo, com DDD.</span></div>
+          <div class="ds-field"><label class="ds-label" for="unidade">Unidade</label>
+            <select class="ds-select" id="unidade"><option>Louveira</option><option>Campinas</option><option>São Paulo</option></select></div>
+          <div class="ds-field"><label class="ds-label" for="fuso">Fuso horário</label>
+            <select class="ds-select" id="fuso"><option>Brasília (GMT-3)</option></select></div>
+        </div>
+        <div class="ds-field"><label class="ds-label" for="bio">Sobre</label><textarea class="ds-textarea" id="bio" placeholder="Uma frase sobre o seu papel na equipe."></textarea></div>
+      </section>
+
+      <section class="ds-card ds-stack">
+        <h3>Segurança</h3>
+        <div>
+          <div class="linha-config">
+            <div><strong>Verificação em duas etapas (2FA)</strong><span class="ds-meta">Pede um código do aplicativo autenticador a cada novo acesso.</span></div>
+            <label class="ds-switch"><input type="checkbox" checked><span class="ds-switch__track"></span></label>
+          </div>
+          <div class="linha-config">
+            <div><strong>Login com a conta da empresa</strong><span class="ds-meta">Entrar com o Google Workspace da empresa.</span></div>
+            <label class="ds-switch"><input type="checkbox"><span class="ds-switch__track"></span></label>
+          </div>
+          <div class="linha-config">
+            <div><strong>Senha</strong><span class="ds-meta">Alterada há 3 meses.</span></div>
+            <button class="ds-btn ds-btn--secondary">Alterar senha</button>
+          </div>
+        </div>
+        <div class="ds-alert ds-alert--warning">Você tem uma sessão ativa num dispositivo que não usa há 30 dias.</div>
+        <div class="ds-table-wrap"><table class="ds-table">
+          <thead><tr><th>Dispositivo</th><th>Local</th><th>Último acesso</th><th></th></tr></thead>
+          <tbody>
+            <tr><td>Chrome · macOS</td><td>Louveira, SP</td><td>Agora</td><td><span class="ds-badge ds-badge--success">Esta sessão</span></td></tr>
+            <tr><td>Safari · iPhone</td><td>Campinas, SP</td><td>Ontem</td><td><a href="#">Encerrar</a></td></tr>
+            <tr><td>Edge · Windows</td><td>São Paulo, SP</td><td>Há 30 dias</td><td><a href="#">Encerrar</a></td></tr>
+          </tbody>
+        </table></div>
+      </section>
+    </div>
+
+    <aside class="ds-stack">
+      <section class="ds-card ds-stack">
+        <h3>Notificações</h3>
+        <label class="ds-switch"><input type="checkbox" checked><span class="ds-switch__track"></span>Resumo semanal por e-mail</label>
+        <label class="ds-switch"><input type="checkbox" checked><span class="ds-switch__track"></span>Alerta de atrasos da equipe</label>
+        <label class="ds-switch"><input type="checkbox"><span class="ds-switch__track"></span>Novidades do produto</label>
+      </section>
+
+      <section class="ds-card">
+        <h3>Atividade recente</h3>
+        <ul class="ds-list">
+          <li><span class="ds-badge ds-badge--success">Relatório</span><span>Frequência de outubro gerada</span></li>
+          <li><span class="ds-badge ds-badge--accent">Acesso</span><span>Login com 2FA</span></li>
+          <li><span class="ds-badge ds-badge--warning">Alerta</span><span>3 registros sem saída</span></li>
+        </ul>
+      </section>
+
+      <section class="ds-card ds-stack">
+        <h3>Zona de cuidado</h3>
+        <p class="ds-meta" style="margin:0">Desativar a conta remove o seu acesso, mas mantém os relatórios já gerados.</p>
+        <button class="ds-btn ds-btn--danger">Desativar conta</button>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<script>
+  const tema = document.getElementById("tema");
+  tema.addEventListener("change", () => { document.documentElement.dataset.theme = tema.value; });
+</script>
+</body>
+</html>
