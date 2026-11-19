@@ -1,11 +1,35 @@
-# 📦 Pandora Box — Base de Conhecimento Público
+<div align="center">
 
-Conhecimentos, dicas, skills, MCPs e materiais que eu uso no dia a dia e quero que
-**qualquer pessoa** possa acessar.
+<img src="assets/banner.svg" alt="Pandora Box: uma caixa aberta espalha luz e pontos de conhecimento pelo mundo; no fundo dela brilha uma estrela dourada, a esperança. Abra a caixa, espalhe o conhecimento." width="100%">
 
-Tudo aqui é aberto: leia, copie, adapte e use nos seus projetos.
+<br>
+
+**A caixa de conhecimento aberto da Pandora Tech.**<br>
+Skills, MCPs, guias e prompts para qualquer pessoa usar, do primeiro passo ao avançado.
+
+<br>
+
+[![Licença do código: MIT](https://img.shields.io/badge/c%C3%B3digo-MIT-F5C451?style=flat-square)](LICENSE)
+[![Licença do conteúdo: CC BY 4.0](https://img.shields.io/badge/conte%C3%BAdo-CC%20BY%204.0-A78BFA?style=flat-square)](LICENSE-CONTEUDO.md)
+[![Idioma: português do Brasil](https://img.shields.io/badge/idioma-pt--BR-67E8F9?style=flat-square)](#)
+[![Contribuições bem-vindas](https://img.shields.io/badge/contribui%C3%A7%C3%B5es-bem--vindas-FFF4D6?style=flat-square)](CONTRIBUTING.md)
+
+[**⚡ Instalar as skills**](#-instalação-rápida) · [**🧰 O que tem aqui**](#-ferramentas-e-skills-disponíveis) · [**🚀 Por onde começar**](#-por-onde-começar) · [**🤝 Contribuir**](#-contribuindo)
+
+</div>
 
 ---
+
+## 📦 Por que Pandora Box?
+
+No mito grego, Pandora abre uma caixa e tudo o que estava lá dentro se espalha pelo mundo.
+Só uma coisa fica guardada no fundo: **a esperança**.
+
+Aqui a caixa é aberta de propósito. O que sai dela é **conhecimento**: tudo o que aprendemos
+construindo com IA, organizado para que qualquer pessoa possa usar. E o que fica guardado no
+fundo, dentro do repositório, é a nossa esperança: **que cada vez mais pessoas abram a caixa também.**
+
+Tudo aqui é aberto: leia, copie, adapte e use nos seus projetos.
 
 ## 🗺️ Como navegar
 
