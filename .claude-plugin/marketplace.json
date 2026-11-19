@@ -7,8 +7,9 @@
   "plugins": [
     {
       "name": "pandora",
+      "displayName": "Pandora Box",
       "source": "./skills",
-      "description": "Todas as skills da Pandora Box em um só plugin. Hoje: família Sync (sync-me, sync-docs, sync-mva, syncdb)."
+      "description": "Skills abertas da Pandora para trabalhar com IA com critério. Família Sync: entrevistas que transformam uma ideia em projeto documentado e em um MVA pronto para montar (sync-me, sync-docs, sync-mva, syncdb)."
     }
   ]
 }
