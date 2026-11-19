@@ -1,17 +1,17 @@
-# sync: skills de entrevista para projetos em aula
+# sync: skills de entrevista para tirar projetos do papel
 
-Família de skills que os alunos usam para construir seus projetos em aula. O objetivo é que
-aluno e IA cheguem a um entendimento compartilhado do projeto, com o aluno sempre questionando,
-e que o projeto chegue a um MVA pronto para usar no Claude.
+Família de skills para qualquer pessoa que queira entender, documentar e construir um projeto
+com a ajuda da IA. O objetivo é que usuário e IA cheguem a um entendimento compartilhado do projeto,
+com o usuário sempre questionando, e que o projeto chegue a um MVA pronto para usar no Claude.
 
-> 🚧 Em construção: as skills ainda não foram escritas.
+> 🚧 Em construção: a `syncing` está pronta (v0.1, em teste); as demais ainda não foram escritas.
 > Para instalar quando estiverem prontas, veja [Como instalar as skills](../../guias/como-instalar-skills.md).
 
 ## Skills
 
 | Skill | Como usar | O que faz | Baseada em |
 |---|---|---|---|
-| `syncing` | Interna (o modelo aciona) | Método de entrevista em rodadas, usado pelas outras skills | [`grilling`](https://www.aihero.dev/skills-grilling), de Matt Pocock |
+| [`syncing`](syncing/) | Interna (o modelo aciona) | Método de entrevista em rodadas, usado pelas outras skills | [`grilling`](https://www.aihero.dev/skills-grilling), de Matt Pocock |
 | `/sync-me` | Você digita | Entrevista livre, sem gerar arquivos. Termina com um resumo. | [`grill-me`](https://www.aihero.dev/skills-grill-me), de Matt Pocock |
 | `/sync-docs` | Você digita | Entrevista que registra glossário e decisões em `sync/` | [`grill-with-docs`](https://www.aihero.dev/skills-grill-with-docs), de Matt Pocock |
 | `/sync-mva` | Você digita | Monta um MVA: prompt do agente com testes, documentos de referência e manual de montagem no Cowork | Metodologia MVA (Pandora Tech LTDA) |

@@ -1,7 +1,7 @@
 # 📚 Wiki — Base de Conhecimento Público
 
 Conhecimentos, dicas, skills, MCPs e materiais que eu uso no dia a dia e quero que
-**qualquer pessoa** possa acessar — especialmente meus alunos e clientes.
+**qualquer pessoa** possa acessar.
 
 Tudo aqui é aberto: leia, copie, adapte e use nos seus projetos.
 
@@ -22,12 +22,12 @@ Tudo aqui é aberto: leia, copie, adapte e use nos seus projetos.
 
 | Nome | Tipo | Para que serve | Status |
 |---|---|---|---|
-| [Família `sync`](skills/sync/) | Skills | Entrevistas guiadas para o aluno entender, documentar e montar o próprio projeto, até um MVA pronto para usar no Claude | 🚧 Em construção |
+| [Família `sync`](skills/sync/) | Skills | Entrevistas guiadas para você entender, documentar e montar o próprio projeto, até um MVA pronto para usar no Claude | 🚧 Em construção |
 | ↳ `/sync-me` | Skill | Conversa livre que questiona a sua ideia até ela ficar clara. Não grava arquivos. | 🚧 |
 | ↳ `/sync-docs` | Skill | Mesma conversa, registrando glossário e decisões do projeto. **Comece por aqui.** | 🚧 |
 | ↳ `/sync-mva` | Skill | Monta um MVA a partir do `/sync-docs`: prompt do agente com testes, documentos e manual de montagem no Cowork | 🚧 |
 | ↳ `/syncdb` | Skill | Gera bases de dados sintéticas (CSV ou Markdown) a partir de um arquivo de exemplo | 🚧 |
-| ↳ `syncing` | Skill (interna) | O método de entrevista usado pelas outras. Você não precisa chamá-la. | 🚧 |
+| ↳ [`syncing`](skills/sync/syncing/) | Skill (interna) | O método de entrevista usado pelas outras. Você não precisa chamá-la. | 🧪 v0.1 |
 
 **Nunca instalou uma skill?** Siga o guia [Como instalar as skills](guias/como-instalar-skills.md). Ele já traz o prompt pronto para copiar e colar.
 
