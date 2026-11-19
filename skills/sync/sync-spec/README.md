@@ -67,7 +67,7 @@ Ideias de `to-spec` (Matt Pocock, MIT), `wireframes` (ba-toolkit, MIT) e `aidlc-
 
 ## What it is
 
-`/sync-spec` turns the `/sync-docs` record into the **spec** for a product or system with screens: purpose, definition of done, users and access, security and data, screens and flows, architecture, visual standard and a step-by-step plan. It is made for people who are not experienced developers and will hand the spec to a model: it walks through topics, explains why each one matters and, if you get tired, applies a safe default.
+`/sync-spec` turns the `/sync-docs` record into the **spec** for a product or system with screens: purpose, done state, users and access, security and data, screens and flows, architecture, visual standard and a step-by-step plan. It is made for people who are not experienced developers and will hand the spec to a model: it walks through topics, explains why each one matters and, if you get tired, applies a safe default.
 
 ## When to use
 
@@ -89,7 +89,7 @@ Installation: see [How to install the skills](../../../guias/como-instalar-skill
 
 ### What happens in the conversation
 
-1. Topic 1, purpose, vision and definition of done: taken from the record; you confirm what "done" means and what is out of scope.
+1. Topic 1, purpose, vision and done state: taken from the record; you confirm what "done" means and what is out of scope.
 2. Topic 2, product, users and access: roles, login, 2FA and sensitive data.
 3. Topic 3, screens and flows: the user's path, with text wireframes of the main screens.
 4. Topic 4, architecture and repository: the AI suggests the technology, modules and folder layout.
@@ -104,7 +104,7 @@ Installation: see [How to install the skills](../../../guias/como-instalar-skill
 
 ## Expected results
 
-- `sync/spec.md`, ready for a coding AI: how to use the spec, purpose, definition of done, out of scope, users and permissions, security and data, modules and requirements with acceptance criteria, flows and screens, visual standard, architecture, step plan, glossary, decisions and open items.
+- `sync/spec.md`, ready for a coding AI: how to use the spec, purpose, done state, out of scope, users and permissions, security and data, modules and requirements with acceptance criteria, flows and screens, visual standard, architecture, step plan, glossary, decisions and open items.
 - Optional: `sync/tela-referencia.html`, one visual reference screen.
 - To use it: open the project in a coding AI and ask "Read sync/spec.md and follow the step plan, starting with step 1".
 

@@ -1,4 +1,4 @@
-<img src="../../assets/banner-sync.png" alt="Sync. A IA pergunta. Você decide. Uma família de skills que entrevista você sobre o seu projeto até haver entendimento compartilhado e, no fim, entrega o material para montar o seu MVA." width="100%">
+<img src="../../assets/banner-sync.png" alt="Sync. A IA pergunta. Você decide. Uma família de skills que entrevista você sobre o seu projeto até haver entendimento compartilhado e, no fim, entrega a spec ou o MVA do projeto." width="100%">
 
 # Sync
 
@@ -8,7 +8,7 @@
 
 A maioria dos projetos com IA começa pela ferramenta e descobre o problema no meio do caminho. O Sync inverte a ordem: primeiro vêm as perguntas, depois a construção.
 
-> **Situação.** As cinco skills estão publicadas na versão 0.1, em teste. Cada uma tem uma página própria: abra a pasta da skill na tabela abaixo.
+> **Situação.** As cinco skills estão publicadas e em teste: `sync-me` na versão 0.2, as demais na 0.1. Cada uma tem uma página própria: abra a pasta da skill na tabela abaixo.
 
 ---
 
@@ -36,7 +36,7 @@ A maioria dos projetos com IA começa pela ferramenta e descobre o problema no m
 | [`/sync-spec`](sync-spec/) | Especificar um produto com telas para uma IA de código construir | `sync/spec.md`: propósito, estado de pronto, acesso e segurança, telas, arquitetura, padrão visual e plano de etapas | v0.1, em teste |
 | [`/sync-mva`](sync-mva/) | Montar um MVA a partir do registro do `/sync-docs` | Prompt do agente com testes automatizados, documentos de referência e manual de montagem no Cowork | v0.1, em teste |
 | [`/syncdb`](syncdb/) | Criar dados de exemplo sem expor dados reais | Bases sintéticas em CSV ou Markdown, a partir de um arquivo de exemplo | v0.1, em teste |
-| [`/sync-me`](sync-me/) | Amadurecer uma ideia ou projeto, sem gerar arquivos. É também o método de entrevista usado pelas outras skills. | Resumo com decisões, discordâncias e perguntas em aberto | v0.1, em teste |
+| [`/sync-me`](sync-me/) | Amadurecer uma ideia ou projeto, sem gerar arquivos. É também o método de entrevista usado pelas outras skills. | Resumo com decisões, discordâncias e perguntas em aberto | v0.2, em teste |
 
 ### O fluxo recomendado
 
@@ -78,7 +78,7 @@ Escolha a sua plataforma em [Como instalar as skills](../../guias/como-instalar-
 
 <a id="english"></a>
 
-<img src="../../assets/banner-sync-en.png" alt="Sync. The AI asks. You decide. A family of skills that interviews you about your project until you share the same understanding, then delivers what you need to build your MVA." width="100%">
+<img src="../../assets/banner-sync-en.png" alt="Sync. The AI asks. You decide. A family of skills that interviews you about your project until you share the same understanding, then delivers your project's spec or MVA." width="100%">
 
 # Sync
 
@@ -88,7 +88,7 @@ Escolha a sua plataforma em [Como instalar as skills](../../guias/como-instalar-
 
 Most AI projects start with the tool and discover the problem halfway through. Sync reverses the order: questions first, building second.
 
-> **Status.** All five skills are published at version 0.1, in testing. Each has its own page: open the skill folder in the table below.
+> **Status.** All five skills are published and in testing: `sync-me` at version 0.2, the others at 0.1. Each has its own page: open the skill folder in the table below.
 
 ## How it works
 
@@ -109,10 +109,10 @@ Most AI projects start with the tool and discover the problem halfway through. S
 | Skill | Purpose | Output | Status |
 |---|---|---|---|
 | [`/sync-docs`](sync-docs/) | Understand and document a project. **Start here.** | `sync/glossario.md` and `sync/decisoes.md` in your project, or a record in the chat | v0.1, testing |
-| [`/sync-spec`](sync-spec/) | Specify a product with screens for a coding AI to build | `sync/spec.md`: purpose, definition of done, access and security, screens, architecture, visual standard and step plan | v0.1, testing |
+| [`/sync-spec`](sync-spec/) | Specify a product with screens for a coding AI to build | `sync/spec.md`: purpose, done state, access and security, screens, architecture, visual standard and step plan | v0.1, testing |
 | [`/sync-mva`](sync-mva/) | Build an MVA (Minimum Viable Automation) from the `/sync-docs` record | Agent prompt with automated tests, reference documents and a Cowork setup manual | v0.1, testing |
 | [`/syncdb`](syncdb/) | Create sample data without exposing real data | Synthetic datasets in CSV or Markdown, from a sample file | v0.1, testing |
-| [`/sync-me`](sync-me/) | Develop an idea or project, without creating files. It is also the interview method the other skills use. | Summary of decisions, disagreements and open questions | v0.1, testing |
+| [`/sync-me`](sync-me/) | Develop an idea or project, without creating files. It is also the interview method the other skills use. | Summary of decisions, disagreements and open questions | v0.2, testing |
 
 ### Recommended flow
 

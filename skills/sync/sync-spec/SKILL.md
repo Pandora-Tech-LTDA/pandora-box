@@ -35,7 +35,7 @@ Quando o usuário pede o padrão, aplique o **padrão seguro** do bloco, registr
 
 ### Bloco 1. Propósito, visão e estado de pronto
 
-Tire a visão do registro e devolva-a em um parágrafo. Depois defina o **estado de pronto**: o que precisa estar funcionando, de forma observável, para a versão 1 estar terminada (por exemplo, "a gestora envia a planilha e recebe o relatório de atrasos em menos de um minuto"). Confirme também o que fica **fora do escopo** da versão 1.
+Tire a visão da seção **Visão** do `sync/decisoes.md` (ou da conversa) e devolva-a em um parágrafo. Use também as seções **Em aberto**, **Suposições** e **Riscos** do registro. Depois defina o **estado de pronto**: o que precisa estar funcionando, de forma observável, para a versão 1 estar terminada (por exemplo, "a gestora envia a planilha e recebe o relatório de atrasos em menos de um minuto"). Confirme também o que fica **fora do escopo** da versão 1.
 
 ### Bloco 2. Produto, usuários e acesso (com segurança e dados)
 
@@ -58,6 +58,8 @@ O objetivo é entender o **caminho** do usuário, não desenhar cada detalhe. Li
 Aqui **você sugere**, e o usuário corrige. Pergunte só se ele já tem preferência ou restrição de tecnologia; senão, proponha uma pilha simples e comum para o tipo de projeto. Defina: os **módulos** do sistema (cada um com uma responsabilidade), a **estrutura de pastas**, onde ficam os segredos, como são os testes mínimos e como os erros são registrados.
 
 **Padrão seguro:** um repositório só; módulos separados por responsabilidade (por exemplo, acesso, dados, regras de negócio, interface); `.env.example` sem valores reais e `.env` fora do controle de versão; validação de toda entrada do usuário; testes para as regras de negócio principais; dependências conhecidas e atualizadas.
+
+**Eficiência, no padrão:** listas longas com paginação; nenhuma consulta repetida dentro de um laço; limites de tamanho para arquivos enviados e respostas; tarefas demoradas (relatórios, importações) fora da tela, com aviso quando terminarem.
 
 Onde publicar fica **fora da conversa**: o usuário decide depois (Railway, VPS ou outro). Registre na spec que a escolha está em aberto.
 
@@ -88,7 +90,7 @@ Escrita para uma IA de código: direta, sem ambiguidade e independente de ferram
 7. **Módulos e requisitos**: por módulo, requisitos numerados (`RF-01`…), cada um com um critério de aceite verificável.
 8. **Fluxos e telas**: os fluxos, a lista de telas, os wireframes em texto e os estados.
 9. **Padrão visual**: o bloco da seção 6 abaixo.
-10. **Arquitetura e repositório**: pilha, módulos, estrutura de pastas e convenções (segredos, validação, testes, registros de erro). Publicação: em aberto.
+10. **Arquitetura e repositório**: pilha, módulos, estrutura de pastas e convenções (segredos, validação, testes, registros de erro, eficiência). Publicação: em aberto.
 11. **Plano de etapas**: cada etapa com objetivo, o que entrega e como verificar.
 12. **Glossário**, vindo do registro.
 13. **Decisões e suposições**: o que foi decidido, o que é `[padrão]` e o que é `[assumido]`.
@@ -104,7 +106,9 @@ Para a spec não depender da estética do modelo, ela **sempre** traz um padrão
 
 **Sem design system do usuário:** use o **Pandora DS**. Pergunte em uma linha qual tema (Pandora Claro, o padrão; Pandora Escuro; Neutro; Alto contraste). Copie para a seção 9 da spec, sem alterar, o bloco do tema em:
 
-`https://raw.githubusercontent.com/Pandora-Tech-LTDA/pandora-box/2a87dadfc1e05c96803f9e79edbe35589af567d7/design-system/resumo-para-spec.md`
+`https://raw.githubusercontent.com/Pandora-Tech-LTDA/pandora-box/main/design-system/resumo-para-spec.md`
+
+(O resumo é lido da versão atual, mas o link da folha de estilo dentro dele é fixo numa versão do Pandora DS. Como o bloco é copiado para a spec, a spec não muda depois.)
 
 Se não conseguir abrir o link, use este resumo do Pandora Claro:
 

@@ -1,4 +1,4 @@
-# 💡 Dicas
+# Dicas
 
 Dicas rápidas e práticas — cada uma em um arquivo curto (`dicas/<tema>.md`).
 

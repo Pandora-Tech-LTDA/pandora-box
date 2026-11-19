@@ -31,7 +31,7 @@ Se não conseguir carregar o `sync-me`, aplique estas regras mínimas:
 
 ## O que perguntar
 
-Comece pelo **processo**, não pela solução. Antes de falar de ferramenta, a árvore precisa cobrir:
+Comece pela **visão**, como manda o método do `sync-me`. Depois, o primeiro galho é o **processo**, não a solução. Antes de falar de ferramenta, a árvore precisa cobrir:
 
 - **O problema:** como ele se manifesta, em que momento aparece, com que frequência e quem mais sofre com ele.
 - **O processo atual:** quem faz, passo a passo, com quais documentos e sistemas, e como a pessoa contorna o problema hoje.
@@ -61,6 +61,18 @@ Registre uma decisão **assim que o usuário a toma**, se ela muda o que vai ser
 ```markdown
 # Decisões
 
+## Visão
+<o parágrafo da visão, validado pelo usuário>
+
+## Em aberto
+- <perguntas em aberto, incluindo os "não sei" e o que precisa de protótipo>
+
+## Suposições
+- <o que foi assumido e não corrigido pelo usuário>
+
+## Riscos
+- <riscos anotados e se já foram analisados>
+
 ## D<número>. <título curto>
 - **Data:** <AAAA-MM-DD>
 - **Decisão:** <o que foi decidido>
@@ -70,6 +82,8 @@ Registre uma decisão **assim que o usuário a toma**, se ela muda o que vai ser
 ```
 
 Se uma decisão nova substitui uma antiga, não apague a antiga: marque-a como **substituída por D<n>**.
+
+Mantenha as seções **Visão**, **Em aberto**, **Suposições** e **Riscos** sempre atualizadas no topo do arquivo: é delas que o `/sync-spec` e o `/sync-mva` partem em outra conversa.
 
 Sem arquivos, mantenha os dois registros no chat e mostre a versão atualizada a cada duas ou três rodadas, para o usuário não perder nada.
 

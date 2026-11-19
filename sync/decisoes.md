@@ -2,7 +2,7 @@
 
 Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D4 vieram da conversa anterior e também estão em `skills/sync/DECISOES.md`.
 
-## D1. Nome e papel da skill
+## D1. Nome e papel da skill (nome do arquivo substituído por D18)
 - **Data:** 2026-11-19
 - **Decisão:** a skill se chama `/sync-spec` e gera o mapa de requisitos (`sync/requisitos.md`): a documentação necessária para começar a desenvolver, incluindo referências, direção visual, telas e wireframes.
 - **Motivo:** "depois do sync-docs, ele precisa de um mapa de requerimentos, que é a documentação necessária para começar a desenvolver alguma coisa"; "sync-spec fica melhor".
@@ -102,3 +102,8 @@ Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D
 - **Data:** 2026-11-19
 - **Decisão:** a v1 do Pandora DS é fixada pelo commit `2a87dadfc1e05c96803f9e79edbe35589af567d7` no link do CDN (`cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@<commit>/design-system/pandora.css`), no lugar da tag `design-system-v1`, que o ambiente de trabalho não conseguiu publicar. Se a tag for criada depois, os links podem passar a usá-la.
 - **Motivo:** a spec precisa apontar para uma versão que não muda (D15).
+
+## D18. Nome do arquivo da spec
+- **Data:** 2026-11-19
+- **Decisão:** a spec é gravada em `sync/spec.md`, não em `sync/requisitos.md` como dizia a D1.
+- **Motivo:** o nome acompanha o nome da skill (`/sync-spec`), adotado na implementação; apontado na auditoria.

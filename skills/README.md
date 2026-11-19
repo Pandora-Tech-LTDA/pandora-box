@@ -27,9 +27,9 @@ Skills que entrevistam você sobre o seu projeto antes de qualquer linha ser esc
 
 Páginas de cada skill: [sync-me](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-me) · [sync-docs](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-docs) · [sync-spec](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-spec) · [sync-mva](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-mva) · [syncdb](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/syncdb).
 
-**Exemplo:** você quer um agente que analise a frequência dos funcionários. O `/sync-docs` esclarece a dor, quem usa a análise e quais regras de ponto valem. O `/sync-mva` define que o agente precisa de uma planilha de frequência e da política de ponto e escreve o prompt com casos de teste. O `/syncdb` cria uma planilha fictícia com os mesmos campos da real.
+**Exemplo:** você quer um agente que analise a frequência dos funcionários. O `/sync-docs` esclarece a dor, quem usa a análise e quais regras de ponto valem. O `/sync-mva` define que o agente precisa de uma planilha de frequência e da política de ponto e escreve o prompt com casos de teste. O `/syncdb` cria uma planilha fictícia com os mesmos campos da real. Se depois virar um produto com telas, o `/sync-spec` escreve a spec para uma IA de código construir.
 
-**Situação:** versão 0.1, em teste.
+**Situação:** em teste. `sync-me` na versão 0.2; as demais na 0.1.
 
 ## Instalação
 
@@ -58,7 +58,7 @@ Skills that interview you about your project before a single line is written. Th
 | Skill | Purpose |
 |---|---|
 | `/pandora:sync-docs` | Understand and document a project, recording a glossary and decisions. **Start here.** |
-| `/pandora:sync-spec` | Build the spec of a product with screens so a coding AI can build it safely: purpose, definition of done, access and security, screens, architecture, visual standard and step plan. |
+| `/pandora:sync-spec` | Build the spec of a product with screens so a coding AI can build it safely: purpose, done state, access and security, screens, architecture, visual standard and step plan. |
 | `/pandora:sync-mva` | Build an MVA (Minimum Viable Automation) from the `/sync-docs` record: agent prompt with self-test, reference documents and a Cowork setup manual. |
 | `/pandora:syncdb` | Create synthetic data in CSV or Markdown from a sample file, without exposing real data. |
 | `/pandora:sync-me` | Develop an idea, without creating files. It is also the interview method for the other skills. |
@@ -70,9 +70,13 @@ Skills that interview you about your project before a single line is written. Th
                                  → /sync-mva → /syncdb  (automation or agent)
 ```
 
+Skill pages: [sync-me](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-me#english) · [sync-docs](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-docs#english) · [sync-spec](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-spec#english) · [sync-mva](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/sync-mva#english) · [syncdb](https://github.com/Pandora-Tech-LTDA/pandora-box/tree/main/skills/sync/syncdb#english)
+
+**Example:** you want an agent that analyzes employee attendance. `/sync-docs` clarifies the pain point, who uses the analysis and which timekeeping rules apply, and recommends `/sync-mva`. `/sync-mva` determines that the agent needs an attendance spreadsheet and the timekeeping policy and writes the prompt with test cases. `/syncdb` creates a fictional spreadsheet with the same fields as the real one. If it later becomes a product with screens, `/sync-spec` writes the spec for a coding AI to build it.
+
 The skills are written in Brazilian Portuguese and work in any language.
 
-**Status:** version 0.1, in testing.
+**Status:** in testing. `sync-me` at version 0.2; the others at 0.1.
 
 ## Installation
 

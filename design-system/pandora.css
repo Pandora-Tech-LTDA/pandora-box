@@ -2,7 +2,7 @@
  * Pandora DS — design system de referência da Pandora Box (v1)
  * Simples, moderno e pensado para experimentos.
  * Uso: <link rel="stylesheet" href="pandora.css"> e <html data-theme="claro|escuro|neutro|alto-contraste">
- * Licença: MIT · ©2026 Pandora Tech LTDA
+ * Licença: MIT · ©2026 Pandora Tech LTDA · v1.1
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap");
@@ -56,6 +56,7 @@
   --text-2: #4B4453;
   --muted: #6B6473;
   --border: #E3DFE8;
+  --border-strong: #8D8695;
   --accent: #7024AE;
   --accent-hover: #5E1D93;
   --on-accent: #FFFFFF;
@@ -77,8 +78,9 @@
   --text-2: #BDB7C3;
   --muted: #8F8996;
   --border: #2B2831;
+  --border-strong: #66606E;
   --accent: #8B3FD1;
-  --accent-hover: #9D55E0;
+  --accent-hover: #7A33BD;
   --on-accent: #FFFFFF;
   --link: #C9A6E8;
   --focus: #C9A6E8;
@@ -98,6 +100,7 @@
   --text-2: #44403C;
   --muted: #6B6560;
   --border: #E5E2DE;
+  --border-strong: #8A847E;
   --accent: #1F3A5F;
   --accent-hover: #162B47;
   --on-accent: #FFFFFF;
@@ -119,6 +122,7 @@
   --text-2: #FFFFFF;
   --muted: #E6E6E6;
   --border: #FFFFFF;
+  --border-strong: #FFFFFF;
   --accent: #FFD400;
   --accent-hover: #FFE14D;
   --on-accent: #000000;
@@ -167,7 +171,7 @@ code, kbd { font-family: var(--font-mono); font-size: 0.9em; }
 a { color: var(--link); text-underline-offset: 3px; }
 a:hover { text-decoration-thickness: 2px; }
 
-:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-sm); }
+:focus-visible { outline: 2px solid transparent; outline-offset: 2px; box-shadow: var(--focus-ring); border-radius: var(--radius-sm); } /* o contorno transparente aparece no modo de cores forçadas */
 
 hr { border: 0; border-top: var(--line) solid var(--border); margin: var(--space-5) 0; }
 
@@ -209,7 +213,7 @@ hr { border: 0; border-top: var(--line) solid var(--border); margin: var(--space
 .ds-input, .ds-select, .ds-textarea {
   width: 100%; min-height: 40px; padding: var(--space-2) var(--space-3);
   background: var(--bg); color: var(--text);
-  border: var(--line) solid var(--border); border-radius: var(--radius-md);
+  border: var(--line) solid var(--border-strong); border-radius: var(--radius-md);
   font: var(--text-input)/1.4 var(--font-body);
   transition: border-color var(--duration) var(--ease);
 }
@@ -287,7 +291,7 @@ hr { border: 0; border-top: var(--line) solid var(--border); margin: var(--space
 .ds-avatar--lg { width: 64px; height: 64px; font-size: var(--text-lg); }
 .ds-switch { position: relative; display: inline-flex; align-items: center; gap: var(--space-3); font-size: var(--text-sm); cursor: pointer; }
 .ds-switch input { position: absolute; opacity: 0; width: 1px; height: 1px; }
-.ds-switch__track { width: 32px; height: 18px; border-radius: var(--radius-full); background: var(--surface-2); border: var(--line) solid var(--border); position: relative; transition: background var(--duration) var(--ease); }
+.ds-switch__track { width: 32px; height: 18px; border-radius: var(--radius-full); background: var(--surface-2); border: var(--line) solid var(--border-strong); position: relative; transition: background var(--duration) var(--ease); }
 .ds-switch__track::after { content: ""; position: absolute; top: 2px; left: 2px; width: 12px; height: 12px; border-radius: 50%; background: var(--muted); transition: transform var(--duration) var(--ease), background var(--duration) var(--ease); }
 .ds-switch input:checked + .ds-switch__track { background: var(--accent); border-color: var(--accent); }
 .ds-switch input:checked + .ds-switch__track::after { transform: translateX(14px); background: var(--on-accent); }

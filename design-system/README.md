@@ -4,7 +4,7 @@
 
 O design system de referência da Pandora Box: simples, moderno e pensado para experimentos. Ele garante telas legíveis, com bom contraste e coerentes entre si quando o projeto ainda não tem um design system próprio. É o padrão visual que o `/sync-spec` aplica nas specs.
 
-> **Versão:** v1 · **Licença:** MIT · ©2026 Pandora Tech LTDA
+> **Versão:** v1.1 · **Licença:** MIT · ©2026 Pandora Tech LTDA
 
 ## Temas
 
@@ -15,7 +15,9 @@ O design system de referência da Pandora Box: simples, moderno e pensado para e
 | **Neutro** (`neutro`) | Grafite com destaque azul discreto, para quem não quer roxo. |
 | **Alto contraste** (`alto-contraste`) | Preto, branco e amarelo, para acessibilidade máxima. |
 
-Todas as combinações de texto passam no contraste mínimo WCAG AA (4,5:1).
+Todas as combinações de texto passam no contraste mínimo WCAG AA (4,5:1), e as bordas de campos e controles têm pelo menos 3:1 contra o fundo. O foco continua visível no modo de cores forçadas do sistema.
+
+**v1.1:** contraste do botão principal no tema escuro, bordas de campos mais fortes (`--border-strong`) e foco visível em cores forçadas.
 
 ## Como usar
 
@@ -57,9 +59,9 @@ O Pandora DS é só o ponto de partida. Para usar o seu, troque a folha de estil
 
 Pandora Box's reference design system: simple, modern and made for experiments. It keeps screens readable, with good contrast and consistent with each other, when a project has no design system of its own. It is the visual default `/sync-spec` applies to specs.
 
-> **Version:** v1 · **License:** MIT · ©2026 Pandora Tech LTDA
+> **Version:** v1.1 · **License:** MIT · ©2026 Pandora Tech LTDA
 
-Themes: **Pandora Claro** (light, default), **Pandora Escuro** (dark), **Neutro** (graphite with a muted blue accent) and **Alto contraste** (high contrast). Every text pairing meets WCAG AA (4.5:1).
+Themes: **Pandora Claro** (light, default), **Pandora Escuro** (dark), **Neutro** (graphite with a muted blue accent) and **Alto contraste** (high contrast). Every text pairing meets WCAG AA (4.5:1), and field and control borders reach at least 3:1 against the background.
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pandora-Tech-LTDA/pandora-box@2a87dadfc1e05c96803f9e79edbe35589af567d7/design-system/pandora.css">

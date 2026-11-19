@@ -1,5 +1,8 @@
 name: Publicar skills
 
+# Convenção: cada skill fica em skills/<família>/<skill>/SKILL.md, e cada família
+# precisa estar listada em "skills" no skills/.claude-plugin/plugin.json.
+#
 # Gera o plugin "pandora" (todas as skills num só .zip) e um .zip por skill,
 # e publica na release "skills", com links fixos para download:
 # https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/pandora.zip
@@ -10,6 +13,7 @@ on:
     branches: [main]
     paths:
       - "skills/**"
+      - "LICENSE"
       - ".github/workflows/publicar-skills.yml"
   workflow_dispatch:
 
@@ -38,6 +42,7 @@ jobs:
             [ "$nome" = "_modelo" ] && continue
             mkdir -p "build/pandora/$fam"
             cp -r "$d" "build/pandora/$fam/"
+            rm -f "build/pandora/$fam/$nome/README.md"  # a página da skill tem links que só funcionam no repositório
           done
           (cd build && zip -qr "$GITHUB_WORKSPACE/dist/pandora.zip" pandora)
           echo "plugin: pandora.zip"
@@ -48,7 +53,9 @@ jobs:
             d="$(dirname "$f")"; nome="$(basename "$d")"
             [ "$nome" = "_modelo" ] && continue
             cp -r "$d" "build/avulsas/$nome"
-            sed -i '/^disable-model-invocation:/d' "build/avulsas/$nome/SKILL.md"
+            rm -f "build/avulsas/$nome/README.md"
+            # remove a chave só no frontmatter (entre as duas primeiras linhas ---)
+            awk 'BEGIN{n=0} /^---$/{n++} !(n==1 && /^disable-model-invocation:/)' "build/avulsas/$nome/SKILL.md" > tmp && mv tmp "build/avulsas/$nome/SKILL.md"
             (cd build/avulsas && zip -qr "$GITHUB_WORKSPACE/dist/$nome.zip" "$nome")
             echo "skill: $nome.zip"
           done
@@ -63,8 +70,8 @@ jobs:
               --title "Skills da Pandora Box (versão mais recente)" \
               --notes "pandora.zip é o plugin com todas as skills (instale em Personalizar → Plugins → Adicionar → Enviar plugin). Os demais .zip são as skills avulsas. Tudo é atualizado automaticamente a cada mudança em skills/. Guia: https://github.com/Pandora-Tech-LTDA/pandora-box/blob/main/guias/como-instalar-skills.md"
           fi
-          # remove arquivos de skills que não existem mais (por exemplo, depois de renomear uma skill)
+          gh release upload skills dist/*.zip --clobber
+          # depois de enviar os novos, remove os arquivos de skills que não existem mais (por exemplo, depois de renomear uma skill)
           for antigo in $(gh release view skills --json assets -q '.assets[].name'); do
             [ -f "dist/$antigo" ] || gh release delete-asset skills "$antigo" -y
           done
-          gh release upload skills dist/*.zip --clobber
