@@ -40,7 +40,7 @@ Todo o material é aberto. Leia, copie, adapte e use, citando a fonte.
 
 **Skills que entrevistam você sobre o seu projeto antes de qualquer linha ser escrita.**
 
-A maioria dos projetos com IA começa pela ferramenta. O Sync começa pelas perguntas: o que você quer resolver, para quem, com quais dados e com qual critério de sucesso. A IA pergunta em rodadas, sugere e mostra o custo de cada sugestão. As decisões ficam com você, e um "sim" sem motivo não fecha nenhuma delas.
+A maioria dos projetos com IA começa pela ferramenta. O Sync começa pelas perguntas: o que você quer resolver, para quem, com quais dados e com qual critério de sucesso. A IA pergunta em rodadas, sugere e mostra o custo de cada sugestão. As decisões ficam com você, e nas que importam um "sim" sem motivo não basta.
 
 No fim, você sai com o projeto documentado e, se quiser, com o material para montar um MVA: o prompt do agente com testes, os documentos de referência e o manual de montagem.
 
@@ -224,7 +224,7 @@ Everything here is open. Read, copy, adapt and use it, with attribution.
 
 **Skills that interview you about your project before a single line is written.**
 
-Most AI projects start with the tool. Sync starts with questions: what you want to solve, for whom, with which data and with which success criteria. The AI asks in rounds, makes suggestions and shows what each suggestion costs. You make the decisions, and a "yes" without a reason closes none of them.
+Most AI projects start with the tool. Sync starts with questions: what you want to solve, for whom, with which data and with which success criteria. The AI asks in rounds, makes suggestions and shows what each suggestion costs. You make the decisions, and on the ones that matter a "yes" without a reason is not enough.
 
 You end up with a documented project and, if you want, everything you need to build an MVA (Minimum Viable Automation): the agent prompt with tests, reference documents and a setup manual.
 
