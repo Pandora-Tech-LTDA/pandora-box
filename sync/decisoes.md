@@ -57,3 +57,21 @@ Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D
 - **Data:** 2026-11-19
 - **Decisão:** o `/sync-spec` conduz a conversa em blocos temáticos (por exemplo, segurança e estética). Cada bloco começa explicando, em linguagem simples, por que aquele tema importa, e oferece uma saída: se o usuário cansar, a skill usa o padrão seguro do bloco e segue para o próximo.
 - **Motivo:** "o processo de construção desse documento tem que ser um processo professoral, quase. Eu vou falar um pouquinho de segurança com você; se você cansar, é só falar para a gente passar de segurança, que a gente usa o padrão."
+
+## D11. Blocos da conversa (versão simplificada)
+- **Data:** 2026-11-19
+- **Decisão:** a conversa do `/sync-spec` percorre, nesta ordem:
+  1. **Propósito, visão e estado de pronto**, tirados do registro do `/sync-me` e do `/sync-docs` (é o bloco central);
+  2. **Produto, usuários e níveis de acesso**;
+  3. **Telas e fluxos**, só o bastante para entender o caminho do usuário;
+  4. **Arquitetura e repositório**, sugeridos pela skill de acordo com a tecnologia;
+  5. **Plano de etapas**.
+  Publicação e operação ficam fora da conversa: o usuário decide depois onde publicar (Railway, VPS ou outro).
+- **Motivo:** "está faltando o propósito mesmo, a visão, o estado de pronto, que você vai tirar do Sync Me e do Sync Docs"; "telas e fluxos, muito mais para entender o caminho"; "publicação e operação ele pode tomar essa decisão quando ele quiser"; "está longo, dá para simplificar".
+- **Alternativas descartadas:** a lista de oito blocos, com dados e privacidade, estética e publicação e operação como blocos próprios.
+- **Discordância:** a sugestão era a lista de oito blocos; o usuário pediu menos blocos e mais foco em objetivo e visão.
+
+## D12. Nível de detalhe da spec
+- **Data:** 2026-11-19
+- **Decisão:** a spec privilegia objetivo, visão e estado de pronto em vez de detalhe exaustivo. Os modelos de código atuais preenchem detalhes sozinhos; o que eles precisam é saber para onde ir e quando está pronto.
+- **Motivo:** "a gente não precisa de tanto detalhe para novos modelos. A gente precisa muito mais falar de objetivo e visão."
