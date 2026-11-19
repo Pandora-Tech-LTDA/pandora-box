@@ -31,6 +31,8 @@ jobs:
           mkdir -p dist build/pandora
           # 1. Plugin "pandora": todas as skills num só arquivo (Claude.ai, Cowork e Claude Code)
           cp -r skills/.claude-plugin build/pandora/
+          cp skills/README.md skills/icon.png build/pandora/
+          cp LICENSE build/pandora/LICENSE
           for f in skills/*/*/SKILL.md; do
             d="$(dirname "$f")"; nome="$(basename "$d")"; fam="$(basename "$(dirname "$d")")"
             [ "$nome" = "_modelo" ] && continue

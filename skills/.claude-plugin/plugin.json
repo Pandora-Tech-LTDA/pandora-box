@@ -1,10 +1,13 @@
 {
   "name": "pandora",
-  "version": "0.1.0",
-  "description": "Todas as skills da Pandora Box em um só plugin. Hoje: família Sync (sync-me, sync-docs, sync-mva, syncdb).",
-  "author": { "name": "Pandora Tech" },
+  "displayName": "Pandora Box",
+  "version": "0.1.1",
+  "description": "Skills abertas da Pandora para trabalhar com IA com critério. Família Sync: entrevistas que transformam uma ideia em projeto documentado e em um MVA pronto para montar (sync-me, sync-docs, sync-mva, syncdb).",
+  "author": { "name": "Pandora Tech", "url": "https://github.com/Pandora-Tech-LTDA" },
   "homepage": "https://github.com/Pandora-Tech-LTDA/pandora-box",
   "repository": "https://github.com/Pandora-Tech-LTDA/pandora-box",
   "license": "MIT",
+  "keywords": ["entrevista", "planejamento", "mva", "automação", "dados sintéticos", "agentes", "pandora"],
+  "icon": "./icon.png",
   "skills": ["./sync"]
 }
