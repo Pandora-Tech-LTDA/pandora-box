@@ -22,3 +22,9 @@ Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D
 - **Data:** 2026-11-19
 - **Decisão:** derivar de `to-spec` e `prototype` (Matt Pocock, MIT), `wireframes` (ba-toolkit, MIT) e `aidlc-requirements` (AWS, MIT-0).
 - **Motivo:** escolhidas na pesquisa no GitHub por cobrirem, juntas, síntese do registro, telas com estados e validação de lacunas, com licenças que permitem derivar.
+
+## D5. Público da spec
+- **Data:** 2026-11-19
+- **Decisão:** a spec é escrita principalmente para IAs de código (várias, não uma só). Precisa ser explícita, sem ambiguidade e independente de ferramenta.
+- **Motivo:** "muito provavelmente uma IA de código, mas várias delas, na verdade. A especificação vai ter que ser bem voltada para IA de código mesmo."
+- **Alternativas descartadas:** spec escrita para uma pessoa desenvolvedora; spec presa a uma única ferramenta.
