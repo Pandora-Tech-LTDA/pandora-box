@@ -38,6 +38,9 @@
   - o prompt (instruções) do projeto;
   - o passo a passo de como colar tudo isso no projeto dentro do Claude.
 - **Encerramento do `/sync-mva`:** a entrevista segue até a própria skill concluir que entendeu. Então ela diz algo como: "Já entendi. Se você tiver mais alguma informação, me diga; senão, posso gerar agora os materiais para você montar o seu MVA." Os materiais só são gerados depois da resposta do aluno.
+- **Estrutura de pastas:** cada skill fica em `skills/sync/<nome>/SKILL.md` (`syncing`, `sync-me`, `sync-docs`, `sync-mva`, `syncdb`). O guia de instalação copia toda subpasta com `SKILL.md`, exceto `references/`.
+- **Créditos:** `syncing`, `/sync-me` e `/sync-docs` citam Matt Pocock com link para [mattpocock/skills](https://github.com/mattpocock/skills) e para a página da skill de origem. `/sync-mva` e `/syncdb` citam a metodologia MVA da Pandora Tech LTDA.
+- **Documentação para iniciantes:** o README raiz lista as ferramentas e skills, e o guia `guias/como-instalar-skills.md` traz prompts prontos para instalar no Claude Code e no Cowork.
 
 ## Em aberto
 
