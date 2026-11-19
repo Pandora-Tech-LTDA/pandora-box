@@ -11,3 +11,10 @@ cubo isométrico em fio e logo invertido oficial.
 
 Para regenerar, abra o HTML num navegador (com internet, para as fontes do Google) e capture
 a área de 1280×440 em escala 2×.
+
+## Card social (Open Graph)
+
+- `social-card.html` gera `../social-preview.png` (1280×640), a imagem que aparece quando o link do repositório é compartilhado.
+- Margem segura de 80px em todos os lados, como recomenda o GitHub: nada importante fica fora dela. Abra o HTML com `#guias` no fim do endereço para ver a margem.
+- Para usar: no GitHub, *Settings → General → Social preview → Edit → Upload an image* e envie `assets/social-preview.png`.
+- Para outro produto, troque selo, título, texto e o elemento gráfico, e capture em 1280×640 (escala 1×).
