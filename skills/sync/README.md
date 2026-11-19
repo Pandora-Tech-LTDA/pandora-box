@@ -50,12 +50,9 @@ A maioria dos projetos com IA começa pela ferramenta e descobre o problema no m
 
 ## Instalação
 
-Funciona no Claude.ai, no Claude Cowork e no Claude Code.
+Funciona no Claude.ai, no Claude Cowork e no Claude Code, e é compatível com o OpenAI Codex, o VS Code com GitHub Copilot e outros agentes que leem o formato Agent Skills.
 
-- **Claude.ai e Cowork:** baixe [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) (ou todos os arquivos em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills)) e envie em *Configurações → Capacidades → Skills*.
-- **Claude Code:** use o prompt da [instalação rápida](../../README.md#instalação-rápida).
-
-Passo a passo completo: [Como instalar as skills](../../guias/como-instalar-skills.md).
+Escolha a sua plataforma em [Como instalar as skills](../../guias/como-instalar-skills.md). Para o Claude.ai e o Cowork, o download direto é [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip).
 
 ---
 

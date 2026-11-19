@@ -56,23 +56,18 @@ No fim, você sai com o projeto documentado e, se quiser, com o material para mo
 
 ## Instalação rápida
 
-As skills funcionam no **Claude.ai**, no **Claude Cowork** e no **Claude Code**.
+As skills seguem o formato aberto [Agent Skills](https://agentskills.io) e funcionam no Claude e em outros agentes compatíveis. Escolha a sua plataforma:
 
-**Claude.ai e Cowork.** Baixe [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) e envie em *Configurações → Capacidades → Skills*, com a execução de código ativada. Todos os arquivos ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
+| Plataforma | Como instala | Guia |
+|---|---|---|
+| **Claude.ai** (navegador, desktop e celular) | Baixe [syncing.zip](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/download/skills/syncing.zip) e envie nas configurações | [Instruções](guias/instalar/claude-ai.md) |
+| **Claude Cowork** | Mesmo .zip do Claude.ai | [Instruções](guias/instalar/claude-cowork.md) |
+| **Claude Code** | Prompt pronto | [Instruções](guias/instalar/claude-code.md) |
+| **OpenAI Codex** | Prompt pronto | [Instruções](guias/instalar/codex.md) |
+| **VS Code com GitHub Copilot** | Prompt pronto, por projeto | [Instruções](guias/instalar/vscode-copilot.md) |
+| **Outros agentes** | Pasta `.agents/skills` | [Instruções](guias/instalar/outros-agentes.md) |
 
-**Claude Code.** Copie o prompt abaixo e cole no chat. O próprio Claude baixa e instala as skills.
-
-```text
-Instale para mim as skills da família "sync" do repositório público https://github.com/Pandora-Tech-LTDA/pandora-box (branch main, pasta skills/sync).
-
-Cada subpasta de skills/sync que tem um arquivo SKILL.md é uma skill. Ignore a pasta "references".
-
-Copie cada uma dessas subpastas, inteira, para ~/.claude/skills/<nome-da-subpasta>/. Se alguma já existir, me pergunte antes de substituir.
-
-Apague os arquivos temporários do download. No final, me mostre uma tabela com as skills instaladas e o que cada uma faz, e me diga como começar a usar.
-```
-
-O passo a passo completo e a solução de problemas estão em [Como instalar as skills](guias/como-instalar-skills.md).
+As skills foram testadas no Claude. Nas demais plataformas, o formato é compatível, mas o comportamento ainda não foi validado. Todos os downloads ficam em [Skills da Pandora Box](https://github.com/Pandora-Tech-LTDA/pandora-box/releases/tag/skills).
 
 ---
 
