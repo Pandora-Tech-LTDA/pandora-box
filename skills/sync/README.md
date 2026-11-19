@@ -1,8 +1,8 @@
-# sync: skills de entrevista para projetos em aula
+# sync: skills de entrevista para tirar projetos do papel
 
-Família de skills que os alunos usam para construir seus projetos em aula. O objetivo é que
-aluno e IA cheguem a um entendimento compartilhado do projeto, com o aluno sempre questionando,
-e que o projeto chegue a um MVA pronto para usar no Claude.
+Família de skills para qualquer pessoa que queira entender, documentar e construir um projeto
+com a ajuda da IA. O objetivo é que usuário e IA cheguem a um entendimento compartilhado do projeto,
+com o usuário sempre questionando, e que o projeto chegue a um MVA pronto para usar no Claude.
 
 > 🚧 Em construção: a `syncing` está pronta (v0.1, em teste); as demais ainda não foram escritas.
 > Para instalar quando estiverem prontas, veja [Como instalar as skills](../../guias/como-instalar-skills.md).

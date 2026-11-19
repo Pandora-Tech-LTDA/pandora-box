@@ -22,7 +22,7 @@ Tudo aqui é aberto: leia, copie, adapte e use nos seus projetos.
 
 | Nome | Tipo | Para que serve | Status |
 |---|---|---|---|
-| [Família `sync`](skills/sync/) | Skills | Entrevistas guiadas para o aluno entender, documentar e montar o próprio projeto, até um MVA pronto para usar no Claude | 🚧 Em construção |
+| [Família `sync`](skills/sync/) | Skills | Entrevistas guiadas para você entender, documentar e montar o próprio projeto, até um MVA pronto para usar no Claude | 🚧 Em construção |
 | ↳ `/sync-me` | Skill | Conversa livre que questiona a sua ideia até ela ficar clara. Não grava arquivos. | 🚧 |
 | ↳ `/sync-docs` | Skill | Mesma conversa, registrando glossário e decisões do projeto. **Comece por aqui.** | 🚧 |
 | ↳ `/sync-mva` | Skill | Monta um MVA a partir do `/sync-docs`: prompt do agente com testes, documentos e manual de montagem no Cowork | 🚧 |
