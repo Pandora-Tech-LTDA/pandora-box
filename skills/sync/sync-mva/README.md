@@ -1,3 +1,5 @@
+<img src="../../../assets/banners/sync-mva-pt.webp" alt="/pandora:sync-mva. Teste o valor antes de construir." width="100%">
+
 # /pandora:sync-mva
 
 **Português** · [English](#english)
@@ -55,6 +57,8 @@ Segue a metodologia MVA, ©2026 Pandora Tech LTDA.
 ---
 
 <a id="english"></a>
+
+<img src="../../../assets/banners/sync-mva-en.webp" alt="/pandora:sync-mva. Test the value before you build." width="100%">
 
 # /pandora:sync-mva
 

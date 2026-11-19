@@ -1,3 +1,5 @@
+<img src="../../../assets/banners/sync-me-pt.webp" alt="/pandora:sync-me. Pense a ideia antes de decidir." width="100%">
+
 # /pandora:sync-me
 
 **Português** · [English](#english)
@@ -56,6 +58,8 @@ Derivada das skills `grilling` e `grill-me` de Matt Pocock ([mattpocock/skills](
 ---
 
 <a id="english"></a>
+
+<img src="../../../assets/banners/sync-me-en.webp" alt="/pandora:sync-me. Think the idea through first." width="100%">
 
 # /pandora:sync-me
 

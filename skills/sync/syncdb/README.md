@@ -1,3 +1,5 @@
+<img src="../../../assets/banners/syncdb-pt.webp" alt="/pandora:syncdb. Dados de teste sem expor ninguém." width="100%">
+
 # /pandora:syncdb
 
 **Português** · [English](#english)
@@ -53,6 +55,8 @@ Segue o protocolo de contexto sintético da metodologia MVA, ©2026 Pandora Tech
 ---
 
 <a id="english"></a>
+
+<img src="../../../assets/banners/syncdb-en.webp" alt="/pandora:syncdb. Test data without exposing anyone." width="100%">
 
 # /pandora:syncdb
 
