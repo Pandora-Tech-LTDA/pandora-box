@@ -27,7 +27,7 @@ Tudo aqui é aberto: leia, copie, adapte e use nos seus projetos.
 | ↳ `/sync-docs` | Skill | Mesma conversa, registrando glossário e decisões do projeto. **Comece por aqui.** | 🚧 |
 | ↳ `/sync-mva` | Skill | Monta um MVA a partir do `/sync-docs`: prompt do agente com testes, documentos e manual de montagem no Cowork | 🚧 |
 | ↳ `/syncdb` | Skill | Gera bases de dados sintéticas (CSV ou Markdown) a partir de um arquivo de exemplo | 🚧 |
-| ↳ `syncing` | Skill (interna) | O método de entrevista usado pelas outras. Você não precisa chamá-la. | 🚧 |
+| ↳ [`syncing`](skills/sync/syncing/) | Skill (interna) | O método de entrevista usado pelas outras. Você não precisa chamá-la. | 🧪 v0.1 |
 
 **Nunca instalou uma skill?** Siga o guia [Como instalar as skills](guias/como-instalar-skills.md). Ele já traz o prompt pronto para copiar e colar.
 
