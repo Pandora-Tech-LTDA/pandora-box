@@ -28,3 +28,10 @@ Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D
 - **Decisão:** a spec é escrita principalmente para IAs de código (várias, não uma só). Precisa ser explícita, sem ambiguidade e independente de ferramenta.
 - **Motivo:** "muito provavelmente uma IA de código, mas várias delas, na verdade. A especificação vai ter que ser bem voltada para IA de código mesmo."
 - **Alternativas descartadas:** spec escrita para uma pessoa desenvolvedora; spec presa a uma única ferramenta.
+
+## D6. Formato das telas
+- **Data:** 2026-11-19
+- **Decisão:** as telas saem como wireframes em texto. No máximo uma tela de referência visual, para mostrar como ficaria. O foco é especificar o sistema, não o visual; o usuário conecta a spec ao design system que tiver depois.
+- **Motivo:** "o wireframe em texto já está bom e, no máximo, uma referência de uma tela de como ficaria visualmente, mas o foco não é ser visual, é fazer a especificação para um sistema. Depois ele pode conectar isso com o design system."
+- **Alternativas descartadas:** prévia em HTML de todas as telas.
+- **Discordância:** a sugestão era wireframe em texto mais prévia em HTML de cada tela; o usuário preferiu manter o foco na especificação.
