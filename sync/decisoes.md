@@ -35,3 +35,9 @@ Projeto: skill `/sync-spec`, da família Sync (Pandora Box). As decisões D1 a D
 - **Motivo:** "o wireframe em texto já está bom e, no máximo, uma referência de uma tela de como ficaria visualmente, mas o foco não é ser visual, é fazer a especificação para um sistema. Depois ele pode conectar isso com o design system."
 - **Alternativas descartadas:** prévia em HTML de todas as telas.
 - **Discordância:** a sugestão era wireframe em texto mais prévia em HTML de cada tela; o usuário preferiu manter o foco na especificação.
+
+## D7. Papel do design system de referência
+- **Data:** 2026-11-19
+- **Decisão:** a spec sempre traz um padrão visual do design system de referência (cores, tipografia, contraste, espaçamento), que a IA de código aplica quando o usuário não conecta um design system próprio. Se o usuário tiver um, ele substitui o padrão. Refina a D3.
+- **Motivo:** "ele serve para gerar alguma coisa que faça sentido mesmo sem conectar um design system. Senão você vai ter uma especificação que vai depender da estética do próprio modelo. Então a gente pelo menos garante que a leitura vai estar boa, os contrastes vão estar bons, que vai ser uma tela coerente."
+- **Alternativas descartadas:** usar o design system só na tela de referência; tirar o design system do `/sync-spec`.
