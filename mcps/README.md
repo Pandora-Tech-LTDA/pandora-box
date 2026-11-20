@@ -9,7 +9,7 @@ assistente de IA (Claude, Cursor, etc.) a ferramentas e dados externos.
 
 | MCP | O que faz | Status |
 |---|---|---|
-| _em breve_ | | |
+| [leadership-mcp](leadership-mcp/) | Liderança humanista no momento da conversa difícil: o assistente oferece consultar a base antes de responder | Em teste |
 
 <!-- Ao adicionar uma MCP, inclua uma linha acima:
 | [nome-da-mcp](nome-da-mcp/) | Descrição curta | Estável / Beta / Em construção |
